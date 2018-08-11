@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
+import {Route, Link} from 'react-router-dom'
 import styled from 'styled-components';
 
 const AppDiv = styled.div`
   border: 1px solid red;
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -39,8 +41,21 @@ const Ke = styled.h1`
 class App extends Component {
   render() {
     return (
+
       <AppDiv>
+        <div className="contact-tabs">
+          <img src="./img/twitter.svg" alt="twitter logo" />
+        </div>
+
         <Header><Mi>MI</Mi><Ke>KE</Ke>RBLESKI</Header>
+
+        <div className="links">
+          <Link to="/resume">resume</Link>
+          <Link to="/current-project">current-project</Link>
+          <Link to="/web-portfolio">web-portfolio</Link>
+          <Link to="/media-portfolio">media-portfolio</Link>
+        </div>
+
       </AppDiv>
     );
   }
