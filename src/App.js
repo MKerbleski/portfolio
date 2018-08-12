@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import './App.css';
-import {Route, Link} from 'react-router-dom'
+import './css/index.css';
+import {Link} from 'react-router-dom'
 import styled from 'styled-components';
 
 class App extends Component {
   render() {
     return (
-
-      <AppDiv>
+      <div className="app-div">
         <div className="all-contact-tabs">
           <img className="contact-tab" src="./img/twitter.svg" alt="twitter logo" />
           <img className="contact-tab" src="./img/twitter.svg" alt="twitter logo" />
@@ -17,7 +16,8 @@ class App extends Component {
 
         <div className="main">
 
-          <Header><Mi>MI</Mi><Ke>KE</Ke>RBLESKI</Header>
+          <header className="header"><span>MIKERBLESKI</span></header>
+
 
           <div className="links">
             <Link to="/resume">resume</Link>
@@ -33,33 +33,13 @@ class App extends Component {
           <div>Last Update:{}</div>
         </footer>
 
-      </AppDiv>
+      </div>
+
     );
   }
 }
 
 export default App;
-
-const AppDiv = styled.div`
-  border: 1px solid red;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space space-between;
-  align-items: center;
-  height: 100vh;
-  margin: 0 auto;
-`;
-
-const Header = styled.h1`
-  border: 1px solid blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  font-size: 13vw;
-`;
 
 const Mi = styled.h1`
   color: white;
@@ -70,7 +50,6 @@ const Mi = styled.h1`
 `;
 
 const Ke = styled.h1`
-  color: gray;
-  font-size: 13vw;
+
 
 `;

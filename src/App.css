@@ -1,8 +1,0 @@
-.all-contact-tabs {
-  border: 1px solid red;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-}

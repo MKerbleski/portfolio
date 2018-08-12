@@ -1,4 +1,4 @@
-.app-div{
+.app-div {
   border: 1px solid red;
   box-sizing: border-box;
   display: flex;
@@ -7,21 +7,20 @@
   align-items: center;
   height: 100vh;
   margin: 0 auto;
-  header {
-    border: 1px solid blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: auto;
-    font-size: 13vw;
-    span {
-      color: gray;
-      font-size: 13vw;
-    }
-  }
 }
-
+.app-div header {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  font-size: 13vw;
+}
+.app-div header span {
+  color: gray;
+  font-size: 13vw;
+}
 .all-contact-tabs {
   border: 1px solid red;
   display: flex;
@@ -31,7 +30,6 @@
   width: 100%;
   background: green;
 }
-
 .main {
   border: 1px solid red;
 }
