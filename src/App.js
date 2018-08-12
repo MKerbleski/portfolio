@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './css/index.css';
-import {Link} from 'react-router-dom'
+import {Route, Link} from 'react-router-dom'
 
 class App extends Component {
   render() {
@@ -9,10 +9,12 @@ class App extends Component {
 
         <header>
           <div className="all-contact-tabs">
-            <img className="contact-tab" src="./img/twitter.svg" alt="twitter logo" />
-            <img className="contact-tab" src="./img/twitter.svg" alt="twitter logo" />
-            <img className="contact-tab" src="./img/twitter.svg" alt="twitter logo" />
-            <i class="fab fa-angellist"></i>
+            <div className="logo" href="https://angel.co/kerbleski"><i class="fab fa-angellist"></i></div>
+            <div className="logo" href="https://twitter.com/kerbleski"><i class="fab fa-twitter"></i></div>
+            <div className="logo" href="https://github.com/kerbleski"><i class="fab fa-github"></i></div>--
+            <div className="logo"><i class="far fa-moon"></i></div>
+            <div className="logo"><i class="far fa-sun"></i></div>
+
           </div>
         </header>
 
@@ -26,6 +28,10 @@ class App extends Component {
             <Link className="link" to="/media-portfolio">media-portfolio</Link>
           </div>
         </div>
+
+        {/* <Route path="/">
+
+        </Route> */}
 
         <footer>
           <div className="copyright">Copyright: Michael Kerbleski</div>
