@@ -12,7 +12,7 @@ class App extends Component {
             <img className="contact-tab" src="./img/twitter.svg" alt="twitter logo" />
             <img className="contact-tab" src="./img/twitter.svg" alt="twitter logo" />
             <img className="contact-tab" src="./img/twitter.svg" alt="twitter logo" />
-
+            <i class="fab fa-angellist"></i>
           </div>
         </header>
 

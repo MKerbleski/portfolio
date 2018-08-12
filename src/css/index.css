@@ -41,9 +41,11 @@ header .all-contact-tabs {
   height: auto;
   font-size: 13vw;
   margin: 0;
+  padding: 0;
 }
 .main .title h1 {
   font-size: 13vw;
+  margin: 10px;
 }
 .main .title h1 mi {
   color: white;
