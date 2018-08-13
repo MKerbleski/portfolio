@@ -15,7 +15,6 @@ const AllContactTabsDiv = styled.div`
     box-sizing: border-box;
     cursor: pointer;
     font-size: 35px;
-    ${'' /* padding: 9px; */}
     color: black;
   }
 `;
