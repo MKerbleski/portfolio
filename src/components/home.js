@@ -20,7 +20,7 @@ const Home = () => {
 export default Home;
 
 const HomeDiv = styled.div`
-  border: 1px solid red;
+  ${'' /* border: 1px solid red; */}
   box-sizing: border-box;
   height: 99.5vh;
   margin: 0;
@@ -31,12 +31,12 @@ const HomeDiv = styled.div`
     font-size: 13vw;
   }
   .all-links {
-    border: 1px solid green;
+    ${'' /* border: 1px solid green; */}
     display: flex;
     justify-content: center;
     align-items: center;
     .link {
-      border: 1px solid red;
+      ${'' /* border: 1px solid red; */}
       margin: 0 3px;
       padding: 3px;
       color: black;

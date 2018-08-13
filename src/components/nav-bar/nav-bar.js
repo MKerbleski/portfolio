@@ -1,5 +1,5 @@
 import React from 'react';
-// import {Route, Link} from 'react-router-dom';
+import {Link, Route} from 'react-router-dom';
 // import Title from './title.js';
 import AllContactTabs from './all-contact-tabs.js';
 import styled from 'styled-components';
@@ -16,7 +16,7 @@ const NavBarDiv = styled.div`
   align-items: center;
  .nav-left{
    width: 25%;
-   border: 1px solid red;
+   ${'' /* border: 1px solid red; */}
    font-size: 35px;
  }
 `;
@@ -27,8 +27,9 @@ const NavBar = () => {
         {/* if not home path then display Title */}
         <div className="nav-left">
           {/* <Title /> */}
-          <i class="fas fa-bars"></i>
-
+          <Route path="/">
+            <i class="fas fa-bars"></i>
+          </Route>
         </div>
         <AllContactTabs />
     </NavBarDiv>

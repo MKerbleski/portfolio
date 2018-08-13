@@ -8,7 +8,7 @@ const Title = () => {
       <Link className="link" to="/">
         <h1>
           <mi>MI</mi>
-          <ke>KE</ke>RBLE.SKI</h1>
+          <ke>KE</ke>RBLE.<img src="../img/easter-egg.png" alt='' />SKI</h1>
       </Link>
     </TitleDiv>
   )
@@ -17,7 +17,7 @@ const Title = () => {
 export default Title;
 
 const TitleDiv = styled.div`
-  border: 1px solid blue;
+  ${'' /* border: 1px solid blue; */}
   display: flex;
   justify-content: center;
   align-items: center;

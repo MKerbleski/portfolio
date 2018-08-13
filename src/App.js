@@ -23,7 +23,7 @@ class App extends Component {
 export default App;
 
 const AppDiv = styled.div`
-  border: 1px solid red;
+  ${'' /* border: 1px solid red; */}
   box-sizing: border-box;
   display: flex;
   flex-direction: column;

@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const AllContactTabsDiv = styled.div`
-  border: 1px solid red;
+  ${'' /* border: 1px solid red; */}
   box-sizing: border-box;
   height: auto;
   display: flex;
