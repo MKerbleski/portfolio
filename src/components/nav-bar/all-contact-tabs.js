@@ -14,7 +14,7 @@ const AllContactTabsDiv = styled.div`
   .logo {
     box-sizing: border-box;
     cursor: pointer;
-    font-size: 35px;
+    font-size: 30px;
     color: black;
   }
 `;

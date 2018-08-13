@@ -3,7 +3,7 @@ import './css/index.css';
 import {Route} from 'react-router-dom';
 import Resume from './components/resume';
 import Home from './components/home';
-import NavBar from './components/nav-bar';
+import NavBar from './components/nav-bar/nav-bar';
 import Footer from './components/footer';
 import styled from 'styled-components';
 

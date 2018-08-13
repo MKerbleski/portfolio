@@ -9,13 +9,15 @@ const NavBarDiv = styled.div`
   box-sizing: border-box;
   width: 100%;
   background: white;
-  height: 90px;
+  padding: 0 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
  .nav-left{
    width: 25%;
+   border: 1px solid red;
+   font-size: 35px;
  }
 `;
 
@@ -25,7 +27,7 @@ const NavBar = () => {
         {/* if not home path then display Title */}
         <div className="nav-left">
           {/* <Title /> */}
-          <img src="../img/hamburger_icon.png" alt="menu-icon" />
+          <i class="fas fa-bars"></i>
 
         </div>
         <AllContactTabs />
