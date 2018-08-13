@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './css/index.css';
-import {Route, Link} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import Resume from './components/resume';
 import Home from './components/home';
 import NavBar from './components/nav-bar';

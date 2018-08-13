@@ -1,6 +1,20 @@
 import React from 'react';
-import {Route, Link} from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import styled from 'styled-components';
+
+const Title = () => {
+  return (
+    <TitleDiv>
+      <Link className="link" to="/">
+        <h1>
+          <mi>MI</mi>
+          <ke>KE</ke>RBLE.SKI</h1>
+      </Link>
+    </TitleDiv>
+  )
+}
+
+export default Title;
 
 const TitleDiv = styled.div`
   border: 1px solid blue;
@@ -10,30 +24,22 @@ const TitleDiv = styled.div`
   width: 100%;
   height: auto;
   text-decoration: none;
-  ${'' /* font-size: 13vw; */}
   margin: 0;
   padding: 0;
+  .link {
+    text-decoration: none;
+  }
   h1 {
-    ${'' /* font-size: 13vw; */}
     margin: 10px;
     color: white;
-    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
     text-decoration: none;
+    &:visited{
+      text-decoration: none;
+    }
     ke {
       color: black;
     }
   }
 `;
-
-const Title = () => {
-  return (<Link to="/">
-    <TitleDiv>
-      <h1>
-        <mi>MI</mi>
-        <ke>KE</ke>RBLE.SKI</h1>
-    </TitleDiv>
-  </Link>)
-}
-
-export default Title;
