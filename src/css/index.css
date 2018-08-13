@@ -141,22 +141,40 @@ body {
   font-family: sans-serif;
   background-color: lightgray;
 }
-.home-div {
+.app-div {
   border: 1px solid red;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  height: 99.5vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.home-div {
+  border: 1px solid red;
+  box-sizing: border-box;
   height: 99.5vh;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-header {
+.nav-bar-away {
+  border: 1px solid red;
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-bar-home {
   border: 1px solid red;
   width: 100%;
   background: white;
 }
-header .all-contact-tabs {
+.all-contact-tabs {
   border: 1px solid red;
   display: flex;
   flex-direction: row;
@@ -164,7 +182,7 @@ header .all-contact-tabs {
   align-items: center;
   width: 100%;
 }
-header .all-contact-tabs .logo {
+.all-contact-tabs .logo {
   cursor: pointer;
   font-size: 35px;
   padding: 9px;
@@ -175,6 +193,9 @@ header .all-contact-tabs .logo {
   margin: 0;
   width: 100%;
   background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .main .title {
   border: 1px solid blue;
