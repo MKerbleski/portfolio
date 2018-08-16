@@ -1,15 +1,17 @@
 import React from 'react';
 import { Link} from 'react-router-dom';
 import styled from 'styled-components';
+import easterEggPic from '../img/easter-egg.png';
 
 const Title = () => {
   return (
     <TitleDiv>
-      <Link className="link" to="/">
+        <span>
         <h1>
           <mi>MI</mi>
-          <ke>KE</ke>RBLE.<img src="../img/easter-egg.png" alt='' />SKI</h1>
-      </Link>
+          <ke>KE</ke>RBLE<Link className="link" to="/egg"><img src={easterEggPic} alt='' /></Link>SKI</h1>
+          </span>
+
     </TitleDiv>
   )
 }
@@ -17,15 +19,25 @@ const Title = () => {
 export default Title;
 
 const TitleDiv = styled.div`
-  ${'' /* border: 1px solid blue; */}
+${''/* border: 1px solid blue */}
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
+  font-weight: 500;
   text-decoration: none;
   margin: 0;
   padding: 0;
+  &:hover{
+    cursor: default;
+  }
+  img{
+    height: 15px;
+    &:hover{
+      cursor: default;
+    }
+  }
   .link {
     text-decoration: none;
   }

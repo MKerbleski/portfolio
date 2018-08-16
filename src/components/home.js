@@ -33,7 +33,7 @@ const HomeDiv = styled.div`
   .all-links {
     ${'' /* border: 1px solid green; */}
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     .link {
       ${'' /* border: 1px solid red; */}
@@ -45,8 +45,9 @@ const HomeDiv = styled.div`
       font-weight: bold;
       border-radius: 3px;
       &:hover {
-        color: white;
-        background-color: black;
+        ${'' /* color: white;
+        background-color: black; */}
+        text-decoration: underline;
       }
     }
   }

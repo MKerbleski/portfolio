@@ -1,5 +1,5 @@
 import React from 'react';
-// import {Route, Link} from 'react-router-dom';
+import {Route, Link} from 'react-router-dom';
 import styled from 'styled-components';
 
 const AllContactTabsDiv = styled.div`
@@ -15,6 +15,7 @@ const AllContactTabsDiv = styled.div`
     box-sizing: border-box;
     cursor: pointer;
     font-size: 30px;
+    margin: 4px;
     color: black;
   }
 `;
@@ -22,12 +23,10 @@ const AllContactTabsDiv = styled.div`
 const AllContactTabs = () => {
   return (
     <AllContactTabsDiv>
-      <div className="logo" href="https://angel.co/kerbleski"><i class="fab fa-angellist"></i></div>
-      <div className="logo" href="https://twitter.com/kerbleski"><i class="fab fa-twitter"></i></div>
-      <div className="logo" href="https://github.com/kerbleski"><i class="fab fa-github"></i></div>
-      --
-      <div className="logo">&#9728;</div>
-      <div className="logo">&#9790;</div>
+
+      <a className="logo" target="_blank" href="https://angel.co/kerbleski"><i class="fab fa-angellist"></i></a>
+      <a className="logo" target="_blank" href="https://twitter.com/kerbleski"><i class="fab fa-twitter"></i></a>
+      <a className="logo" target="_blank" href="https://github.com/kerbleski"><i class="fab fa-github"></i></a>
     </AllContactTabsDiv>
   )
 }

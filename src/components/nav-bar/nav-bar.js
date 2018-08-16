@@ -9,7 +9,7 @@ const NavBarDiv = styled.div`
   box-sizing: border-box;
   width: 100%;
   background: white;
-  padding: 0 5px;
+  padding: 15px 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -27,9 +27,9 @@ const NavBar = () => {
         {/* if not home path then display Title */}
         <div className="nav-left">
           {/* <Title /> */}
-          <Route path="/">
+          <Link to="/">
             <i class="fas fa-bars"></i>
-          </Route>
+          </Link>
         </div>
         <AllContactTabs />
     </NavBarDiv>
