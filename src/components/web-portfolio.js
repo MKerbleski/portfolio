@@ -6,7 +6,7 @@ import {connect} from 'react-redux';
 
 const PortfolioDiv = styled.div`
   border: 1px solid red;
-  height: 100%;
+  ${'' /* height: 100%; */}
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,12 +18,12 @@ const PortfolioDiv = styled.div`
     justify-content: center;
     border: 1px solid green;
     width: 90%;
-    height: 90%;
+    height: 900px;
   }
   .mini-site {
     border: 1px solid blue;
     width: 80%;
-    height: 80%;
+    height: 800px;
   }
 `;
 
@@ -35,11 +35,15 @@ class WebPortfolio extends React.Component {
   render(){
     console.log(this.props.state)
     return (
-
           <PortfolioDiv>
             {(this.props.state.fetchedData === true) ?        (this.props.state.githubData.data.map( (project) => {
               return (
-                <div>{project.name}</div>
+                <div className="site-div">
+                {/* //   <h1>{project.name}</h1>
+                //   <p>{project.updated_at}</p>
+                //   <p>description</p> */}
+                  {(project.has_pages === false) ? null : <iframe className="mini-site" src={`https://mkerbleski.github.io/${project.name}/`}></iframe> }
+                </div>
               )
             })) : null}
             <div className="site-div">

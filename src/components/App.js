@@ -42,7 +42,7 @@ const AppDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 99.5vh;
+  ${'' /* height: 99.5vh; */}
   width: 100%;
   margin: 0;
   padding: 0;
