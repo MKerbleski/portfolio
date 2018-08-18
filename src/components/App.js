@@ -7,22 +7,26 @@ import Home from './home';
 import NavBar from './nav-bar/nav-bar';
 import Footer from './footer';
 import styled from 'styled-components';
+import {connect} from 'react-redux';
+import {connnectGithub} from './../actions';
 
-class App extends Component {
+class App extends React.Component {
   render() {
     return (
       <AppDiv>
         <NavBar />
         <Route path="/resume" render={Resume}></Route>
-        <Route path="/web-portfolio" render={WebPortfolio}></Route>
+        <Route path="/web-portfolio" component={() => {
+          return WebPortfolio}}></Route>
         <Route path="/" exact render={Home}></Route>
         <Footer />
       </AppDiv>
     );
   }
 }
+export default (App)
 
-export default App;
+
 
 const AppDiv = styled.div`
   ${'' /* border: 1px solid red; */}
