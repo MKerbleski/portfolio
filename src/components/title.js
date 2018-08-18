@@ -6,7 +6,7 @@ import easterEggPic from '../img/easter-egg.png';
 const Title = () => {
   return (
     <TitleDiv>
-        <Link className="link" to="/">
+        <Link className="link" to="">
           <h1>
             <mi>MI</mi>
             <ke>KE</ke>RBLE<Link className="link"  to="/egg"><img src={easterEggPic} alt='' /></Link>SKI</h1>

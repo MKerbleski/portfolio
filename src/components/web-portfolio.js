@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import {connnectGithub} from './../actions';
 import {connect} from 'react-redux';
@@ -18,7 +18,7 @@ const PortfolioDiv = styled.div`
     justify-content: center;
     border: 1px solid green;
     width: 90%;
-    height: 900px;
+    max-height: 900px;
   }
   .mini-site {
     border: 1px solid blue;
@@ -39,10 +39,10 @@ class WebPortfolio extends React.Component {
             {(this.props.state.fetchedData === true) ?        (this.props.state.githubData.data.map( (project) => {
               return (
                 <div className="site-div">
-                {/* //   <h1>{project.name}</h1>
-                //   <p>{project.updated_at}</p>
-                //   <p>description</p> */}
-                  {(project.has_pages === false) ? null : <iframe className="mini-site" src={`https://mkerbleski.github.io/${project.name}/`}></iframe> }
+                   <h1>{project.name}</h1>
+                   <p>{project.updated_at}</p>
+                   <p>description</p>
+                  {(project.has_pages === false) ? null : <iframe title={project.id} className="mini-site" src={`https://mkerbleski.github.io/${project.name}/`}></iframe> }
                 </div>
               )
             })) : null}
@@ -50,7 +50,7 @@ class WebPortfolio extends React.Component {
               <h1>title</h1>
               <p>date</p>
               <p>description</p>
-              <iframe className="mini-site" src="https://mkerbleski.github.io/Sprint-Challenge-Applied-Javascript/"></iframe>
+              <iframe title="title" className="mini-site" src="https://mkerbleski.github.io/Sprint-Challenge-Applied-Javascript/"></iframe>
             </div>
           </PortfolioDiv>
     )

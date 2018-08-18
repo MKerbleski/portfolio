@@ -1,14 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../css/index.css';
 import {Route} from 'react-router-dom';
+import styled from 'styled-components';
+import {connect} from 'react-redux';
+import {connnectGithub} from './../actions';
+
 import Resume from './resume';
 import WebPortfolio from './web-portfolio';
 import Home from './home';
 import NavBar from './nav-bar/nav-bar';
 import Footer from './footer';
-import styled from 'styled-components';
-import {connect} from 'react-redux';
-import {connnectGithub} from './../actions';
 
 class App extends React.Component {
   constructor(){
@@ -26,15 +27,16 @@ class App extends React.Component {
     return (
       <AppDiv>
         <NavBar />
-        <Route path="/resume" render={Resume}></Route>
-        <Route path="/web-portfolio" component={WebPortfolio} monkey={this.props.githubData}></Route>
+        <Route exact path="/resume" render={Resume}></Route>
+        <Route exact path="/current-project" render={Resume}></Route>
+        <Route exact path="/web-portfolio" component={WebPortfolio}></Route>
         <Route path="/" exact render={Home}></Route>
         <Footer />
       </AppDiv>
     );
   }
 }
-// export default (App)
+export default (App)
 
 const AppDiv = styled.div`
   ${'' /* border: 1px solid red; */}
@@ -49,12 +51,12 @@ const AppDiv = styled.div`
 `;
 
 
-const mapStateToProps = store => {
-  return {state: store};//state is really props & store is store
-}
-
-const mapDispatchToProps = {
-  connnectGithub
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+// const mapStateToProps = store => {
+//   return {state: store};//state is really props & store is store
+// }
+//
+// const mapDispatchToProps = {
+//   connnectGithub
+// }
+//
+// export default connect(mapStateToProps, mapDispatchToProps)(App);
