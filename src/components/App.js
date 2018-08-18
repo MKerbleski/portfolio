@@ -16,8 +16,7 @@ class App extends React.Component {
       <AppDiv>
         <NavBar />
         <Route path="/resume" render={Resume}></Route>
-        <Route path="/web-portfolio" component={() => {
-          return WebPortfolio}}></Route>
+        <Route path="/web-portfolio" render={WebPortfolio}></Route>
         <Route path="/" exact render={Home}></Route>
         <Footer />
       </AppDiv>
