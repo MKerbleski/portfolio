@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './css/index.css';
 import {Route} from 'react-router-dom';
 import Resume from './components/resume';
-import WebPortfolio from './components/webPortfolio';
+import WebPortfolio from './components/web-portfolio';
 import Home from './components/home';
 import NavBar from './components/nav-bar/nav-bar';
 import Footer from './components/footer';
@@ -14,7 +14,7 @@ class App extends Component {
       <AppDiv>
         <NavBar />
         <Route path="/resume" render={Resume}></Route>
-        <Route path="/webPortfolio" render={WebPortfolio}></Route>
+        <Route path="/web-portfolio" render={WebPortfolio}></Route>
         <Route path="/" exact render={Home}></Route>
         <Footer />
       </AppDiv>

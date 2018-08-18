@@ -9,7 +9,8 @@ const Title = () => {
         <span>
         <h1>
           <mi>MI</mi>
-          <ke>KE</ke>RBLE<Link className="link" to="/egg"><img src={easterEggPic} alt='' /></Link>SKI</h1>
+          <ke>KE</ke>RBLE<Link className="link"  to="/egg"><img src={easterEggPic} alt='' /></Link>SKI</h1>
+          {/* https://www.w3schools.com/howto/howto_js_draggable.asp */}
           </span>
 
     </TitleDiv>
@@ -40,6 +41,7 @@ ${''/* border: 1px solid blue */}
   }
   .link {
     text-decoration: none;
+    ${'' /* position: absolute; */}
   }
   h1 {
     margin: 10px;
