@@ -26,7 +26,7 @@ const AllContactTabs = () => {
 
       <a className="logo" target="_blank" href="https://angel.co/kerbleski"><i class="fab fa-angellist"></i></a>
       <a className="logo" target="_blank" href="https://twitter.com/kerbleski"><i class="fab fa-twitter"></i></a>
-      <a className="logo" target="_blank" href="https://github.com/kerbleski"><i class="fab fa-github"></i></a>
+      <a className="logo" target="_blank" href="https://github.com/mkerbleski"><i class="fab fa-github"></i></a>
     </AllContactTabsDiv>
   )
 }

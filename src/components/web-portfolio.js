@@ -31,6 +31,7 @@ const WebPortfolio = () => {
             <h1>title</h1>
             <p>date</p>
             <p>description</p>
+            <a href="https://mkerbleski.github.io/Sprint-Challenge-Applied-Javascript/">fullscreen</a>
             <iframe className="mini-site" src="https://mkerbleski.github.io/Sprint-Challenge-Applied-Javascript/"></iframe>
           </div>
         </PortfolioDiv>

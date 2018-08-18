@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './css/index.css';
+import '../css/index.css';
 import {Route} from 'react-router-dom';
-import Resume from './components/resume';
-import WebPortfolio from './components/web-portfolio';
-import Home from './components/home';
-import NavBar from './components/nav-bar/nav-bar';
-import Footer from './components/footer';
+import Resume from './resume';
+import WebPortfolio from './web-portfolio';
+import Home from './home';
+import NavBar from './nav-bar/nav-bar';
+import Footer from './footer';
 import styled from 'styled-components';
 
 class App extends Component {

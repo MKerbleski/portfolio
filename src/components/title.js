@@ -6,14 +6,13 @@ import easterEggPic from '../img/easter-egg.png';
 const Title = () => {
   return (
     <TitleDiv>
-        <span>
-        <h1>
-          <mi>MI</mi>
-          <ke>KE</ke>RBLE<Link className="link"  to="/egg"><img src={easterEggPic} alt='' /></Link>SKI</h1>
-          {/* https://www.w3schools.com/howto/howto_js_draggable.asp */}
-          </span>
-
-    </TitleDiv>
+        <Link className="link" to="/">
+          <h1>
+            <mi>MI</mi>
+            <ke>KE</ke>RBLE<Link className="link"  to="/egg"><img src={easterEggPic} alt='' /></Link>SKI</h1>
+            {/* https://www.w3schools.com/howto/howto_js_draggable.asp */}
+        </Link>
+      </TitleDiv>
   )
 }
 
