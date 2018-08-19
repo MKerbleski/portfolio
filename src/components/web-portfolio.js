@@ -63,7 +63,7 @@ class WebPortfolio extends React.Component {
           <PortfolioDiv>
             <div>
               <h4>List of Projects</h4>
-              {(this.props.state.fetchedData === true) ?        (this.props.state.githubData.data.map( (project) => {
+              {(this.props.state.fetchedData === true) ? (this.props.state.githubData.data.map( (project) => {
                 return (
                   <div key={project.id} className={(this.state.currentProjectID == project.id) ? ('site-name selected-site') : ('site-name')} >
                      <h1>{project.name}</h1>
