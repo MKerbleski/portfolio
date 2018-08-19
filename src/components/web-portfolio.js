@@ -66,33 +66,32 @@ class WebPortfolio extends React.Component {
   }
 
   render(){
-    console.log(this.state.currentProject, "current project")
     return (
-          <PortfolioDiv>
-            <div className="project-list">
-              <h4>List of Projects</h4>
-              {(this.props.state.fetchedData === true) ? (this.props.state.githubData.data.map( (project) => {
-                return (
-                  <div key={project.id} className={(this.state.currentProjectID == project.id) ? ('site-name selected-site') : ('site-name')} >
-                     <h1>{project.name}</h1>
-                     <p>{project.updated_at}</p>
-                     <p>{project.id}</p>
-                     <p>description</p>
-                     <p id={project.id} onClick={this.selectSite}>show</p>
-                    {/* {(project.has_pages === false) ? <div>no page enabled</div> : <iframe title={project.id} className="mini-site" src={`https://mkerbleski.github.io/${project.name}/`}></iframe> } */}
-                  </div>
-                )
-              })) : null}
-            </div>
+      <PortfolioDiv>
+        <div className="project-list">
+          <h4>List of Projects</h4>
+          {(this.props.state.fetchedData === true) ? (this.props.state.githubData.data.map( (project) => {
+            return (
+              <div key={project.id} className={(this.state.currentProjectID == project.id) ? ('site-name selected-site') : ('site-name')} >
+                 <h1>{project.name}</h1>
+                 {(project.has_pages) ? (<p>Live preview!</p>) : null}
+                 <p id={project.id} onClick={this.selectSite}>show</p>
+              </div>
+            )
+          })) : null}
+        </div>
 
-            <div className="site-div">
-              {(this.state.currentProjectID) ? (<h1>{this.state.currentProject[0].name}</h1>) : (<p>Please select a project to see details.</p>)}
-              <p>date</p>
-              <p>description</p>
-              <iframe title="title" className="mini-site" src="https://mkerbleski.github.io/Sprint-Challenge-Applied-Javascript/"></iframe>
-            </div>
+        {(this.state.currentProjectID) ? (
+          <div className="site-div">
+            <h1>{this.state.currentProject[0].name}</h1>
+            <p>Created at:{this.state.currentProject[0].created_at}</p>
+            <p>Last Updated:{this.state.currentProject[0].updated_at}</p>
+            <p>{this.state.currentProject[0].size}</p>
+            {(this.state.currentProject[0].has_pages) ? (<iframe title="title" className="mini-site" src={`https://mkerbleski.github.io/${this.state.currentProject[0].name}/`}></iframe>) : null}
+          </div>) : (
+            <p>Select a project to see details.</p>)}
 
-          </PortfolioDiv>
+      </PortfolioDiv>
     )
   }
 }
