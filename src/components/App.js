@@ -51,8 +51,6 @@ const AppDiv = styled.div`
   padding: 0;
 `;
 
-const ExtraDiv = withRouter(App)
-
 const mapStateToProps = store => {
   return {state: store};//state is really props & store is store
 }
@@ -61,4 +59,4 @@ const mapDispatchToProps = {
   connnectGithub
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ExtraDiv);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

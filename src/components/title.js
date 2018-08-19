@@ -7,10 +7,12 @@ const Title = () => {
   return (
     <TitleDiv>
         <Link className="link" to="">
-          <h1>
-            <mi>MI</mi>
-            <ke>KE</ke>RBLE<Link className="link"  to="/egg"><img src={easterEggPic} alt='' /></Link>SKI</h1>
+          <div>
+            <div>MI
+            <strong>KE</strong>RBLE<Link className="link"  to="/egg"><img src={easterEggPic} alt='' /></Link>SKI</div>
             {/* https://www.w3schools.com/howto/howto_js_draggable.asp */}
+          </div>
+
         </Link>
       </TitleDiv>
   )
@@ -19,12 +21,13 @@ const Title = () => {
 export default Title;
 
 const TitleDiv = styled.div`
-${''/* border: 1px solid blue */}
+  border: 1px solid blue;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
+  font-size: 50px;
   font-weight: 500;
   text-decoration: none;
   margin: 0;

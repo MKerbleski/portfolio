@@ -11,6 +11,13 @@ const PortfolioDiv = styled.div`
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+
+  .project-list {
+    border: 1px solid green;
+    width: 30%;
+    max-height: 1000px;
+    overflow: auto;
+  }
   .site-name {
     background-color: gray;
   }
@@ -44,24 +51,41 @@ class WebPortfolio extends React.Component {
 
   componentDidMount(){
    this.props.connnectGithub();
+   this.init();
+  }
+
+  init(){
+    if (this.props.state.fetchedData === true) {
+      this.setState({
+        currentProjectID: 142026822,
+      })
+    }
+  }
+
+  componentDidUpdate = () => {
+
+
 
   }
+
+
 
   selectSite = e => {
     e.preventDefault();
-    console.log(this.props.state.githubData.data[e.target.id]);
     this.setState({
       currentProjectID: e.target.id,
-      currentProject: this.props.state.githubData.data,
+      currentProject: this.props.state.githubData.data.filter(project => project.id ==e.target.id
+      )
       //need to find a way to return the index of the array that matches the id
     })
+    console.log(this.state)
   }
 
   render(){
-    console.log(this.state.currentProject)
+    console.log(this.state.currentProject, "current project")
     return (
           <PortfolioDiv>
-            <div>
+            <div className="project-list">
               <h4>List of Projects</h4>
               {(this.props.state.fetchedData === true) ? (this.props.state.githubData.data.map( (project) => {
                 return (
@@ -76,20 +100,14 @@ class WebPortfolio extends React.Component {
                 )
               })) : null}
             </div>
-            <div>
-              <h4>site preview</h4>
-              {/* {
-                (this.state.currentProject !== null ) ? ( <div>{this.state.currentProject.name}</div>) : (<div>nope</div>)
-            } */}
-            </div>
 
-{/*
             <div className="site-div">
-              <h1>title</h1>
+
+              <h1>{this.state.currentProjectID}</h1>
               <p>date</p>
               <p>description</p>
               <iframe title="title" className="mini-site" src="https://mkerbleski.github.io/Sprint-Challenge-Applied-Javascript/"></iframe>
-            </div> */}
+            </div>
 
           </PortfolioDiv>
     )
