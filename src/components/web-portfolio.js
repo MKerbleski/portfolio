@@ -51,34 +51,18 @@ class WebPortfolio extends React.Component {
 
   componentDidMount(){
    this.props.connnectGithub();
-   this.init();
+   this.setState({
+
+   })
   }
-
-  init(){
-    if (this.props.state.fetchedData === true) {
-      this.setState({
-        currentProjectID: 142026822,
-      })
-    }
-  }
-
-  componentDidUpdate = () => {
-
-
-
-  }
-
-
 
   selectSite = e => {
     e.preventDefault();
     this.setState({
       currentProjectID: e.target.id,
-      currentProject: this.props.state.githubData.data.filter(project => project.id ==e.target.id
+      currentProject: this.props.state.githubData.data.filter(project => project.id == e.target.id
       )
-      //need to find a way to return the index of the array that matches the id
     })
-    console.log(this.state)
   }
 
   render(){
@@ -102,8 +86,7 @@ class WebPortfolio extends React.Component {
             </div>
 
             <div className="site-div">
-
-              <h1>{this.state.currentProjectID}</h1>
+              {(this.state.currentProjectID) ? (<h1>{this.state.currentProject[0].name}</h1>) : (<p>Please select a project to see details.</p>)}
               <p>date</p>
               <p>description</p>
               <iframe title="title" className="mini-site" src="https://mkerbleski.github.io/Sprint-Challenge-Applied-Javascript/"></iframe>
