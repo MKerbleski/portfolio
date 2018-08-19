@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Link} from 'react-router-dom';
+// import {Route, Link} from 'react-router-dom';
 import styled from 'styled-components';
 
 const AllContactTabsDiv = styled.div`
@@ -24,9 +24,10 @@ const AllContactTabs = () => {
   return (
     <AllContactTabsDiv>
 
-      <a className="logo" target="_blank" href="https://angel.co/kerbleski"><i class="fab fa-angellist"></i></a>
-      <a className="logo" target="_blank" href="https://twitter.com/kerbleski"><i class="fab fa-twitter"></i></a>
-      <a className="logo" target="_blank" href="https://github.com/kerbleski"><i class="fab fa-github"></i></a>
+
+      <a className="logo" target="_blank" rel="noopener noreferrer" href="https://angel.co/kerbleski"><i class="fab fa-angellist"></i></a>
+      <a className="logo" target="_blank" rel="noopener noreferrer" href="https://twitter.com/kerbleski"><i class="fab fa-twitter"></i></a>
+      <a className="logo" target="_blank" rel="noopener noreferrer" href="https://github.com/mkerbleski"><i class="fab fa-github"></i></a>
     </AllContactTabsDiv>
   )
 }

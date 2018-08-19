@@ -3,12 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
     "gh-pages": "^1.2.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
+<<<<<<< HEAD
     "styled-components": "^3.4.2"
+=======
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^3.4.1"
+>>>>>>> 96a1f2885f18b8c0624106fd4f6ab5598a9b1252
   },
   "scripts": {
     "start": "react-scripts start",

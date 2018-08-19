@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {Link, Route} from 'react-router-dom';
 // import Title from './title.js';
 import AllContactTabs from './all-contact-tabs.js';
 import styled from 'styled-components';
+import Title from '../title';
 
 const NavBarDiv = styled.div`
   ${'' /* border: 1px solid red; */}
@@ -15,25 +16,38 @@ const NavBarDiv = styled.div`
   justify-content: space-between;
   align-items: center;
  .nav-left{
-   width: 25%;
-   ${'' /* border: 1px solid red; */}
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   width: 50%;
+   border: 1px solid red;
    font-size: 35px;
  }
 `;
 
-const NavBar = () => {
-  return (
-    <NavBarDiv>
-        {/* if not home path then display Title */}
-        <div className="nav-left">
-          {/* <Title /> */}
-          <Link to="/">
-            <i class="fas fa-bars"></i>
-          </Link>
-        </div>
-        <AllContactTabs />
-    </NavBarDiv>
-  )
+class NavBar extends Component {
+  constructor(){
+    super();
+    this.state = {
+    }
+  }
+
+  render(){
+    return (
+      <NavBarDiv>
+          <div className="nav-left">
+            {(window.location.pathname !== "/") ?
+            <Title /> :
+            <Link to="/">
+              <i class="fas fa-bars"></i>
+            </Link>
+            }
+          </div>
+          <AllContactTabs />
+      </NavBarDiv>
+    )
+  }
 }
 
 export default NavBar;
