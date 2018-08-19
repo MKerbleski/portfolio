@@ -7,6 +7,7 @@ import Title from '../title';
 
 const NavBarDiv = styled.div`
   ${'' /* border: 1px solid red; */}
+  border-bottom: 1px solid black;
   box-sizing: border-box;
   width: 100%;
   background: white;
@@ -16,13 +17,15 @@ const NavBarDiv = styled.div`
   justify-content: space-between;
   align-items: center;
  .nav-left{
+   ${'' /* border: 1px solid red; */}
    display: flex;
    flex-direction: row;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: center;
-   width: 50%;
-   border: 1px solid red;
-   font-size: 35px;
+   width: 45%;
+   &:visited{
+     color: black;
+   }
  }
 `;
 
@@ -39,9 +42,10 @@ class NavBar extends Component {
           <div className="nav-left">
             {(window.location.pathname !== "/") ?
             <Title /> :
-            <Link to="/">
-              <i class="fas fa-bars"></i>
-            </Link>
+            null
+            // <Link to="/">
+            //   <i class="fas fa-bars"></i>
+            // </Link>
             }
           </div>
           <AllContactTabs />
