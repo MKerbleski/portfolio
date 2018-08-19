@@ -4,6 +4,7 @@ import {Route} from 'react-router-dom';
 import styled from 'styled-components';
 import {connect} from 'react-redux';
 import {connnectGithub} from './../actions';
+import { withRouter } from 'react-router'
 
 import Resume from './resume';
 import WebPortfolio from './web-portfolio';
@@ -20,7 +21,7 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-   // this.props.connnectGithub();
+   this.props.connnectGithub();
   }
 
   render() {
@@ -30,13 +31,13 @@ class App extends React.Component {
         <Route exact path="/resume" render={Resume}></Route>
         <Route exact path="/current-project" render={Resume}></Route>
         <Route exact path="/web-portfolio" component={WebPortfolio}></Route>
-        <Route path="/" exact render={Home}></Route>
+        <Route exact path="/" render={Home}></Route>
         <Footer />
       </AppDiv>
     );
   }
 }
-export default (App)
+// export default (App);
 
 const AppDiv = styled.div`
   ${'' /* border: 1px solid red; */}
@@ -50,13 +51,14 @@ const AppDiv = styled.div`
   padding: 0;
 `;
 
+const ExtraDiv = withRouter(App)
 
-// const mapStateToProps = store => {
-//   return {state: store};//state is really props & store is store
-// }
-//
-// const mapDispatchToProps = {
-//   connnectGithub
-// }
-//
-// export default connect(mapStateToProps, mapDispatchToProps)(App);
+const mapStateToProps = store => {
+  return {state: store};//state is really props & store is store
+}
+
+const mapDispatchToProps = {
+  connnectGithub
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ExtraDiv);

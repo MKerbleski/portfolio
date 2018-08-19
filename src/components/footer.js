@@ -1,6 +1,7 @@
 import React from 'react';
 // import {Route, Link} from 'react-router-dom';
 import styled from 'styled-components';
+
 const FooterDiv = styled.div`
   ${'' /* border: 1px solid green; */}
   display: flex;
@@ -11,7 +12,7 @@ const FooterDiv = styled.div`
   font-size: 12px;
   padding: 5px 0;
   background: white;
-  .top{
+  .top { 
     box-sizing: border-box;
     ${'' /* border: 1px solid red; */}
     display: flex;
