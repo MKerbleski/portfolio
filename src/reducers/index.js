@@ -5,6 +5,7 @@ const initState = {
   fetchingData: false,
   fetchedData: false,
   hasErrors: false,
+  status: '',
 }
 
 export const reducer = (state = initState, action) => {
@@ -12,12 +13,14 @@ export const reducer = (state = initState, action) => {
     case FETCHING_DATA:
       return {
         fetchingData: true,
+        status: action.payload
       }
     case DATA_RECIEVED:
       return Object.assign({}, state, {
         githubData: action.payload,
         fetchingData: false,
         fetchedData: true,
+        status: ''
       })
     case ERROR:
       return {
