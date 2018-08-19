@@ -55,9 +55,6 @@ class WebPortfolio extends React.Component {
 
   componentDidMount(){
    this.props.connnectGithub();
-   this.setState({
-
-   })
   }
 
   selectSite = e => {
@@ -66,6 +63,8 @@ class WebPortfolio extends React.Component {
       currentProjectID: e.target.id,
       currentProject: this.props.state.githubData.filter(project => project.id == e.target.id
       )
+//change to find and it wont return an array maybe
+
     })
   }
 

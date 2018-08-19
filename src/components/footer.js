@@ -12,7 +12,7 @@ const FooterDiv = styled.div`
   font-size: 12px;
   padding: 5px 0;
   background: white;
-  .top { 
+  .top {
     box-sizing: border-box;
     ${'' /* border: 1px solid red; */}
     display: flex;
@@ -26,7 +26,9 @@ const FooterDiv = styled.div`
   }
 `;
 
-const Footer = () => {
+const Footer = (props) => {
+  console.log(props.date.state.githubData)
+  
   return (
     <FooterDiv>
       <div className="top">

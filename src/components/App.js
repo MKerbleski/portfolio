@@ -22,9 +22,21 @@ class App extends React.Component {
 
   componentDidMount(){
    this.props.connnectGithub();
+
   }
 
+  // componentDidUpdate(){
+  //   {(this.props.state.fetchedData) ?
+  //      (this.setState({
+  //        lastUpdate: (this.props.state.githubData.filter(project => project.name === "Portfolio")).id
+  //       })) :
+  //       (this.setState({
+  //         lastUpdate: 'failed truth statement',
+  //        })) }
+  // }
+
   render() {
+
     return (
       <AppDiv>
         <NavBar />
@@ -32,7 +44,7 @@ class App extends React.Component {
         <Route exact path="/current-project" render={Resume}></Route>
         <Route exact path="/web-portfolio" component={WebPortfolio}></Route>
         <Route exact path="/" render={Home}></Route>
-        <Footer />
+        <Footer date={this.props}/>
       </AppDiv>
     );
   }

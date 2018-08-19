@@ -20,7 +20,8 @@ export const reducer = (state = initState, action) => {
         githubData: action.payload,
         fetchingData: false,
         fetchedData: true,
-        status: ''
+        status: '',
+        
       })
     case ERROR:
       return {
