@@ -22,11 +22,12 @@ export default Title;
 const TitleDiv = styled.div`
   ${'' /* border: 1px solid blue; */}
   display: flex;
+  flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
-  ${'' /* font-size: 50px; */}
+  font-size: 4vw;
   font-weight: 500;
   text-decoration: none;
   margin: 0;

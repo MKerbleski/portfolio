@@ -33,12 +33,13 @@ const HomeDiv = styled.div`
   .all-links {
     ${'' /* border: 1px solid green; */}
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
     .link {
       ${'' /* border: 1px solid red; */}
       margin: 0 3px;
-      padding: 3px;
+      padding: 0 3%;
       color: black;
       font-size: 18px;
       text-decoration: none;

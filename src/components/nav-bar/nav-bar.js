@@ -26,6 +26,9 @@ const NavBarDiv = styled.div`
    &:visited{
      color: black;
    }
+   .nav-title{
+     ${'' /* font-size: 10vh; */}
+   }
  }
 `;
 
@@ -41,7 +44,7 @@ class NavBar extends Component {
       <NavBarDiv>
           <div className="nav-left">
             {(window.location.pathname !== "/") ?
-            <Title /> :
+            <Title className="nav-title"/> :
             null
             // <Link to="/">
             //   <i class="fas fa-bars"></i>
