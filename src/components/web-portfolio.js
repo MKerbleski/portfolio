@@ -55,6 +55,7 @@ class WebPortfolio extends React.Component {
 
   componentDidMount(){
    this.props.connnectGithub();
+
   }
 
   selectSite = e => {

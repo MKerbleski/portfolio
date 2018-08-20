@@ -3,7 +3,7 @@ import '../css/index.css';
 import {Route} from 'react-router-dom';
 import styled from 'styled-components';
 import {connect} from 'react-redux';
-import {connnectGithub} from './../actions';
+import {connnectGithub, getTime} from './../actions';
 import { withRouter } from 'react-router'
 
 import Resume from './resume';
@@ -16,27 +16,17 @@ class App extends React.Component {
   constructor(){
     super();
     this.state = {
+      lastUpdateFetched: false,
       lastUpdate: ''
     }
   }
 
   componentDidMount(){
-   this.props.connnectGithub();
-
+   // this.props.connnectGithub();
+   this.props.getTime();
   }
 
-  // componentDidUpdate(){
-  //   {(this.props.state.fetchedData) ?
-  //      (this.setState({
-  //        lastUpdate: (this.props.state.githubData.filter(project => project.name === "Portfolio")).id
-  //       })) :
-  //       (this.setState({
-  //         lastUpdate: 'failed truth statement',
-  //        })) }
-  // }
-
   render() {
-
     return (
       <AppDiv>
         <NavBar />
@@ -44,7 +34,7 @@ class App extends React.Component {
         <Route exact path="/current-project" render={Resume}></Route>
         <Route exact path="/web-portfolio" component={WebPortfolio}></Route>
         <Route exact path="/" render={Home}></Route>
-        <Footer date={this.props}/>
+        <Footer date={this.props.state.time}/>
       </AppDiv>
     );
   }
@@ -68,7 +58,7 @@ const mapStateToProps = store => {
 }
 
 const mapDispatchToProps = {
-  connnectGithub
+  connnectGithub, getTime
 }
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
