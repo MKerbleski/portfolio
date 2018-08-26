@@ -10,8 +10,7 @@ const Home = () => {
       <div className="all-links">
         <Link className="link" to="/resume">resume</Link>
         {/* <Link className="link" to="/current-project">current-project</Link> */}
-        <Link className="link" to="/web-portfolio">websites</Link>
-        <Link className="link" to="/web-portfolio">side-projects</Link>
+        <Link className="link" to="/web-portfolio">web-portfolio</Link>
         <Link className="link" to="/media-portfolio">media-portfolio</Link>
       </div>
     </HomeDiv>
@@ -28,7 +27,7 @@ const HomeDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  h1{
+  h1 {
     font-size: 13vw;
   }
   .all-links {

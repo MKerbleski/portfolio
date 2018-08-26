@@ -25,9 +25,9 @@ const AllContactTabs = () => {
     <AllContactTabsDiv>
 
 
-      <a className="logo" target="_blank" rel="noopener noreferrer" href="https://angel.co/kerbleski"><i class="fab fa-angellist"></i></a>
-      <a className="logo" target="_blank" rel="noopener noreferrer" href="https://twitter.com/kerbleski"><i class="fab fa-twitter"></i></a>
-      <a className="logo" target="_blank" rel="noopener noreferrer" href="https://github.com/mkerbleski"><i class="fab fa-github"></i></a>
+      <a className="logo" target="_blank" rel="noopener noreferrer" href="https://angel.co/kerbleski"><i className="fab fa-angellist"></i></a>
+      <a className="logo" target="_blank" rel="noopener noreferrer" href="https://twitter.com/kerbleski"><i className="fab fa-twitter"></i></a>
+      <a className="logo" target="_blank" rel="noopener noreferrer" href="https://github.com/mkerbleski"><i className="fab fa-github"></i></a>
     </AllContactTabsDiv>
   )
 }

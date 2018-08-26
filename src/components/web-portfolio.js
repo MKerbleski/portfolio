@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {connnectGithub} from './../actions';
 import {connect} from 'react-redux';
-
+import moment from 'moment';
 
 const PortfolioDiv = styled.div`
   ${'' /* border: 1px solid red; */}
@@ -15,6 +15,12 @@ const PortfolioDiv = styled.div`
     width: 30%;
     max-height: 1000px;
     overflow: auto;
+    .listButtons {
+      border: 1px solid red;
+      button {
+        width: 50%;
+      }
+    }
   }
   .site-name {
     background-color: white;
@@ -73,15 +79,21 @@ class WebPortfolio extends React.Component {
     return (
       <PortfolioDiv>
         <div className="project-list">
-          <h4>List of Projects</h4>
+          <h4>Projects</h4>
+          <div className="listButtons">
+            <button>Live Preview</button>
+            <button>All Projects</button>
+          </div>
           {(this.props.state.fetchedData === true) ? (this.props.state.githubData.map( (project) => {
             return (
-              <div key={project.id} className={(this.state.currentProjectID == project.id) ?
+              <div
+                key={project.id} className={(this.state.currentProjectID == project.id) ?
                 ('site-name selected-site') :
                 ('site-name')} >
-                 <h3 id={project.id} onClick={this.selectSite}>{project.name}</h3>
-                 {(project.has_pages) ? (
-                   <p>Live preview!</p>) : null}
+                 <h3
+                   id={project.id} onClick={this.selectSite}>{project.name}</h3>
+                 {/* {(project.has_pages) ? (
+                   <p>Live preview!</p>) : null} */}
               </div>
             )
           })) :
@@ -92,9 +104,9 @@ class WebPortfolio extends React.Component {
           {(this.state.currentProjectID) ? (
             <div className="site-div">
               <h1>{this.state.currentProject[0].name}</h1>
-              <p>Created at:{this.state.currentProject[0].created_at}</p>
-              <p>Last Updated:{this.state.currentProject[0].updated_at}</p>
-              <p>{this.state.currentProject[0].size}</p>
+              <p>Created:{moment(this.state.currentProject[0].created_at).fromNow()}</p>
+              <p>Last Updated:{moment(this.state.currentProject[0].updated_at).fromNow()}</p>
+              <p>{this.state.currentProject[0].description}</p>
               {(this.state.currentProject[0].has_pages) ?
                 (<iframe title="title" className="mini-site" src={`https://mkerbleski.github.io/${this.state.currentProject[0].name}/`}></iframe>) :
                 null}
