@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 // import Title from './title.js';
 import AllContactTabs from './all-contact-tabs.js';
 import styled from 'styled-components';
-import Title from '../title';
+import TitleTop from './titleTop';
 
 const NavBarDiv = styled.div`
   ${'' /* border: 1px solid red; */}
@@ -11,7 +11,7 @@ const NavBarDiv = styled.div`
   box-sizing: border-box;
   width: 100%;
   background: white;
-  padding: 15px 25px;
+  padding: 15px 20px 15px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -44,7 +44,7 @@ class NavBar extends Component {
       <NavBarDiv>
           <div className="nav-left">
             {(window.location.pathname !== "/") ?
-            <Title className="nav-title"/> :
+            <TitleTop className="nav-title" /> :
             null
             // <Link to="/">
             //   <i class="fas fa-bars"></i>
