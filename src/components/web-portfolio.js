@@ -80,33 +80,39 @@ class WebPortfolio extends React.Component {
       <PortfolioDiv>
         <div className="project-list">
           <h4>Projects</h4>
-          <div className="listButtons">
+          {/* <div className="listButtons">
             <button>Live Preview</button>
             <button>All Projects</button>
-          </div>
-          {(this.props.state.fetchedData === true) ? (this.props.state.githubData.map( (project) => {
-            return (
-              <div
-                key={project.id} className={(this.state.currentProjectID == project.id) ?
-                ('site-name selected-site') :
-                ('site-name')} >
-                 <h3
-                   id={project.id} onClick={this.selectSite}>{project.name}</h3>
-                 {/* {(project.has_pages) ? (
-                   <p>Live preview!</p>) : null} */}
-              </div>
-            )
-          })) :
-          (<p>{this.props.state.status}</p>)}
+          </div> */}
+          {(this.props.state.fetchedData === true) ?
+              (this.props.state.githubData.map( (project) => {
+                return (
+                  <div
+                    key={project.id} className={
+                      (this.state.currentProjectID == project.id) ?
+                        ('site-name selected-site') :
+                          ('site-name')} >
+                     <h3
+                       id={project.id} onClick={this.selectSite}>{project.name}</h3>
+                     {/* {(project.has_pages) ? (
+                       <p>Live preview!</p>) : null} */}
+                  </div>
+                )
+              })) :
+          (<p>{this.props.state.status}</p>)
+        }
         </div>
 
         <div className="site-div" >
           {(this.state.currentProjectID) ? (
             <div className="site-div">
               <h1>{this.state.currentProject[0].name}</h1>
-              <p>Created:{moment(this.state.currentProject[0].created_at).fromNow()}</p>
-              <p>Last Updated:{moment(this.state.currentProject[0].updated_at).fromNow()}</p>
-              <p>{this.state.currentProject[0].description}</p>
+              <p>
+                Created:{moment(this.state.currentProject[0].created_at).fromNow()}</p>
+              <p>
+                Last Updated:{moment(this.state.currentProject[0].updated_at).fromNow()}</p>
+              <p>
+                {this.state.currentProject[0].description}</p>
               {(this.state.currentProject[0].has_pages) ?
                 (<iframe title="title" className="mini-site" src={`https://mkerbleski.github.io/${this.state.currentProject[0].name}/`}></iframe>) :
                 null}

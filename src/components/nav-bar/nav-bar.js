@@ -11,7 +11,7 @@ const NavBarDiv = styled.div`
   box-sizing: border-box;
   width: 100%;
   background: white;
-  padding: 15px 20px 15px 0;
+  padding: 5px 20px 5px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
