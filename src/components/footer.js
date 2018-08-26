@@ -47,6 +47,7 @@ class Footer extends React.Component {
       time: moment(this.props.date.updated_at).fromNow(),
     })
   }
+
   render(){
     return (
       <FooterDiv>
