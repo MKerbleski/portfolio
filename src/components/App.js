@@ -8,6 +8,7 @@ import { withRouter } from 'react-router'
 
 import Resume from './resume';
 import WebPortfolio from './web-portfolio';
+import MediaPortfolio from './media-portfolio';
 import Home from './home';
 import NavBar from './nav-bar/nav-bar';
 import Footer from './footer';
@@ -33,6 +34,7 @@ class App extends React.Component {
         <Route exact path="/resume" render={Resume}></Route>
         <Route exact path="/current-project" render={Resume}></Route>
         <Route exact path="/web-portfolio" component={WebPortfolio}></Route>
+        <Route exact path="/media-portfolio" component={MediaPortfolio}></Route>
         <Route exact path="/" render={Home}></Route>
         <Footer date={this.props.state.time}/>
       </AppDiv>
