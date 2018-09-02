@@ -36,7 +36,7 @@ class App extends React.Component {
         <Route exact path="/web-portfolio" component={WebPortfolio}></Route>
         <Route exact path="/media-portfolio" component={MediaPortfolio}></Route>
         <Route exact path="/" render={Home}></Route>
-        <Footer date={this.props.state.time}/>
+        <Footer date={this.props.state.time} lastUpdate={this.props.state.lastUpdate} />
       </AppDiv>
     );
   }

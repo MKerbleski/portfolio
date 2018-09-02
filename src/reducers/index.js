@@ -26,7 +26,6 @@ export const reducer = (state = initState, action) => {
     case FETCHING_TIME:
       return Object.assign({}, state, {
         fetchingTime: true,
-
       })
     case TIME_RECIEVED:
       return Object.assign({}, state, {
