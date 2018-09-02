@@ -27,11 +27,6 @@ const FooterDiv = styled.div`
     .last-update{
       box-sizing: border-box;
       display: flex;
-      &:hover{
-        box-sizing: border-box;
-        border: 1px solid red;
-
-      }
     }
   }
 `;
