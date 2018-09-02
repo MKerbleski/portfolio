@@ -6,70 +6,18 @@ import easterEggPic from '../img/easter-egg.png';
 class Title extends React.Component {
   constructor(){
     super();
-    this.state = {
-      mikeHover: false,
-      kerbleskiHover: false,
-      allHover: false,
-    }
   }
 
-  mikeHover = e => {
-    // e.preventDefault();
-    this.setState({
-      mikeHover: true,
-      kerbleskiHover: false,
-      allHover: true,
-    })
-  }
 
-  kerbleskiHover = e => {
-    // e.preventDefault();
-    this.setState({
-      mikeHover: false,
-      kerbleskiHover: true,
-      allHover: true,
-    })
-  }
-
-  mikerbleskiHoverEnter = e => {
-    // e.preventDefault();
-    this.setState({
-      mikeHover: false,
-      kerbleskiHover: false,
-      allHover: true,
-    })
-  }
-  mikerbleskiHoverLeave = e => {
-    // e.preventDefault();
-    this.setState({
-      mikeHover: false,
-      kerbleskiHover: false,
-      allHover: false,
-    })
-  }
 
  render(){
    return (
      <TitleDiv>
-         <Link onMouseEnter={this.mikerbleskiHoverEnter}
-         onMouseLeave={this.mikerbleskiHoverLeave} className="link" to="">
+         <Link className="link" to="">
            <h1>
-             <span
-               onMouseOver={this.mikeHover}  className={(this.state.mikeHover) ?
-                  ("mi underline") :
-                  ("mi")}>MI
-                </span>
-             <span
-               className={(this.state.allHover)?
-                  ("ke underline") :
-                  ("ke")}>KE
-             </span>
-            <span
-              onMouseOver={this.kerbleskiHover}
-              className={(this.state.kerbleskiHover)?
-                 ("rbleski underline") :
-                 ("rbleski")} >
-                   RBLE
+             <span className="mi">MI</span>
+             <span className="ke">KE</span>
+            <span>RBLE
                    {/* <Link className="link"  to="/egg"> */}
                    <img src={easterEggPic} alt='' />
                    {/* </Link> */}
@@ -99,11 +47,7 @@ const TitleDiv = styled.div`
   text-decoration: none;
   margin: 0;
   padding: 0;
-.badUL {
-  width: 100%;
-  height: 3px;
-  color: black;
-}
+
   .ke {
     color: black;
     .underline {
@@ -118,9 +62,7 @@ const TitleDiv = styled.div`
      text-decoration: underline;
    }
   }
-  .hidden{
-    visibility: hidden;
-  }
+
   img{
     height: 15px;
     &:hover{
