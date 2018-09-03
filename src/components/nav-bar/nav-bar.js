@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 // import Title from './title.js';
 import AllContactTabs from './all-contact-tabs.js';
 import styled from 'styled-components';
 import TitleTop from './titleTop';
+import Basket from './basket';
 
 const NavBarDiv = styled.div`
   ${'' /* border: 1px solid red; */}
@@ -45,10 +46,11 @@ class NavBar extends Component {
           <div className="nav-left">
             {(window.location.pathname !== "/") ?
             <TitleTop className="nav-title" /> :
-            null
+            <Basket />
             // <Link to="/">
             //   <i class="fas fa-bars"></i>
             // </Link>
+
             }
           </div>
           <AllContactTabs />

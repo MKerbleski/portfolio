@@ -2,6 +2,7 @@ import React from 'react';
 import { Link} from 'react-router-dom';
 import styled from 'styled-components';
 import easterEggPic from '../img/easter-egg.png';
+import Ball from './ball';
 
 class Title extends React.Component {
   constructor(){
@@ -18,10 +19,11 @@ class Title extends React.Component {
              <span className="mi">MI</span>
              <span className="ke">KE</span>
             <span>RBLE
-                   {/* <Link className="link"  to="/egg"> */}
-                   <img src={easterEggPic} alt='' />
-                   {/* </Link> */}
+              <span className="ball"><Ball  /></span>
                    SKI
+                   {/* <Link className="link"  to="/egg">
+                     <i className="fab fa-basketball-ball"></i>
+                   </Link> */}
              </span>
            </h1>
              {/* https://www.w3schools.com/howto/howto_js_draggable.asp */}
@@ -75,6 +77,9 @@ const TitleDiv = styled.div`
     &:visited{
       color: black;
     }
+    &:hover{
+      cursor: default;
+    }
   }
   h1 {
     margin: 10px;
@@ -86,5 +91,10 @@ const TitleDiv = styled.div`
       text-decoration: none;
     }
 
+  }
+  .ball {
+    &:hover{
+      cursor: grab;
+    }
   }
 `;

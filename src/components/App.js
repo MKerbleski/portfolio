@@ -6,6 +6,9 @@ import {connect} from 'react-redux';
 import {connnectGithub, getTime} from './../actions';
 import { withRouter } from 'react-router'
 
+import { DragDropContext } from 'react-dnd';
+import HTML5Backend from 'react-dnd-html5-backend';
+
 import Resume from './resume';
 import WebPortfolio from './web-portfolio';
 import MediaPortfolio from './media-portfolio';
@@ -63,4 +66,7 @@ const mapDispatchToProps = {
   connnectGithub, getTime
 }
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
+export default
+DragDropContext(HTML5Backend)(
+withRouter(
+  connect(mapStateToProps, mapDispatchToProps)(App)));
