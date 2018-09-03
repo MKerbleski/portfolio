@@ -2,40 +2,25 @@ import React from 'react';
 import { DragSource } from 'react-dnd';
 import { Link} from 'react-router-dom';
 
-//also needs to be a stateless functional component
 const Ball = (props) => (
 // const Source = ({ color, connectDragSource, isDragging }) => (
   props.connectDragSource(
-    <span>
-      . 
+    <span style={{cursor: props.isDragging ? 'pointer' : null}} >
+      .
     </span>
   )
 );
 
-
-
 const sourceObj = {
-  beginDrag(props) { // this mounts any props onto the object
-    console.log("beginDrag", props)
-    const { color, text } = props; //this return just 'green'
-    console.log(color);
-    console.log(props.color); //same thing but props cant be in a return statement?
+  beginDrag(props) {
+    const {color} = props
     return ({
-      color, text
+      color //this gets sent to the drop item // is null in this example because react-dnd is overkill
     });
   },
-  //endDrag is called when dropped on a target
-  endDrag(props, monitor) {// this takes props mounted on beginDrag
-    console.log("endDrag", "props", props, "monitor", monitor.getDropResult())
-    if (!monitor.didDrop()) {
-      return;
-    }
-    // const { onDrop } = props;
-    const  {color, text}  = monitor.getItem(); //returns just 'blue'
-    // console.log(props.color) // also returns just 'blue'
 
-    const { shape, catagory } = monitor.getDropResult();//gets props from the target// shape
-    props.onDrop( color, shape, text, catagory);//onDrop supplied by parent which attaches the color and shape to the props
+  endDrag(props, monitor) {// this takes props mounted on beginDrag
+  
   },
 };
 

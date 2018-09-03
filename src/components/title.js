@@ -4,14 +4,8 @@ import styled from 'styled-components';
 import easterEggPic from '../img/easter-egg.png';
 import Ball from './ball';
 
-class Title extends React.Component {
-  constructor(){
-    super();
-  }
-
-
-
- render(){
+const Title = (props) => {
+   console.log(props)
    return (
      <TitleDiv>
          <Link className="link" to="">
@@ -19,7 +13,7 @@ class Title extends React.Component {
              <span className="mi">MI</span>
              <span className="ke">KE</span>
             <span>RBLE
-              <span className="ball"><Ball  /></span>
+              <span className="ball"><Ball /></span>
                    SKI
                    {/* <Link className="link"  to="/egg">
                      <i className="fab fa-basketball-ball"></i>
@@ -31,7 +25,7 @@ class Title extends React.Component {
          <div className="badUL"></div>
        </TitleDiv>
    )
- }
+
 }
 
 export default Title;

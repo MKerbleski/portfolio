@@ -30,15 +30,19 @@ class App extends React.Component {
    this.props.getTime();
   }
 
+  openAuth(){
+    console.log('openAuth')
+  };
+
   render() {
     return (
       <AppDiv>
-        <NavBar />
+        <NavBar openAuth={this.openAuth} props="props" />
         <Route exact path="/resume" render={Resume}></Route>
         <Route exact path="/current-project" render={Resume}></Route>
         <Route exact path="/web-portfolio" component={WebPortfolio}></Route>
         <Route exact path="/media-portfolio" component={MediaPortfolio}></Route>
-        <Route exact path="/" render={Home}></Route>
+        <Route exact path="/" render={() => <Home openAuth={this.openAuth} />} ></Route>
         <Footer date={this.props.state.time} lastUpdate={this.props.state.lastUpdate} />
       </AppDiv>
     );

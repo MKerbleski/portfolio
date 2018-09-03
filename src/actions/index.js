@@ -4,6 +4,7 @@ export const FETCHING_DATA = 'FETCHING_DATA';
 export const FETCHING_TIME = 'FETCHING_TIME';
 export const DATA_RECIEVED = 'DATA_RECIEVED';
 export const TIME_RECIEVED = 'TIME_RECIEVED';
+export const AUTHENTICATED = 'AUTHINTICATED';
 export const ERROR = 'ERROR';
 
 export const connnectGithub = () => {

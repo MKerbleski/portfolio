@@ -34,22 +34,20 @@ const NavBarDiv = styled.div`
 `;
 
 class NavBar extends Component {
-  constructor(){
-    super();
+  constructor(props){
+    super(props);
     this.state = {
     }
   }
 
-  render(){
+  render(props){
+    console.log(props)
     return (
       <NavBarDiv>
           <div className="nav-left">
             {(window.location.pathname !== "/") ?
             <TitleTop className="nav-title" /> :
-            <Basket />
-            // <Link to="/">
-            //   <i class="fas fa-bars"></i>
-            // </Link>
+            <Basket  />
 
             }
           </div>

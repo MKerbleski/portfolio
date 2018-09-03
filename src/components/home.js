@@ -3,10 +3,11 @@ import { Link} from 'react-router-dom';
 import Title from './title.js';
 import styled from 'styled-components';
 
-const Home = () => {
+const Home = (props) => {
+  console.log(props)
   return (
     <HomeDiv>
-      <Title />
+      <Title openAuth={props.openAuth} />
       <div className="all-links">
         <Link className="link" to="/resume">resume</Link>
         {/* <Link className="link" to="/current-project">current-project</Link> */}
