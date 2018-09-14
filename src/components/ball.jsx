@@ -1,6 +1,5 @@
 import React from 'react';
 import { DragSource } from 'react-dnd';
-import { Link} from 'react-router-dom';
 
 const Ball = (props) => (
 // const Source = ({ color, connectDragSource, isDragging }) => (
@@ -20,7 +19,7 @@ const sourceObj = {
   },
 
   endDrag(props, monitor) {// this takes props mounted on beginDrag
-  
+
   },
 };
 

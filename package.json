@@ -1,7 +1,9 @@
 {
   "name": "portfolio",
+  "author": "Michael Kerbleski",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "http://mikerbl.ski",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^1.2.0",

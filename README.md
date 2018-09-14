@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const NAME = styled.div`
 
 `;
-
+<!-- 
 {/* <h1>Virtual Reality at Tonto National Monument</h1>
 <div className="mediaBin">
 <iframe title="Tonto VR" className="media" src="http://swvirtualmuseum.nau.edu/wp/Tonto_panos/Tonto-NM-pano-tour.html"></iframe>
@@ -19,4 +19,4 @@ open fullscreen</a>
 <p><a href="https://vimeo.com/214381757">Canada Play in 360 Womens Basketball</a> from <a href="https://vimeo.com/mkerbleski">Michael Kerbleski</a>.</p>
 </div>
 
-</div> */}
+</div> */} -->
