@@ -26,7 +26,7 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-   // this.props.connnectGithub();
+   this.props.connnectGithub();
    this.props.getTime();
   }
 
@@ -35,6 +35,7 @@ class App extends React.Component {
   };
 
   render() {
+    console.log(this.state)
     return (
       <AppDiv>
         <NavBar openAuth={this.openAuth} props="props" />
@@ -44,6 +45,16 @@ class App extends React.Component {
         <Route exact path="/media-portfolio" component={MediaPortfolio}></Route>
         <Route exact path="/" render={() => <Home openAuth={this.openAuth} />} ></Route>
         <Footer date={this.props.state.time} lastUpdate={this.props.state.lastUpdate} />
+        {this.props.state.githubData.map(project => {
+          return <Route 
+                    exact 
+                    path={`/${project.name}`} 
+                    render={(project2) => {
+                      console.log(project2)
+            return (
+             (<iframe title="title" src={`https://mkerbleski.github.io/${project.name}/`}></iframe>) 
+            )}}></Route>
+        })}
       </AppDiv>
     );
   }
@@ -67,7 +78,8 @@ const mapStateToProps = store => {
 }
 
 const mapDispatchToProps = {
-  connnectGithub, getTime
+  connnectGithub, 
+  getTime
 }
 
 export default

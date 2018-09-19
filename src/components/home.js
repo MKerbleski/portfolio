@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link} from 'react-router-dom';
 import Title from './title.js';
+
+
 import styled from 'styled-components';
 
 const Home = (props) => {
