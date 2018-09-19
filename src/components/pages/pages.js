@@ -1,17 +1,17 @@
 import React, {Redirect} from 'react';
-import '../css/index.css';
 import {Route} from 'react-router-dom';
 import styled from 'styled-components';
 import {connect} from 'react-redux';
-import {connnectGithub, getTime} from './../actions';
+import {connnectGithub, getTime} from '../../actions';
 import { withRouter } from 'react-router'
 
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
+import Portfolio from '../portfolio/portfolio';
 
-import Pages from './pages/pages';
 
-class App extends React.Component {
+
+class Pages extends React.Component {
   constructor(){
     super();
     this.state = {
@@ -21,28 +21,35 @@ class App extends React.Component {
   }
 
   componentDidMount(){
-  //  this.props.connnectGithub();
-  //  this.props.getTime();
+   this.props.connnectGithub();
   }
 
   openAuth(){
     console.log('openAuth')
   };
 
-  render(props) {
+  render() {
     console.log(this.state)
-
-      return (
-        <AppDiv>
-          <Route path='/' component={Pages}></Route>
-         </AppDiv>
+    return (
+      <PagesDiv>
+        <Route path='/' component={Portfolio}></Route>
+        {this.props.state.githubData.map(project => {
+          return <Route 
+                    exact 
+                    path={`/${project.name}`} 
+                    render={(project2) => {
+                      console.log(project2)
+            return (
+             (<iframe title="title" src={`https://mkerbleski.github.io/${project.name}/`}></iframe>) 
+            )}}></Route>
+        })}
+      </PagesDiv>
     );
-  
   }
 }
-// export default (App);
+// export default (Pages);
 
-const AppDiv = styled.div`
+const PagesDiv = styled.div`
   ${'' /* border: 1px solid red; */}
   box-sizing: border-box;
   display: flex;
@@ -59,11 +66,11 @@ const mapStateToProps = store => {
 }
 
 const mapDispatchToProps = {
-  // connnectGithub, 
-  // getTime
+  connnectGithub, 
+  getTime
 }
 
 export default
 DragDropContext(HTML5Backend)(
 withRouter(
-  connect(mapStateToProps, mapDispatchToProps)(App)));
+  connect(mapStateToProps, mapDispatchToProps)(Pages)));

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {connnectGithub} from './../actions';
+import {connnectGithub} from '../../actions';
 import {connect} from 'react-redux';
 import moment from 'moment';
 
@@ -50,7 +50,7 @@ const PortfolioDiv = styled.div`
   }
 `;
 
-class WebPortfolio extends React.Component {
+class MediaPortfolio extends React.Component {
   constructor(){
     super();
     this.state = {
@@ -60,7 +60,7 @@ class WebPortfolio extends React.Component {
   }
 
   componentDidMount(){
-   this.props.connnectGithub();
+   // this.props.connnectGithub();
 
   }
 
@@ -134,4 +134,19 @@ const mapDispatchToProps = {
   connnectGithub
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(WebPortfolio);
+export default connect(mapStateToProps, mapDispatchToProps)(MediaPortfolio);
+// 
+// <h1>Virtual Reality at Tonto National Monument</h1>
+// <div className="mediaBin">
+// <iframe title="Tonto VR" className="media" src="http://swvirtualmuseum.nau.edu/wp/Tonto_panos/Tonto-NM-pano-tour.html"></iframe>
+// <a href="http://swvirtualmuseum.nau.edu/wp/Tonto_panos/Tonto-NM-pano-tour.html">
+// open fullscreen</a>
+// <p>Note: There are errors with this website. I contributed the audio, photo, and videos displayed throughout the site and set up the interactive part with a seperate program. I was not responsible for anything relating to the publishing of the site or the errors that render. </p>
+//
+//
+// <div className="video media">
+// <iframe title="Basketball VR" src="https://player.vimeo.com/video/214381757" width="100%" height="80%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+// <p><a href="https://vimeo.com/214381757">Canada Play in 360 Womens Basketball</a> from <a href="https://vimeo.com/mkerbleski">Michael Kerbleski</a>.</p>
+// </div>
+//
+// </div>
