@@ -7,7 +7,6 @@ import { withRouter } from 'react-router'
 
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
-import Portfolio from '../portfolio/portfolio';
 
 
 
@@ -16,7 +15,8 @@ class Pages extends React.Component {
     super();
     this.state = {
       lastUpdateFetched: false,
-      lastUpdate: ''
+      lastUpdate: '',
+      hide: true
     }
   }
 
@@ -32,10 +32,10 @@ class Pages extends React.Component {
     console.log(this.state)
     return (
       <PagesDiv>
-        <Route path='/' component={Portfolio}></Route>
+
         {this.props.state.githubData.map(project => {
           return <Route 
-                    exact 
+          exact
                     path={`/${project.name}`} 
                     render={(project2) => {
                       console.log(project2)

@@ -40,14 +40,13 @@ class Portfolio extends React.Component {
     console.log(this.state)
     return (
       <PortfolioDiv>
-        
-        <NavBar openAuth={this.openAuth} props="props" />
+        <NavBar path="/" openAuth={this.openAuth} props="props" />
         <Route path="/resume" render={Resume}></Route>
-        <Route exact path="/current-project" render={Resume}></Route>
-        <Route exact path="/web-portfolio" component={WebPortfolio}></Route>
-        <Route exact path="/media-portfolio" component={MediaPortfolio}></Route>
+        <Route  path="/current-project" render={Resume}></Route>
+        <Route  path="/web" component={WebPortfolio}></Route>
+        <Route  path="/media" component={MediaPortfolio}></Route>
         <Route exact path="/" render={() => <Home openAuth={this.openAuth} />} ></Route>
-        <Footer date={this.props.state.time} lastUpdate={this.props.state.lastUpdate} />
+        <Footer path="/" date={this.props.state.time} lastUpdate={this.props.state.lastUpdate} />
       </PortfolioDiv>
     );
   }
