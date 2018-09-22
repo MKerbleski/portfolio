@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import {connect} from 'react-redux';
 import {
     // connnectGithub,
-    getTime} from '../../actions';
+    getTime} from '../actions';
 import { withRouter } from 'react-router'
 
 import { DragDropContext } from 'react-dnd';

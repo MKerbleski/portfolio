@@ -24,7 +24,6 @@ const Title = (props) => {
          <div className="badUL"></div>
        </TitleDiv>
    )
-
 }
 
 export default Title;

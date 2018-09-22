@@ -58,13 +58,12 @@ class App extends React.Component {
         {/* <NavBar openAuth={this.openAuth} props="props" /> */}
           <Route exact path="/resume" render={Resume}></Route>
           <Route exact path="/current-project" render={Resume}></Route>
-          <Route exact path="/web-portfolio" component={WebPortfolio}></Route>
-          <Route exact path="/media-portfolio" component={MediaPortfolio}></Route>
+          <Route exact path="/web" component={WebPortfolio}></Route>
+          <Route exact path="/media" component={MediaPortfolio}></Route>
           <Route exact path="/" render={() => <Home openAuth={this.openAuth} />} ></Route>
           <Route path="/" component={this.state.showHeaders ? Footer : null} />
         
           {/* <Footer date={this.props.state.time} lastUpdate={this.props.state.lastUpdate} /> */}
-
       </AppDiv>
     );
   }
