@@ -1,50 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ResumeDiv = styled.div `
-  border: 1px solid red;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  background: lightgray;
-  .container {
-    max-width: 800px;
-    padding: 15px;
-    margin: 10px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    align-items: baseline;
-    .col {
-      border: 1px solid pink;
-      margin: 5px;
-    }
-    .right {
-      max-width: 30%;
-    }
-    .row {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-    .header {
-      border-bottom: 1px solid green;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-end;
-      padding: 0, 0, 10px, 0;
-      h1, p {
-        border: 1px solid blue;
-        margin: 0;
-        padding: 0;
-      }
-    }
-  }
-`;
+
 
 const Resume = () => {
   return (<div className="resume-div">
@@ -100,3 +57,49 @@ const Resume = () => {
 }
 
 export default Resume;
+
+
+const ResumeDiv = styled.div `
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: lightgray;
+  .container {
+    max-width: 800px;
+    padding: 15px;
+    margin: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+    .col {
+      border: 1px solid pink;
+      margin: 5px;
+    }
+    .right {
+      max-width: 30%;
+    }
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .header {
+      border-bottom: 1px solid green;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding: 0, 0, 10px, 0;
+      h1, p {
+        border: 1px solid blue;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+`;
