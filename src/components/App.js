@@ -9,7 +9,6 @@ import { withRouter } from 'react-router'
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 
-<<<<<<< HEAD
 import Resume from './resume';
 import WebPortfolio from './web-portfolio';
 import MediaPortfolio from './media-portfolio';
@@ -18,16 +17,6 @@ import Home from './home';
 import NavBar from './nav-bar/nav-bar';
 import Footer from './footer';
 import Portfolioo from './portfolioo.js'
-=======
-import Resume from './portfolio/resume';
-// import WebPortfolio from './portfolio/web-portfolio';
-// import MediaPortfolio from './portfolio/media-portfolio';
-// import Home from './portfolio/home';
-// import NavBar from './portfolio/nav-bar/nav-bar';
-// import Footer from './portfolio/footer';
-import Pages from './pages/pages';
-import Portfolio from './portfolio/portfolio';
->>>>>>> edc8531290cea9b06af6cb67d202268eef2e2b6b
 
 class App extends React.Component {
   constructor(){
@@ -61,7 +50,6 @@ class App extends React.Component {
     
     return (
       <AppDiv>
-<<<<<<< HEAD
         {/* <Route path="/portfolioo" props={this.props} render={Portfolioo} />
         <Route exact path="/" render={() => {
           return (<Redirect to="/portfolioo" />)
@@ -77,21 +65,6 @@ class App extends React.Component {
         
           {/* <Footer date={this.props.state.time} lastUpdate={this.props.state.lastUpdate} /> */}
 
-        {this.props.state.githubData.map(project => {
-          return <Route 
-                    exact 
-                    path={`/${project.name}`} 
-                    render={(project2) => {
-
-                      
-            return (
-              <FullScreen hideHeaders={this.hideHeaders} name={project.name}/>
-            )}}></Route>
-        })}
-=======
-        <Route path="/" component={Portfolio} />
-        <Route path="/websites" component={Pages} />
->>>>>>> edc8531290cea9b06af6cb67d202268eef2e2b6b
       </AppDiv>
     );
   }
