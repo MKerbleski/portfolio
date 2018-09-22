@@ -53,7 +53,7 @@ class App extends React.Component {
           <Route exact path="/web" component={WebPortfolio}></Route>
           <Route exact path="/media" component={MediaPortfolio}></Route>
           <Route exact path="/" render={() => <Home openAuth={this.openAuth} />} ></Route>
-          <Route path="/" component={this.state.showHeaders ? Footer : null} />
+        <Route path="/" component={this.state.showHeaders ? Footer : null} />
       </AppDiv>
     );
   }

@@ -41,14 +41,12 @@ class NavBar extends Component {
   }
 
   render(props){
-    console.log(props)
     return (
       <NavBarDiv>
           <div className="nav-left">
             {(window.location.pathname !== "/") ?
             <TitleTop className="nav-title" /> :
             <Basket  />
-
             }
           </div>
           <AllContactTabs />

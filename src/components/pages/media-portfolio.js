@@ -2,53 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {connnectGithub} from '../../actions';
 import {connect} from 'react-redux';
-import moment from 'moment';
 
-const PortfolioDiv = styled.div`
-  ${'' /* border: 1px solid red; */}
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  .project-list {
-    ${'' /* border: 1px solid green; */}
-    width: 30%;
-    max-height: 1000px;
-    overflow: auto;
-    .listButtons {
-      border: 1px solid red;
-      button {
-        width: 50%;
-      }
-    }
-  }
-  .site-name {
-    background-color: white;
-    border: 1px solid black;
-    text-align: center;
-  }
-  .selected-site {
-    background-color: lightgray;
-  }
-  .site-div {
-    ${'' /* border: 1px solid green; */}
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-height: 900px;
-  }
-  .mini-site {
-    ${'' /* border: 1px solid blue; */}
-    width: 95%;
-    height: 800px;
-    padding: 10px;
-    -moz-box-shadow:    inset 0 0 10px #000000;
-   -webkit-box-shadow: inset 0 0 10px #000000;
-    box-shadow:         inset 0 0 10px #000000;
-  }
-`;
 
 class MediaPortfolio extends React.Component {
   constructor(){
@@ -68,7 +22,7 @@ class MediaPortfolio extends React.Component {
     e.preventDefault();
     this.setState({
       currentProjectID: e.target.id,
-      currentProject: this.props.state.githubData.filter(project => project.id == e.target.id
+      currentProject: this.props.state.githubData.filter(project => +project.id === +e.target.id
       )
 //change to find and it wont return an array maybe
 
@@ -112,3 +66,51 @@ export default connect(mapStateToProps, mapDispatchToProps)(MediaPortfolio);
 // </div>
 //
 // </div>
+
+
+const PortfolioDiv = styled.div`
+  ${'' /* border: 1px solid red; */}
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 99.5vh;
+  .project-list {
+    ${'' /* border: 1px solid green; */}
+    width: 30%;
+    max-height: 1000px;
+    overflow: auto;
+    .listButtons {
+      border: 1px solid red;
+      button {
+        width: 50%;
+      }
+    }
+  }
+  .site-name {
+    background-color: white;
+    border: 1px solid black;
+    text-align: center;
+  }
+  .selected-site {
+    background-color: lightgray;
+  }
+  .site-div {
+    ${'' /* border: 1px solid green; */}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-height: 900px;
+  }
+  .mini-site {
+    ${'' /* border: 1px solid blue; */}
+    width: 95%;
+    height: 800px;
+    padding: 10px;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+  }
+`;

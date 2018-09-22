@@ -12,7 +12,6 @@ const Home = (props) => {
       <Title openAuth={props.openAuth} />
       <div className="all-links">
         <Link className="link" to="/resume">resume</Link>
-        {/* <Link className="link" to="/current-project">current-project</Link> */}
         <Link className="link" to="/web">web</Link>
         <Link className="link" to="/media">media</Link>
       </div>

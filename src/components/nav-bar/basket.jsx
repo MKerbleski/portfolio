@@ -19,7 +19,6 @@ const BasketDiv = styled.div`
       padding-right: 6px;
       color: black;
     }
-
 `
 
 const Basket = (props) => (
@@ -43,11 +42,11 @@ const specObj = {
   drop(props) {
     console.log('target props', props)//target props //square or circle
     const { shape, catagory } = props;
+    props.openAuth();
     return ({
       shape,
       catagory
     });
-    props.openAuth();
   }
 }
 
