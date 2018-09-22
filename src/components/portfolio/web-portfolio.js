@@ -1,6 +1,7 @@
 import React from 'react';
+import {Route} from 'react-router-dom';
 import styled from 'styled-components';
-import {connnectGithub} from './../actions';
+import {connnectGithub} from '../../actions';
 import {connect} from 'react-redux';
 import moment from 'moment';
 
@@ -119,6 +120,15 @@ class WebPortfolio extends React.Component {
             </div>) :
              (<p>Select project for details.</p>)}
         </div>
+        {this.props.state.githubData.map(project => {
+          return <Route 
+                    path={`/${project.name}`} 
+                    render={(project2) => {
+                      console.log(project2)
+            return (
+             (<iframe title="title" src={`https://mkerbleski.github.io/${project.name}/`}></iframe>) 
+            )}}></Route>
+        })}
       </PortfolioDiv>
     )
   }
