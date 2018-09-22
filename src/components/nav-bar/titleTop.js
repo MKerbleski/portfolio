@@ -11,7 +11,6 @@ const TitleTop = () => {
             <mi>MI</mi>
             <ke>KE</ke>RBLE.SKI</h1>
             {/* https://www.w3schools.com/howto/howto_js_draggable.asp */}
-
         </Link>
       </TitleDiv>
   )

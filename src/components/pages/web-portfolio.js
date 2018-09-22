@@ -4,9 +4,6 @@ import styled from 'styled-components';
 import {connnectGithub} from '../../actions';
 import {connect} from 'react-redux';
 import moment from 'moment';
-import Website from './website';
-
-
 
 class WebPortfolio extends React.Component {
   constructor(){
@@ -34,10 +31,6 @@ class WebPortfolio extends React.Component {
       <PortfolioDiv>
         <div className="project-list">
           <h4>Projects</h4>
-          {/* <div className="listButtons">
-            <button>Live Preview</button>
-            <button>All Projects</button>
-          </div> */}
           {(this.props.state.fetchedData === true) ?
               (this.props.state.githubData.map( (project) => {
                 return (
@@ -71,10 +64,6 @@ class WebPortfolio extends React.Component {
             </div>) :
             (<p>Select project for details.</p>)}
         </div>
-
-        { this.props.state.githubData.map(project => {
-          console.log(project)
-        })}
         
       </PortfolioDiv>
     )
@@ -95,7 +84,7 @@ export default connect(mapStateToProps, mapDispatchToProps)(WebPortfolio);
 
 
 const PortfolioDiv = styled.div`
-  border: 1px solid red;
+  ${'' /* border: 1px solid red; */}
   display: flex;
   flex-direction: row;
   align-items: flex-start;

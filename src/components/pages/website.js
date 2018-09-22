@@ -1,16 +1,11 @@
 import React, {Component} from 'react';
-// import {Link} from 'react-router-dom';
-// import Title from './title.js';
+import {Link} from 'react-router-dom';
+import TitleTop from '../nav-bar/titleTop.js';
 
 import styled from 'styled-components';
 
 
-const WebSiteDiv = styled.div`
-.fullscreen{
-  width: 100%;
-  height: 100vh;
-}
-`;
+
 
 class Website extends Component {
   constructor(props){
@@ -32,7 +27,8 @@ class Website extends Component {
       console.log(props)
     return (
       <WebSiteDiv>
-      <div>hi{this.props.name}</div>
+      <div className="websiteReturn">
+      <Link to="/" > back to MIKERBLE.SKI</Link></div>
           <iframe title="title" className="fullscreen" src={`https://mkerbleski.github.io/${this.props.name}/`}></iframe>
       </WebSiteDiv>
     )
@@ -41,3 +37,15 @@ class Website extends Component {
 
 export default Website;
 
+const WebSiteDiv = styled.div`
+  .fullscreen{
+    width: 100%;
+    height: 100vh;
+  }
+  .websiteReturn{
+    ${'' /* border: 1px solid blue; */}
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+`;

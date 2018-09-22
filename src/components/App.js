@@ -68,8 +68,8 @@ class App extends React.Component {
             return (
              <Website name={project.name} hideHeaders={this.hideHeaders} showHeaders={this.showHeaders} />
             )}}></Route>
-        })}
-        <Footer />
+          })}
+        <Route path="/" component={this.state.showHeaders ? Footer : null} />
 
       </AppDiv>
     );
