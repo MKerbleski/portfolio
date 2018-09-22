@@ -16,6 +16,7 @@ import Home from './pages/home/home';
 
 import NavBar from './nav-bar/nav-bar';
 import Footer from './footer/footer';
+import Website from './pages/website';
 
 class App extends React.Component {
   constructor(){
@@ -43,8 +44,15 @@ class App extends React.Component {
       showHeaders: false,
     })
   }
+  
+  showHeaders = () => {
+    this.setState({
+      showHeaders: true,
+    })
+  }
 
   render() {
+    console.log(this.props.state.githubData)
     return (
       <AppDiv>
         <Route path="/" component={this.state.showHeaders ? NavBar : null} />
@@ -53,7 +61,16 @@ class App extends React.Component {
           <Route exact path="/web" component={WebPortfolio}></Route>
           <Route exact path="/media" component={MediaPortfolio}></Route>
           <Route exact path="/" render={() => <Home openAuth={this.openAuth} />} ></Route>
-        <Route path="/" component={this.state.showHeaders ? Footer : null} />
+          { this.props.state.githubData.map(project => {
+          return <Route path={`/${project.name}`} 
+                    render={(project2) => {
+                      console.log(project2)
+            return (
+             <Website name={project.name} hideHeaders={this.hideHeaders} showHeaders={this.showHeaders} />
+            )}}></Route>
+        })}
+        <Footer />
+
       </AppDiv>
     );
   }

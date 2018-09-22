@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import {connnectGithub} from '../../actions';
 import {connect} from 'react-redux';
 import moment from 'moment';
+import Website from './website';
+
 
 
 class WebPortfolio extends React.Component {
@@ -60,8 +62,8 @@ class WebPortfolio extends React.Component {
               <p> Created:{moment(this.state.currentProject.created_at).fromNow()}</p>
               <p> Last Updated:{moment(this.state.currentProject.updated_at).fromNow()}</p>
               <p> {this.state.currentProject.description}</p>
-              <Link to={`/web/${this.state.currentProject.name}`}>Fullscreen</Link>
-
+              <Link to={`/${this.state.currentProject.name}`}>Fullscreen</Link>
+              
               {(this.state.currentProject.has_pages) ?
                (<iframe title="title" className="mini-site" src={`https://mkerbleski.github.io/${this.state.currentProject.name}/`}></iframe>) :
                 null}
@@ -70,13 +72,10 @@ class WebPortfolio extends React.Component {
             (<p>Select project for details.</p>)}
         </div>
 
-        {this.props.state.githubData.map(project => {
-          return <Route key={project.id} path={`/web/${project.name}`} render={(pro) => {
-            console.log(pro)
-            return (<iframe title={pro.name} src={`https://mkerbleski.github.io/${pro.name}/`}></iframe>) 
-            }}></Route>
+        { this.props.state.githubData.map(project => {
+          console.log(project)
         })}
-
+        
       </PortfolioDiv>
     )
   }
@@ -96,12 +95,13 @@ export default connect(mapStateToProps, mapDispatchToProps)(WebPortfolio);
 
 
 const PortfolioDiv = styled.div`
-  ${'' /* border: 1px solid red; */}
+  border: 1px solid red;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
   height: 99.5vh;
+  overflow: auto;
   .project-list {
     ${'' /* border: 1px solid green; */}
     width: 30%;
