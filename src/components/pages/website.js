@@ -28,7 +28,7 @@ class Website extends Component {
     return (
       <WebSiteDiv>
       <div className="websiteReturn">
-      <Link to="/" > back to MIKERBLE.SKI</Link></div>
+      <Link to={`/web`}> view on MIKERBLE.SKI</Link></div>
           <iframe title="title" className="fullscreen" src={`https://mkerbleski.github.io/${this.props.name}/`}></iframe>
       </WebSiteDiv>
     )
