@@ -1,6 +1,6 @@
 import React from 'react';
 import '../css/index.css';
-import {Route, Redirect} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import styled from 'styled-components';
 import {connect} from 'react-redux';
 import {connnectGithub, getTime} from './../actions';
@@ -12,11 +12,9 @@ import HTML5Backend from 'react-dnd-html5-backend';
 import Resume from './resume';
 import WebPortfolio from './web-portfolio';
 import MediaPortfolio from './media-portfolio';
-import FullScreen from './fullscreen.js';
 import Home from './home';
 import NavBar from './nav-bar/nav-bar';
 import Footer from './footer';
-import Portfolioo from './portfolioo.js'
 
 class App extends React.Component {
   constructor(){
@@ -46,29 +44,19 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state)
-    
     return (
       <AppDiv>
-        {/* <Route path="/portfolioo" props={this.props} render={Portfolioo} />
-        <Route exact path="/" render={() => {
-          return (<Redirect to="/portfolioo" />)
-        }} /> */}
         <Route path="/" component={this.state.showHeaders ? NavBar : null} />
-        {/* <NavBar openAuth={this.openAuth} props="props" /> */}
           <Route exact path="/resume" render={Resume}></Route>
           <Route exact path="/current-project" render={Resume}></Route>
           <Route exact path="/web" component={WebPortfolio}></Route>
           <Route exact path="/media" component={MediaPortfolio}></Route>
           <Route exact path="/" render={() => <Home openAuth={this.openAuth} />} ></Route>
           <Route path="/" component={this.state.showHeaders ? Footer : null} />
-        
-          {/* <Footer date={this.props.state.time} lastUpdate={this.props.state.lastUpdate} /> */}
       </AppDiv>
     );
   }
 }
-// export default (App);
 
 const AppDiv = styled.div`
   ${'' /* border: 1px solid red; */}
@@ -95,11 +83,3 @@ export default
 DragDropContext(HTML5Backend)(
 withRouter(
   connect(mapStateToProps, mapDispatchToProps)(App)));
-
-          {/* <NavBar openAuth={this.openAuth} props="props" />
-        <Route exact path="/resume" render={Resume}></Route>
-        <Route exact path="/current-project" render={Resume}></Route>
-        <Route exact path="/web" component={WebPortfolio}></Route>
-        <Route exact path="/media" component={MediaPortfolio}></Route>
-        <Route exact path="/" render={() => <Home openAuth={this.openAuth} />} ></Route>
-        <Footer date={this.props.state.time} lastUpdate={this.props.state.lastUpdate} /> */}
