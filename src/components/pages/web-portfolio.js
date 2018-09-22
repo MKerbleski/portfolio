@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route} from 'react-router-dom';
 import styled from 'styled-components';
-import {connnectGithub} from '../actions';
+import {connnectGithub} from '../../actions';
 import {connect} from 'react-redux';
 import moment from 'moment';
 
@@ -61,18 +61,14 @@ class WebPortfolio extends React.Component {
   }
 
   componentDidMount(){
-   this.props.connnectGithub();
-
+    this.props.connnectGithub();
   }
 
   selectSite = e => {
     e.preventDefault();
     this.setState({
       currentProjectID: e.target.id,
-      currentProject: this.props.state.githubData.filter(project => project.id == e.target.id
-      )
-//change to find and it wont return an array maybe
-
+      currentProject: this.props.state.githubData.find(project => project.id == e.target.id)
     })
   }
 
@@ -91,12 +87,9 @@ class WebPortfolio extends React.Component {
                   <div
                     key={project.id} className={
                       (this.state.currentProjectID == project.id) ?
-                        ('site-name selected-site') :
-                          ('site-name')} >
-                     <h3
-                       id={project.id} onClick={this.selectSite}>{project.name}</h3>
-                     {/* {(project.has_pages) ? (
-                       <p>Live preview!</p>) : null} */}
+                      ('site-name selected-site') :
+                      ('site-name')} >
+                     <h3 id={project.id} onClick={this.selectSite}>{project.name}</h3>
                   </div>
                 )
               })) :
@@ -107,15 +100,15 @@ class WebPortfolio extends React.Component {
         <div className="site-div" >
           {(this.state.currentProjectID) ? (
             <div className="site-div">
-              <h1>{this.state.currentProject[0].name}</h1>
+              <h1>{this.state.currentProject.name}</h1>
               <p>
-                Created:{moment(this.state.currentProject[0].created_at).fromNow()}</p>
+                Created:{moment(this.state.currentProject.created_at).fromNow()}</p>
               <p>
-                Last Updated:{moment(this.state.currentProject[0].updated_at).fromNow()}</p>
+                Last Updated:{moment(this.state.currentProject.updated_at).fromNow()}</p>
               <p>
-                {this.state.currentProject[0].description}</p>
-              {(this.state.currentProject[0].has_pages) ?
-                (<iframe title="title" className="mini-site" src={`https://mkerbleski.github.io/${this.state.currentProject[0].name}/`}></iframe>) :
+                {this.state.currentProject.description}</p>
+              {(this.state.currentProject.has_pages) ?
+                (<iframe title="title" className="mini-site" src={`https://mkerbleski.github.io/${this.state.currentProject.name}/`}></iframe>) :
                 null}
             </div>) :
              (<p>Select project for details.</p>)}

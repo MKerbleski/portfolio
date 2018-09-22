@@ -5,16 +5,17 @@ import styled from 'styled-components';
 import {connect} from 'react-redux';
 import {connnectGithub, getTime} from './../actions';
 import { withRouter } from 'react-router'
-
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 
-import Resume from './resume';
-import WebPortfolio from './web-portfolio';
-import MediaPortfolio from './media-portfolio';
-import Home from './home';
+import Resume from './pages/resume';
+import WebPortfolio from './pages/web-portfolio';
+import MediaPortfolio from './pages/media-portfolio';
+
+import Home from './pages/home/home';
+
 import NavBar from './nav-bar/nav-bar';
-import Footer from './footer';
+import Footer from './footer/footer';
 
 class App extends React.Component {
   constructor(){

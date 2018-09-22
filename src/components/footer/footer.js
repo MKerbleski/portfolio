@@ -2,7 +2,7 @@ import React from 'react';
 // import {Route, Link} from 'react-router-dom';
 import styled from 'styled-components';
 import moment from 'moment';
-import {getTime} from './../actions';
+import {getTime} from '../../actions';
 import {connect} from 'react-redux';
 
 

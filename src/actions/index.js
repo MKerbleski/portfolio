@@ -12,11 +12,11 @@ export const connnectGithub = () => {
     setTimeout( ()=> {
       dispatch({type: FETCHING_DATA, payload:"retreiving projets from github"});
       axios.get('https://api.github.com/users/mkerbleski/repos').then(res => {
-        // let withPages = res.data.filter( project => {
-        //    return project.has_pages
-        // })
+        let hasPages = res.data.filter( project => {
+           return project.has_pages
+        })
 
-        dispatch({type: DATA_RECIEVED, payload: res.data});
+        dispatch({type: DATA_RECIEVED, payload: hasPages});
       }).catch(err => {
         dispatch({type: ERROR, payload: err})
       })

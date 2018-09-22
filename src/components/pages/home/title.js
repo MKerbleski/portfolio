@@ -14,12 +14,9 @@ const Title = (props) => {
             <span>RBLE
               <span className="ball"><Ball /></span>
                    SKI
-                   {/* <Link className="link"  to="/egg">
-                     <i className="fab fa-basketball-ball"></i>
-                   </Link> */}
              </span>
            </h1>
-             {/* https://www.w3schools.com/howto/howto_js_draggable.asp */}
+            {/* https://www.w3schools.com/howto/howto_js_draggable.asp */}
          </Link>
          <div className="badUL"></div>
        </TitleDiv>
@@ -41,22 +38,19 @@ const TitleDiv = styled.div`
   text-decoration: none;
   margin: 0;
   padding: 0;
-
   .ke {
     color: black;
     .underline {
-     &:hover{
-       text-decoration: underline;
-     }
-  }
-
+      &:hover{
+        text-decoration: underline;
+      }
+    }
   }
   .underline {
-   &:hover{
-     text-decoration: underline;
-   }
+    &:hover{
+      text-decoration: underline;
+    }
   }
-
   img{
     height: 15px;
     &:hover{
@@ -65,7 +59,6 @@ const TitleDiv = styled.div`
   }
   .link {
     text-decoration: none;
-    ${'' /* position: absolute; */}
     &:visited{
       color: black;
     }
@@ -82,7 +75,6 @@ const TitleDiv = styled.div`
     &:visited{
       text-decoration: none;
     }
-
   }
   .ball {
     &:hover{

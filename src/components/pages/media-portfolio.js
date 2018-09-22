@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {connnectGithub} from '../actions';
+import {connnectGithub} from '../../actions';
 import {connect} from 'react-redux';
 import moment from 'moment';
 
