@@ -82,7 +82,6 @@ const mapDispatchToProps = {
 
 export default connect(mapStateToProps, mapDispatchToProps)(WebPortfolio);
 
-
 const PortfolioDiv = styled.div`
   ${'' /* border: 1px solid red; */}
   display: flex;

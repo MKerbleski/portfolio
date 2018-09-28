@@ -4,9 +4,6 @@ import TitleTop from '../nav-bar/titleTop.js';
 
 import styled from 'styled-components';
 
-
-
-
 class Website extends Component {
   constructor(props){
     super(props);
