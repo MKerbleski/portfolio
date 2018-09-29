@@ -33,7 +33,8 @@ class MediaPortfolio extends React.Component {
       <PortfolioDiv>
         <div className="project-list">
           <div className="project">
-          <iframe className="media" title="Timelapse" src="https://player.vimeo.com/214206963" width="100%" height="80%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe title="Timelapse" className="media" src="https://player.vimeo.com/video/214206963" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <p><a href="https://vimeo.com/214206963">Timelapse #1</a> from <a href="https://vimeo.com/mkerbleski">Michael Kerbleski</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
           </div>
           <div className="project">
             <iframe title="Tonto VR" className="media" src="http://swvirtualmuseum.nau.edu/wp/Tonto_panos/Tonto-NM-pano-tour.html"></iframe>
