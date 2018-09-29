@@ -28,7 +28,7 @@ export const getTime = () => {
   return function(dispatch){
     dispatch({type: FETCHING_TIME, payload: 'fetching time'})
     axios.get('https://api.github.com/repos/mkerbleski/portfolio').then(res => {
-      dispatch({type: TIME_RECIEVED, payload: res.data})
+      dispatch({type: TIME_RECIEVED, payload: res.data.updated_at})
     }).catch(err => {
       dispatch({type: ERROR, payload: err})
     })

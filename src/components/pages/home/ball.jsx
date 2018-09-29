@@ -1,11 +1,13 @@
 import React from 'react';
 import { DragSource } from 'react-dnd';
+import qrCode from './QR_Code_.png';
 
 const Ball = (props) => (
 // const Source = ({ color, connectDragSource, isDragging }) => (
   props.connectDragSource(
+    
     <span style={{cursor: props.isDragging ? 'pointer' : null}} >
-      .
+      <img src={qrCode} alt="."></img>
     </span>
   )
 );
