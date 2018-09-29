@@ -15,7 +15,6 @@ class MediaPortfolio extends React.Component {
 
   componentDidMount(){
    // this.props.connnectGithub();
-
   }
 
   selectSite = e => {
@@ -33,7 +32,18 @@ class MediaPortfolio extends React.Component {
     return (
       <PortfolioDiv>
         <div className="project-list">
+          <div className="project">
+          <iframe className="media" title="Timelapse" src="https://player.vimeo.com/214206963" width="100%" height="80%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          <div className="project">
             <iframe title="Tonto VR" className="media" src="http://swvirtualmuseum.nau.edu/wp/Tonto_panos/Tonto-NM-pano-tour.html"></iframe>
+            <h4>Tonto National Monument Virtual Tour</h4>
+            <p>Captured photo audio and video, and compiled website</p>
+          
+          </div>
+          <div className="project">
+          <iframe className="media" title="Basketball VR" src="https://player.vimeo.com/video/214381757" width="100%" height="80%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
         </div>
       </PortfolioDiv>
     )
@@ -69,48 +79,24 @@ export default connect(mapStateToProps, mapDispatchToProps)(MediaPortfolio);
 
 
 const PortfolioDiv = styled.div`
-  ${'' /* border: 1px solid red; */}
+  border: 1px solid green;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
   height: 99.5vh;
-  .project-list {
-    ${'' /* border: 1px solid green; */}
-    width: 30%;
-    max-height: 1000px;
-    overflow: auto;
-    .listButtons {
-      border: 1px solid red;
-      button {
-        width: 50%;
-      }
+  width: 100vw;
+  padding: 10px;
+  .project-list{
+    width: 100%;
+    .project{
+    border: 1px solid red;
+    width: 100%;
+    .media{
+      width: 100%;
+      height: 400px;
     }
   }
-  .site-name {
-    background-color: white;
-    border: 1px solid black;
-    text-align: center;
   }
-  .selected-site {
-    background-color: lightgray;
-  }
-  .site-div {
-    ${'' /* border: 1px solid green; */}
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-height: 900px;
-  }
-  .mini-site {
-    ${'' /* border: 1px solid blue; */}
-    width: 95%;
-    height: 800px;
-    padding: 10px;
-    -moz-box-shadow:    inset 0 0 10px #000000;
-   -webkit-box-shadow: inset 0 0 10px #000000;
-    box-shadow:         inset 0 0 10px #000000;
-  }
+  
 `;

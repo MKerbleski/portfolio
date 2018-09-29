@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, Link} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import {connnectGithub} from '../../actions';
 import {connect} from 'react-redux';

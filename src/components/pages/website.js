@@ -24,8 +24,9 @@ class Website extends Component {
       console.log(props)
     return (
       <WebSiteDiv>
-      <div className="websiteReturn">
-      <Link to={`/web`}> view on MIKERBLE.SKI</Link></div>
+        {/* <div className="websiteReturn">
+          <Link to={`/web`}> view on MIKERBLE.SKI</Link>
+        </div> */}
           <iframe title="title" className="fullscreen" src={`https://mkerbleski.github.io/${this.props.name}/`}></iframe>
       </WebSiteDiv>
     )
