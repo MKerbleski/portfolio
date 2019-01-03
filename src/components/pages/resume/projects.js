@@ -5,48 +5,58 @@ export default class Projects extends React.Component {
     render(){
         return (
             <ProjectsDiv>
-                <div className="topic">
+                <div className="sectionTitle">
                     <h3>Software Projects</h3>
                 </div>
                 <div>
-                    <strong className="summary">
+                    <strong className="dateAndTitle">
                         <span className="one">Stic.ky</span>
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Utilized: </li>
-                            <li>detail</li>
+                            <li>Front End: Redux, React, Styled Components, Axios, Ajax, RESTful API, Express</li>
+                            <li>Back End: Arcitechure, node.js, middleware, authentication, knex, sqlite3, postgress, heroku, </li>
                         </ul>
                     </div>
                 </div>
                 <div>
-                    <strong className="summary">
+                    <strong className="dateAndTitle">
                         <span className="one">MUD</span>
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Utilized: </li>
-                            <li>detail</li>
+                            <li>Utilized: Websockets, Python, Django </li>
+                            <li>deployed on Netlify </li>
                         </ul>
                     </div>
                 </div>
                 <div>
-                    <strong className="summary">
+                    <strong className="dateAndTitle">
                         <span className="one">Conways Game of Life</span>
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Utilized: </li>
+                            <li>Utilized: conways game of life is a simulation that visualizes the cellular automata rules set in Conways game of life </li>
                         </ul>
                     </div>
                 </div>
                 <div>
-                    <strong className="summary">
+                    <strong className="dateAndTitle">
                         <span className="one">Intro Design</span>
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Utilized: </li>
+                            <li>Utilized: HTML5 CSS LESS, wireframes, using no Libraries</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <strong className="dateAndTitle">
+                        <span className="one">Skills in progress</span>
+                    </strong>
+                    <div className="details">
+                        <ul>
+                            <li>Isomorphic Universal serverside rendered applications</li>
                         </ul>
                     </div>
                 </div>
@@ -67,7 +77,7 @@ const ProjectsDiv = styled.div`
         box-sizing: border-box;
         
     }
-    .topic {
+    .sectionTitle {
         /* border: 1px solid blue; */
         width: 100%;
         display: flex;
@@ -78,7 +88,7 @@ const ProjectsDiv = styled.div`
             margin: 0;
         }
     }
-    .summary {
+    .dateAndTitle {
         /* border: 1px solid blue; */
         width: 100%;
         display: flex;

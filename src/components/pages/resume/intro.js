@@ -7,7 +7,7 @@ export default class Intro extends React.Component {
             <IntroDiv>
                 <div className="left">
                     <ul>
-                        <li><a href="https://github.com/mkerbleski">https://github.com/mkerbleski</a></li>
+                        <li><a href="https://github.com/mkerbleski">github.com/mkerbleski</a></li>
                     </ul>
                 </div>
                 <div className="center">

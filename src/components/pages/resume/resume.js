@@ -38,5 +38,6 @@ const ResumeDiv = styled.div `
     flex-direction: column;
     justify-content: baseline;
     align-items: baseline;
+    
   }
 `;
