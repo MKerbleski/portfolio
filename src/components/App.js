@@ -10,6 +10,7 @@ import HTML5Backend from 'react-dnd-html5-backend';
 
 import Resume from './pages/resume/resume';
 import Print from './pages/resume/print';
+import ResumePage from './pages/resume/resumePage';
 import WebPortfolio from './pages/web-portfolio';
 import MediaPortfolio from './pages/media-portfolio';
 
@@ -25,7 +26,7 @@ class App extends React.Component {
     this.state = {
       lastUpdateFetched: false,
       lastUpdate: '',
-      showHeaders: false,
+      showHeaders: true,
     }
   }
 
@@ -56,13 +57,14 @@ class App extends React.Component {
       <AppDiv>
         {/* <Route path="/" component={this.state.showHeaders ? NavBar : null} /> */}
         {this.state.showHeaders ? <NavBar /> : null}
-        <Route exact path="/resume/print" render={() => {
-          return <Print hideHeaders={this.hideHeaders} showHeaders={this.showHeaders}/>}} />
-          <Route exact path="/resume" hideHeaders={this.hideHeaders} showHeaders={this.showHeaders} render={Resume}></Route>
-          <Route exact path="/current-project" render={Resume}></Route>
-          <Route exact path="/web" component={WebPortfolio}></Route>
-          <Route exact path="/media" component={MediaPortfolio}></Route>
-          <Route exact path="/" render={() => <Home openAuth={this.openAuth} />} ></Route>
+          <Route exact path="/print" render={() => {
+            return <Print hideHeaders={this.hideHeaders} showHeaders={this.showHeaders}/>}} />
+          <Route exact path="/resume" hideHeaders={this.hideHeaders} showHeaders={this.showHeaders} render={ResumePage} />
+          
+          <Route exact path="/current-project" render={Resume}/> 
+          <Route exact path="/web" component={WebPortfolio} />
+          <Route exact path="/media" component={MediaPortfolio} />
+          <Route exact path="/" render={() => <Home openAuth={this.openAuth} />} />
           { this.props.state.githubData.map(project => {
           return <Route key={project.name} path={`/${project.name}`} 
                     render={(project2) => {
@@ -85,7 +87,9 @@ const AppDiv = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
+  background: lightgray;
   ${'' /* height: 99.5vh; */}
   width: 100%;
   margin: 0;

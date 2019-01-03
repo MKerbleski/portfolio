@@ -1,22 +1,23 @@
 import React from 'react';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Title from './title.js';
 
 
 import styled from 'styled-components';
 
-const Home = (props) => {
-  console.log(props)
-  return (
-    <HomeDiv>
-      <Title openAuth={props.openAuth} />
-      <div className="all-links">
-        <Link className="link" to="/resume">resume</Link>
-        <Link className="link" to="/web">web</Link>
-        <Link className="link" to="/media">media</Link>
-      </div>
-    </HomeDiv>
-  )
+class Home extends React.Component {
+  render(){
+      return (
+        <HomeDiv>
+          <Title openAuth={this.props.openAuth} />
+          <div className="all-links">
+            <Link className="link" to="/resume">resume</Link>
+            <Link className="link" to="/web">web</Link>
+            <Link className="link" to="/media">media</Link>
+          </div>
+        </HomeDiv>
+      )
+  }
 }
 
 export default Home;
