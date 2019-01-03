@@ -26,12 +26,17 @@ export default class Intro extends React.Component {
 }
 
 const IntroDiv = styled.div`
-    /* border: 1px solid red; */
+    border: 1px solid red;
+    box-sizing: border-box;
+    padding: 20px 0;
     width: 100%;
     display: flex;
     flex-direction: row;
+    * {
+        margin: 0;
+    }
     .left {
-        /* border: 1px solid blue; */
+        border: 1px solid blue;
         width: 100%;
         display: flex;
         justify-content: flex-start;
@@ -47,19 +52,20 @@ const IntroDiv = styled.div`
         }
     }
     .center {
-        /* border: 1px solid blue; */
+        border: 1px solid blue;
         width: 100%;
         display: flex;
         justify-content: center;
     }
     .right {
-        /* border: 1px solid blue; */
+        border: 1px solid blue;
         width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
         ul {
-            /* border: 1px solid green; */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
+            border: 1px solid green;
             list-style-type: none;
             li {
                 /* border: 1px solid red; */

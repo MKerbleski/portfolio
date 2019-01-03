@@ -3,22 +3,13 @@ export function dateAndTitle(){
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 3px;
     .one {
         float: left;
     }
     .two {
         text-align: center;
         color: black;
-        a{
-            :hover{
-                cursor: pointer;
-                text-decoration: underline;
-            }
-            &:visited{
-                color: black;
-                text-decoration: none;
-            }
-        }
     }
     .three {
         display: flex;
@@ -39,13 +30,18 @@ export function sectionTitle(){
 
 export function sectionContainer(){
     return `
+    border: 1px solid red;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
+        margin-top: 5px;
+        width: 100%;
         * {
             margin: 0;
             width: 100%;
             box-sizing: border-box;
-            
+        }
+        li {
+            font-size: 14px;
         }
 `}

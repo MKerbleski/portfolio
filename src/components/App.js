@@ -9,6 +9,7 @@ import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 
 import Resume from './pages/resume/resume';
+import Print from './pages/resume/print';
 import WebPortfolio from './pages/web-portfolio';
 import MediaPortfolio from './pages/media-portfolio';
 
@@ -24,15 +25,12 @@ class App extends React.Component {
     this.state = {
       lastUpdateFetched: false,
       lastUpdate: '',
-      showHeaders: true,
+      showHeaders: false,
     }
   }
 
   componentDidMount(props) {
     this.props.connnectGithub();
-    this.setState({
-      showHeaders: true,
-    })
   }
 
   openAuth(){
@@ -40,6 +38,7 @@ class App extends React.Component {
   };
 
   hideHeaders = () => {
+    console.log("hideHeaders")
     this.setState({
       showHeaders: false,
     })
@@ -47,29 +46,34 @@ class App extends React.Component {
   
   showHeaders = () => {
     this.setState({
-      showHeaders: true,
+      showHeaders: false,
     })
   }
 
   render() {
-    console.log(this.props.state.githubData)
+    console.log(this.state)
     return (
       <AppDiv>
-        <Route path="/" component={this.state.showHeaders ? NavBar : null} />
-          <Route exact path="/resume" render={Resume}></Route>
+        {/* <Route path="/" component={this.state.showHeaders ? NavBar : null} /> */}
+        {this.state.showHeaders ? <NavBar /> : null}
+        <Route exact path="/resume/print" render={() => {
+          return <Print hideHeaders={this.hideHeaders} showHeaders={this.showHeaders}/>}} />
+          <Route exact path="/resume" hideHeaders={this.hideHeaders} showHeaders={this.showHeaders} render={Resume}></Route>
           <Route exact path="/current-project" render={Resume}></Route>
           <Route exact path="/web" component={WebPortfolio}></Route>
           <Route exact path="/media" component={MediaPortfolio}></Route>
           <Route exact path="/" render={() => <Home openAuth={this.openAuth} />} ></Route>
           { this.props.state.githubData.map(project => {
-          return <Route path={`/${project.name}`} 
+          return <Route key={project.name} path={`/${project.name}`} 
                     render={(project2) => {
                       console.log(project2)
             return (
-             <Website name={project.name} hideHeaders={this.hideHeaders} showHeaders={this.showHeaders} />
-            )}}></Route>
+             <Website name={project.name} key={project.name} hideHeaders={this.hideHeaders} showHeaders={this.showHeaders} />
+            )
+            }}></Route>
           })}
-        <Route path="/" component={this.state.showHeaders ? Footer : null} />
+          {this.state.showHeaders ? <Footer /> : null}
+        {/* <Route path="/" component={this.state.showHeaders ? Footer : null} /> */}
 
       </AppDiv>
     );

@@ -12,7 +12,7 @@ export default class Education extends React.Component {
                 <div>
                     <strong className="dateAndTitle">
                         <span className="one">Remote</span>
-                        <span className="two"><a href="https://learn.lambdaschool.com/course/cs-fsw" target="_blank">Lambda School</a></span>
+                        <a className="two" href="https://learn.lambdaschool.com/course/cs-fsw" target="_blank">Lambda School</a>
                         <span className="three">June 2018-Feb 2019</span>
                     </strong>
                     <div className="details">
@@ -22,7 +22,6 @@ export default class Education extends React.Component {
                         </ul>
                     </div>
                 </div>
-                <br></br>
                 <div>
                     <strong className="dateAndTitle">
                         <span className="one">Flagstaff, AZ</span>
@@ -34,11 +33,10 @@ export default class Education extends React.Component {
                             <li><strong>Masters</strong>: Communication - Unreal Engine 4, Virtual Reality, Brain Computer Interface, Bitcoin and Cryptocurencies</li>
                             <li><strong>Major</strong>: Electronic Media and Film - Adobe After Effects, Premiere, Final Cut</li>
                             <li><strong>Minor</strong>: Business - Microsoft Word, Excel</li>
-                            <li><strong>Extra</strong>: Mascot - Hype</li>
+                            {/* <li><strong>Extra</strong>: Mascot - Hype</li> */}
                         </ul>
                     </div>
                 </div>
-                <br></br>
                 <div>
                     <strong className="dateAndTitle">
                         <span className="one">Albuquerque</span>

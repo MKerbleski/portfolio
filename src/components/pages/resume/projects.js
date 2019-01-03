@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { sectionTitle, sectionContainer, dateAndTitle } from './styles';
 
 export default class Projects extends React.Component {
     render(){
@@ -10,18 +11,34 @@ export default class Projects extends React.Component {
                 </div>
                 <div>
                     <strong className="dateAndTitle">
-                        <span className="one">Stic.ky</span>
+                        <span className="one">Personal Website: <a href="http://kerble.ski">http://kerble.ski</a></span>
+                    </strong>
+                </div>
+                <div>
+                    <strong className="dateAndTitle">
+                        <span className="one"><a href="https://amudappthatdoesntsuck.xyz" target="_blank">Stic.ky</a></span>
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Front End: Redux, React, Styled Components, Axios, Ajax, RESTful API, Express</li>
+                            <li>Personal Data Aggregator</li>
+                            <li>Front End: Redux, React, Styled Components, Axios, Ajax, RESTful API, Express, React Drag and Drop</li>
                             <li>Back End: Arcitechure, node.js, middleware, authentication, knex, sqlite3, postgress, heroku, </li>
                         </ul>
                     </div>
                 </div>
                 <div>
                     <strong className="dateAndTitle">
-                        <span className="one">MUD</span>
+                        <span className="one"><a href="" target="_blank">TBD Capstone</a></span>
+                    </strong>
+                    <div className="details">
+                        <ul>
+                            <li>Collaborative website with 6 students for 5 weeks</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <strong className="dateAndTitle">
+                        <span className="one"><a href="https://amudappthatdoesntsuck.xyz" target="_blank">MUD</a></span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -31,8 +48,8 @@ export default class Projects extends React.Component {
                     </div>
                 </div>
                 <div>
-                    <strong className="dateAndTitle">
-                        <span className="one">Conways Game of Life</span>
+                    <strong className="dateAndTitle"> 
+                        <span className="one"><a href="https://mkerbleski.github.io/Conways-Life/" target="_blank">Conways Game of Life</a></span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -42,15 +59,15 @@ export default class Projects extends React.Component {
                 </div>
                 <div>
                     <strong className="dateAndTitle">
-                        <span className="one">Intro Design</span>
+                        <span className="one"><a href="https://mkerbleski.github.io/User-Interface-Project-Week/" target="_blank">Intro Design</a></span>
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Utilized: HTML5 CSS LESS, wireframes, using no Libraries</li>
+                            <li>Utilized: HTML5 CSS LESS, wireframes, using no Libraries, bootstrap, Dynamic, mobile design</li>
                         </ul>
                     </div>
                 </div>
-                <div>
+                {/* <div>
                     <strong className="dateAndTitle">
                         <span className="one">Skills in progress</span>
                     </strong>
@@ -59,7 +76,7 @@ export default class Projects extends React.Component {
                             <li>Isomorphic Universal serverside rendered applications</li>
                         </ul>
                     </div>
-                </div>
+                </div> */}
             </ProjectsDiv>
         )
     }
@@ -67,50 +84,12 @@ export default class Projects extends React.Component {
 
 const ProjectsDiv = styled.div`
     /* border: 1px solid red; */
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    * {
-        margin: 0;
-        width: 100%;
-        box-sizing: border-box;
-        
-    }
-    .sectionTitle {
-        /* border: 1px solid blue; */
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-end;
-        border-bottom: 1px solid black;
-        h3 {
-            margin: 0;
-        }
+    ${sectionContainer()}
+    .sectionTitle{
+        ${sectionTitle()}
     }
     .dateAndTitle {
         /* border: 1px solid blue; */
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        span {
-            /* border: 1px solid green; */
-        }
-    }
-    .right {
-        /* border: 1px solid blue; */
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-        ul {
-            /* border: 1px solid green; */
-            list-style-type: none;
-            li {
-                border: 1px solid red;
-                float: right;
-            }
-        }
+       ${dateAndTitle()}
     }
 `

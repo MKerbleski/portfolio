@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { sectionTitle, sectionContainer, dateAndTitle } from './styles';
 
 export default class Jobs extends React.Component {
     render(){
@@ -109,60 +110,13 @@ export default class Jobs extends React.Component {
 
 const JobsDiv = styled.div`
     /* border: 1px solid red; */
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    * {
-        margin: 0;
-        width: 100%;
-        box-sizing: border-box;
-        
-    }
+    ${sectionContainer()}
     .sectionTitle {
         /* border: 1px solid blue; */
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-end;
-        border-bottom: 1px solid black;
-        h3 {
-            margin: 0;
-        }
+       ${sectionTitle()}
     }
     .dateAndTitle {
         /* border: 1px solid blue; */
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        span {
-            /* border: 1px solid green; */
-        }
-        .one {
-            float: left;
-        }
-        .two {
-            text-align: center;
-        }
-        .three {
-            display: flex;
-            justify-content: flex-end;
-        }
-    }
-    .right {
-        border: 1px solid blue;
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-start;
-        ul {
-            border: 1px solid green;
-            list-style-type: none;
-            li {
-                border: 1px solid red;
-                float: right;
-            }
-        }
+        ${dateAndTitle()}
     }
 `

@@ -10,11 +10,8 @@ const Resume = () => {
               <ResumeDiv>
                   <div className="container">
                       <Intro />
-                      <br></br>
                       <Education />
-                      <br></br>
                       <Projects />
-                      <br></br>
                       <Jobs />
                   </div>
               </ResumeDiv>
@@ -24,20 +21,29 @@ const Resume = () => {
 export default Resume;
 
 const ResumeDiv = styled.div `
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   justify-content: center;
   background: lightgray;
+  a {
+      &:hover{
+          cursor: pointer;
+          text-decoration: underline;
+      }
+      :visited{
+          color: black;
+          text-decoration-line: none;
+      }
+  }
   .container {
-    max-width: 800px;
-    padding: 15px;
-    margin: 10px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: baseline;
-    align-items: baseline;
-    
+    border: 2px solid green;
+      max-width: 800px;
+      padding: 15px;
+      margin: 10px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: baseline;
+      align-items: center;
   }
 `;
