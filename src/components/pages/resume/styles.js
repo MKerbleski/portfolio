@@ -30,7 +30,7 @@ export function sectionTitle(){
 
 export function sectionContainer(){
     return `
-    border: 1px solid red;
+    // border: 1px solid red;
         box-sizing: border-box;
         display: flex;
         flex-direction: column;

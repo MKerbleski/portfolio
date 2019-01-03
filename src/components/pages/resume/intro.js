@@ -26,11 +26,12 @@ export default class Intro extends React.Component {
 }
 
 const IntroDiv = styled.div`
-    border: 1px solid red;
+    /* border: 1px solid red; */
     box-sizing: border-box;
     width: 100%;
     display: flex;
     flex-direction: row;
+    margin-bottom: 8px;
     * {
         margin: 0;
         box-sizing: border-box;

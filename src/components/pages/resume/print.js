@@ -13,6 +13,11 @@ class Print extends Component {
 
   componentDidMount(){
     this.props.hideHeaders();
+    
+  }
+
+  componentDidUpdate(){
+      window.print()
   }
 
   componentWillUnmount(){
@@ -20,7 +25,6 @@ class Print extends Component {
   }
 
   render(props){
-      console.log(this.props)
     return (
       <PrintDiv>
           <Resume />

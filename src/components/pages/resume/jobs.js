@@ -60,7 +60,7 @@ export default class Jobs extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>video detail, survived major round of layoffs</li>
+                            <li>video detail, survived major round of layoffs, organiz</li>
                         </ul>
                     </div>
                 </div>
