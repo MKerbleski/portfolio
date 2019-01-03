@@ -15,8 +15,8 @@ export default class Intro extends React.Component {
                 </div>
                 <div className="right">
                     <ul>
-                        <li>resume@kerble.ski</li>
-                        <li>520-333-6271</li>
+                        <li><a href="mailto:resume@kerble.ski">resume@kerble.ski</a></li>
+                        <li><a href="tel:1-520-333-6271">520-333-6271</a></li>
                         <li><a href="http://kerble.ski">http://kerble.ski</a></li>
                     </ul>
                 </div>
@@ -28,15 +28,14 @@ export default class Intro extends React.Component {
 const IntroDiv = styled.div`
     border: 1px solid red;
     box-sizing: border-box;
-    padding: 20px 0;
     width: 100%;
     display: flex;
     flex-direction: row;
     * {
         margin: 0;
+        box-sizing: border-box;
     }
     .left {
-        border: 1px solid blue;
         width: 100%;
         display: flex;
         justify-content: flex-start;
@@ -52,20 +51,18 @@ const IntroDiv = styled.div`
         }
     }
     .center {
-        border: 1px solid blue;
         width: 100%;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     .right {
-        border: 1px solid blue;
         width: 100%;
         ul {
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             align-items: flex-end;
-            border: 1px solid green;
             list-style-type: none;
             li {
                 /* border: 1px solid red; */

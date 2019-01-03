@@ -30,6 +30,7 @@ const HomeDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: white;
   h1 {
     font-size: 13vw;
   }

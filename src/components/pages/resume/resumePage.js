@@ -10,7 +10,10 @@ import Resume from './resume'
 const ResumePage = () => {
   return <div className="resume-page-div">
               <ResumePageDiv>
+              <div className="resume-container">
+
                     <Resume />
+              </div>
                     <div className="print-link">
                         <Link className="print" to="/print">Print Resume Page</Link>
                     </div>
@@ -25,7 +28,10 @@ const ResumePageDiv = styled.div `
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: lightgray;
+  .resume-container{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 20px;
+  }
   .print-link{
       width: 100%;
       margin-bottom: 10px;

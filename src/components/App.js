@@ -47,7 +47,7 @@ class App extends React.Component {
   
   showHeaders = () => {
     this.setState({
-      showHeaders: false,
+      showHeaders: true,
     })
   }
 
@@ -55,7 +55,6 @@ class App extends React.Component {
     console.log(this.state)
     return (
       <AppDiv>
-        {/* <Route path="/" component={this.state.showHeaders ? NavBar : null} /> */}
         {this.state.showHeaders ? <NavBar /> : null}
           <Route exact path="/print" render={() => {
             return <Print hideHeaders={this.hideHeaders} showHeaders={this.showHeaders}/>}} />
@@ -65,7 +64,7 @@ class App extends React.Component {
           <Route exact path="/web" component={WebPortfolio} />
           <Route exact path="/media" component={MediaPortfolio} />
           <Route exact path="/" render={() => <Home openAuth={this.openAuth} />} />
-          { this.props.state.githubData.map(project => {
+          {/* { this.props.state.githubData.map(project => {
           return <Route key={project.name} path={`/${project.name}`} 
                     render={(project2) => {
                       console.log(project2)
@@ -73,27 +72,31 @@ class App extends React.Component {
              <Website name={project.name} key={project.name} hideHeaders={this.hideHeaders} showHeaders={this.showHeaders} />
             )
             }}></Route>
-          })}
+          })} */}
           {this.state.showHeaders ? <Footer /> : null}
-        {/* <Route path="/" component={this.state.showHeaders ? Footer : null} /> */}
-
       </AppDiv>
     );
   }
 }
 
 const AppDiv = styled.div`
-  ${'' /* border: 1px solid red; */}
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  background: lightgray;
-  ${'' /* height: 99.5vh; */}
-  width: 100%;
-  margin: 0;
-  padding: 0;
+    ${'' /* border: 1px solid red; */}
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* background: lightgray; */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    &::-webkit-scrollbar {
+        width: 6px;
+        &-thumb{
+            background-color: gray;
+            border-radius: 25px;
+        }
+    }
 `;
 
 const mapStateToProps = store => {
