@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 // import {Link} from 'react-router-dom';
 // import TitleTop from '../nav-bar/titleTop.js';
-
 import styled from 'styled-components';
 
 class Website extends Component {

@@ -8,7 +8,7 @@ import { withRouter } from 'react-router'
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 
-import Resume from './pages/resume';
+import Resume from './pages/resume/resume';
 import WebPortfolio from './pages/web-portfolio';
 import MediaPortfolio from './pages/media-portfolio';
 

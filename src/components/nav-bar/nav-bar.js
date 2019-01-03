@@ -49,6 +49,7 @@ class NavBar extends Component {
             <Basket  />
             }
           </div>
+          <input placeholder="******"></input>
           <AllContactTabs />
       </NavBarDiv>
     )
