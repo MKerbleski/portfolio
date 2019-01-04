@@ -22,14 +22,14 @@ export default Resume;
 const ResumeDiv = styled.div `
   max-width: 800px;
   padding: 15px;
-
   background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: baseline;
   align-items: center;
-
   a {
+      text-decoration: none;
+      color: black;
       &:hover{
           cursor: pointer;
           text-decoration: underline;

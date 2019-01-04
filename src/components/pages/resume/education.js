@@ -13,7 +13,7 @@ export default class Education extends React.Component {
                     <strong className="dateAndTitle">
                         <span className="one">Remote</span>
                         <a className="two" href="https://learn.lambdaschool.com/course/cs-fsw" target="_blank">Lambda School</a>
-                        <span className="three">June 2018-Feb 2019</span>
+                        <span className="three">June 2018 - Feb 2019</span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -26,7 +26,7 @@ export default class Education extends React.Component {
                     <strong className="dateAndTitle">
                         <span className="one">Flagstaff, AZ</span>
                         <span className="two">Northern Arizona University</span>
-                        <span className="three">Aug 2011-Dec 2018</span>
+                        <span className="three">Aug 2011 - Dec 2018</span>
                     </strong>
                     <div className="details">
                         <ul>

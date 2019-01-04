@@ -9,15 +9,14 @@ import Resume from './resume'
 
 const ResumePage = () => {
   return <div className="resume-page-div">
-              <ResumePageDiv>
-              <div className="resume-container">
-
+            <ResumePageDiv>
+                <div className="resume-container">
                     <Resume />
-              </div>
-                    <div className="print-link">
-                        <Link className="print" to="/print">Print Resume Page</Link>
-                    </div>
-              </ResumePageDiv>
+                </div>
+                <div className="print-link">
+                    <Link className="print" to="/print">Print Resume Page</Link>
+                </div>
+            </ResumePageDiv>
           </div>
 }
 

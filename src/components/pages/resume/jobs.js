@@ -14,7 +14,7 @@ export default class Jobs extends React.Component {
                     <strong className="dateAndTitle">
                         <span className="one">Graduate Teaching Assistant</span>
                         <span className="two">School of Communication</span>
-                        <span className="three">Aug 2016-May 2018</span>
+                        <span className="three">Aug 2016 - May 2018</span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -28,7 +28,7 @@ export default class Jobs extends React.Component {
                     <strong className="dateAndTitle">
                         <span className="one">360 Video Specialist</span>
                         <span className="two">Interactive Virtual Reality Lab</span>
-                        <span className="three">Jan 2017-Jun 2017</span>
+                        <span className="three">Jan 2017 - Jun 2017</span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -42,7 +42,7 @@ export default class Jobs extends React.Component {
                     <strong className="dateAndTitle">
                         <span className="one">Video Manager</span>
                         <span className="two">NAU Marketing</span>
-                        <span className="three">May 2015-May 2016</span>
+                        <span className="three">May 2015 - May 2016</span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -56,7 +56,7 @@ export default class Jobs extends React.Component {
                     <strong className="dateAndTitle">
                         <span className="one">Videographer</span>
                         <span className="two">NAU Marketing</span>
-                        <span className="three">Jan 2014-Dec 2014</span>
+                        <span className="three">Jan 2014 - Dec 2014</span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -69,7 +69,7 @@ export default class Jobs extends React.Component {
                     <strong className="dateAndTitle">
                         <span className="one">Internship</span>
                         <span className="two">Vora Financial Group</span>
-                        <span className="three">Oct 2012-May 2013</span>
+                        <span className="three">Oct 2012 - May 2013</span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -82,7 +82,7 @@ export default class Jobs extends React.Component {
                     <strong className="dateAndTitle">
                         <span className="one">Various Positions</span>
                         <span className="two">Vail Valley Foundation</span>
-                        <span className="three">2011-2017</span>
+                        <span className="three">2011 - 2017</span>
                     </strong>
                     <div className="details">
                         <ul>
