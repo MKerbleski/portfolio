@@ -47,7 +47,7 @@ export default class Jobs extends React.Component {
                     <div className="details">
                         <ul>
                             <li>Marketing detail: manager, scheduling, budgeting, project planning, supervising, organization</li>
-                            <li>detail</li>
+                            <li>Organized workflows, backup data managment, managed 4 videographer</li>
                         </ul>
                     </div>
                 </div>
@@ -60,7 +60,7 @@ export default class Jobs extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>video detail, survived major round of layoffs, organiz</li>
+                            <li>video detail, survived major round of layoffs, organized, reorganized entire catalogue of video files</li>
                         </ul>
                     </div>
                 </div>
@@ -86,7 +86,7 @@ export default class Jobs extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>vvf details temporary event managment loading dock managment, attention to detail, advanced planning, machines, grit, event managment</li>
+                            <li>vvf details temporary event managment loading dock managment, attention to detail, advanced planning, machines, grit, event managment, improvise, flexible, on the fly decision making</li>
                         </ul>
                     </div>
                 </div>

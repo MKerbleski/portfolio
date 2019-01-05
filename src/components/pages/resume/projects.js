@@ -21,7 +21,7 @@ export default class Projects extends React.Component {
                     <div className="details">
                         <ul>
                             <li>Personal Data Aggregator</li>
-                            <li>Front End: Redux, React, Styled Components, Axios, Ajax, RESTful API, Express, React Drag and Drop</li>
+                            <li>Front End: Redux, React.js, Styled Components, Axios, Ajax, RESTful API, Express, React Drag and Drop, ES6</li>
                             <li>Back End: Arcitechure, node.js, middleware, authentication, knex, sqlite3, postgress, heroku, </li>
                         </ul>
                     </div>
@@ -32,7 +32,7 @@ export default class Projects extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Collaborative website with 6 students for 5 weeks</li>
+                            <li>Collaborative website with 6 students for 5 weeks, communication, collaboration, vision, Team, from wireframes to functionall application</li>
                         </ul>
                     </div>
                 </div>
@@ -42,7 +42,7 @@ export default class Projects extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Utilized: Websockets, Python, Django </li>
+                            <li>Utilized: Websockets, Python, Django, API </li>
                             <li>deployed on Netlify </li>
                         </ul>
                     </div>
@@ -63,7 +63,7 @@ export default class Projects extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Utilized: HTML5 CSS LESS, wireframes, using no Libraries, bootstrap, Dynamic, mobile design</li>
+                            <li>Utilized: HTML5, CSS, LESS, wireframes, using no Libraries, bootstrap, Dynamic, mobile design, user interface, user design</li>
                         </ul>
                     </div>
                 </div>

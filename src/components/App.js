@@ -90,13 +90,6 @@ const AppDiv = styled.div`
     width: 100%;
     margin: 0;
     padding: 0;
-    &::-webkit-scrollbar {
-        width: 6px;
-        &-thumb{
-            background-color: gray;
-            border-radius: 25px;
-        }
-    }
 `;
 
 const mapStateToProps = store => {
