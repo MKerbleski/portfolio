@@ -34,7 +34,7 @@ export default class Jobs extends React.Component {
                     <div className="details">
                         <ul>
                             <li>Led and contributed to collaborative 360 video projects among artists, 
-                                sound editors, archeologists, computer scientists.</li>
+                                sound editors, archeologists, computer scientists. Software: Unreal Engine 4.</li>
                             <li>Projects: 
                                 <a href="http://swvirtualmuseum.nau.edu/wp/Tonto_panos/Tonto-NM-pano-tour.html">Tonto National Monument (interactive)</a>, 
                                 <a href="https://vimeo.com/209591527">Chem VR</a>, 
@@ -65,7 +65,8 @@ export default class Jobs extends React.Component {
                 <div>
                     <strong className="dateAndTitle">
                         <span className="one">Videographer</span>
-                        <span className="two">NAU Marketing</span>
+                        <span className="two">
+                            <a href="https://vimeo.com/nauvideo">NAU Marketing</a></span>
                         <span className="three">Jan 2014 - Dec 2014</span>
                     </strong>
                     <div className="details">
