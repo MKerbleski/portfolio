@@ -50,11 +50,10 @@ export default class Projects extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Designed and developed a front end user experience for 
+                            <li>Designed and developed a front end user experience, with websockets, for   
                                 <a href="https://github.com/LambdaSchool/LambdaMUD-Project/blob/master/README.md" target="_blank">
-                                an existing Python Django backend API</a>
-                                which also needed modifications.</li>
-                            <li>Utilized: Websockets, Netlify</li>
+                                 an existing Python Django backend API</a>
+                                </li>
                         </ul>
                     </div>
                 </div>

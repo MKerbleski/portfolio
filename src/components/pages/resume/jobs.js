@@ -36,10 +36,10 @@ export default class Jobs extends React.Component {
                             <li>Led and contributed to collaborative 360 video projects among artists, 
                                 sound editors, archeologists, computer scientists. Software: Unreal Engine 4.</li>
                             <li>Projects: 
-                                <a href="http://swvirtualmuseum.nau.edu/wp/Tonto_panos/Tonto-NM-pano-tour.html">Tonto National Monument (interactive)</a>, 
-                                <a href="https://vimeo.com/209591527">Chem VR</a>, 
-                                <a href="https://vimeo.com/214381757">NAU basketball (interactive)</a>, 
-                                <a href="">Fiction film</a>
+                                <a href="http://swvirtualmuseum.nau.edu/wp/Tonto_panos/Tonto-NM-pano-tour.html"> Tonto National Monument (interactive)</a>, 
+                                <a href="https://vimeo.com/209591527"> Chem VR</a>, 
+                                <a href="https://vimeo.com/214381757"> NAU basketball (interactive)</a>, 
+                                <a href=""> Fiction film</a>
                                 </li>
                         </ul>
                     </div>
@@ -72,7 +72,7 @@ export default class Jobs extends React.Component {
                     <div className="details">
                         <ul>
                             <li>Produced, directed, and edited promotional videos for the university. 
-                                Self-started a reorganization of the team's digital assets.</li>
+                                Self-started a reorganization of the team's assets.</li>
                         </ul>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ export default class Jobs extends React.Component {
                             <li>Assisted in the file managment and preservation of financial records,
                                  created necessary redundencies and </li>
                             <li>Knowledge Leveraged: Asset managments, wealth managment, 
-                                various financial vechicles, financial planning, microeconomics.</li>
+                                financial planning, microeconomics.</li>
                             
                         </ul>
                     </div>
