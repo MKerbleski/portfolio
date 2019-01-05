@@ -51,8 +51,7 @@ export default class Projects extends React.Component {
                     <div className="details">
                         <ul>
                             <li>Designed and developed a front end UX, with websockets, for   
-                                <a href="https://github.com/LambdaSchool/LambdaMUD-Project/blob/master/README.md" target="_blank">
-                                  an existing Python Django backend API</a>
+                                <a href="https://github.com/LambdaSchool/LambdaMUD-Project/blob/master/README.md" target="_blank"> an existing Python Django backend API</a>
                                 </li>
                         </ul>
                     </div>
