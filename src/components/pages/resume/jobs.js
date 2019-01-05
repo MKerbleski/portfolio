@@ -33,8 +33,8 @@ export default class Jobs extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Led and contributed to collaborative 360 video projects among artists, 
-                                sound editors, archeologists, computer scientists. Software: Unreal Engine 4.</li>
+                            <li>Created collaborative 360 video projects among artists, 
+                                sound editors, archeologists, computer scientists. Software: UE4.</li>
                             <li>Projects: 
                                 <a href="http://swvirtualmuseum.nau.edu/wp/Tonto_panos/Tonto-NM-pano-tour.html"> Tonto National Monument (interactive)</a>, 
                                 <a href="https://vimeo.com/209591527"> Chem VR</a>, 
@@ -56,7 +56,8 @@ export default class Jobs extends React.Component {
                     <div className="details">
                         <ul>
                             <li>Managed, scheduled, budegeted, planned, supervised for a team of 5 videographers. </li>
-                            <li>Organized workflows, created backup data managment plans. 
+                            <li>Organized workflows, 
+                                {/* created backup data managment plans.  */}
                                 Corridnated among internal and external vendors.</li>
                         </ul>
                     </div>
@@ -71,7 +72,7 @@ export default class Jobs extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Produced, directed, and edited promotional videos for the university. 
+                            <li>Produced, directed, and edited videos for the university. 
                                 Self-started a reorganization of the team's assets.</li>
                         </ul>
                     </div>
@@ -86,7 +87,7 @@ export default class Jobs extends React.Component {
                     <div className="details">
                         <ul>
                             <li>Assisted in the file managment and preservation of financial records,
-                                 created necessary redundencies and </li>
+                                 created necessary redundencies</li>
                             <li>Knowledge Leveraged: Asset managments, wealth managment, 
                                 financial planning, microeconomics.</li>
                             
@@ -118,8 +119,8 @@ export default class Jobs extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Shadowed a high frequency trader and gained insights 
-                                into the world of stocks, futures, currencies and strategy.</li>
+                            <li>Shadowed high frequency traders and gained insights 
+                                into the world of stocks, futures, and currencies.</li>
                         </ul>
                     </div>
                 </div>
