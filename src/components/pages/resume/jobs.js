@@ -18,8 +18,8 @@ export default class Jobs extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Teaching, learning, mentoring </li>
-                            <li>detail</li>
+                            <li>Delivered technical written and spoken communication to 4 classes of 
+                                10-15 students on the basic operations of editing software and filmmaking equipment.</li>
                         </ul>
                     </div>
                 </div>
@@ -27,13 +27,20 @@ export default class Jobs extends React.Component {
                 <div>
                     <strong className="dateAndTitle">
                         <span className="one">360 Video Specialist</span>
-                        <span className="two">Interactive Virtual Reality Lab</span>
+                        <span className="two">
+                            <a href="https://www.facebook.com/nauivrlab/">Interactive Virtual Reality Lab</a></span>
                         <span className="three">Jan 2017 - Jun 2017</span>
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>vr details: Tonto National Monument, Documentary, NAU basketball, Fiction film, Interactive</li>
-                            <li>vr details: collaboration, artists, sound editing, interactive videos</li>
+                            <li>Led and contributed to collaborative 360 video projects among artists, 
+                                sound editors, archeologists, computer scientists.</li>
+                            <li>Projects: 
+                                <a href="http://swvirtualmuseum.nau.edu/wp/Tonto_panos/Tonto-NM-pano-tour.html">Tonto National Monument (interactive)</a>, 
+                                <a href="https://vimeo.com/209591527">Chem VR</a>, 
+                                <a href="https://vimeo.com/214381757">NAU basketball (interactive)</a>, 
+                                <a href="">Fiction film</a>
+                                </li>
                         </ul>
                     </div>
                 </div>
@@ -41,13 +48,16 @@ export default class Jobs extends React.Component {
                 <div>
                     <strong className="dateAndTitle">
                         <span className="one">Video Manager</span>
-                        <span className="two">NAU Marketing</span>
+                        <span className="two">
+                            <a href="https://vimeo.com/nauvideo">NAU Marketing</a>
+                        </span>
                         <span className="three">May 2015 - May 2016</span>
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Marketing detail: manager, scheduling, budgeting, project planning, supervising, organization</li>
-                            <li>Organized workflows, backup data managment, managed 4 videographer</li>
+                            <li>Managed, scheduled, budegeted, planned, supervised for a team of 5 videographers. </li>
+                            <li>Organized workflows, created backup data managment plans. 
+                                Corridnated among internal and external vendors.</li>
                         </ul>
                     </div>
                 </div>
@@ -60,7 +70,8 @@ export default class Jobs extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>video detail, survived major round of layoffs, organized, reorganized entire catalogue of video files</li>
+                            <li>Produced, directed, and edited promotional videos for the university. 
+                                Self-started a reorganization of the team's digital assets.</li>
                         </ul>
                     </div>
                 </div>
@@ -73,7 +84,11 @@ export default class Jobs extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>vora details, stocks, money managment, file managment, data base entry,s </li>
+                            <li>Assisted in the file managment and preservation of financial records,
+                                 created necessary redundencies and </li>
+                            <li>Knowledge Leveraged: Asset managments, wealth managment, 
+                                various financial vechicles, financial planning, microeconomics.</li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -86,7 +101,10 @@ export default class Jobs extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>vvf details temporary event managment loading dock managment, attention to detail, advanced planning, machines, grit, event managment, improvise, flexible, on the fly decision making</li>
+                            <li>Various event managment positions for events throughout the 
+                                Vail Valley in Colorado.</li>
+                            <li>Knowledge Leveraged: Logistics, advanced planning, event managment, 
+                                attention to detail, improvisation.</li>
                         </ul>
                     </div>
                 </div>
@@ -99,7 +117,8 @@ export default class Jobs extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>high frequency trading, futures, automation, stocks, currency</li>
+                            <li>Shadowed a high frequency trader and gained insights 
+                                into the world of stocks, futures, currencies and strategy.</li>
                         </ul>
                     </div>
                 </div>
