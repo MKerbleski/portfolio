@@ -75,7 +75,7 @@ export default class Projects extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Turned wireframes specs into a pixel-perfect, dynamic, (for mobile and desktop) UI/UX using HTML5, CSS, LESS, Javascript.</li>
+                            <li>Turned wireframes into a pixel-perfect dynamic UI/UX using HTML5, CSS, LESS, Javascript.</li>
                         </ul>
                     </div>
                 </div>
