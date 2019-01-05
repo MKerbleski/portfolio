@@ -17,7 +17,7 @@ export default class Education extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li><strong>Full-Stack Web Development</strong>: HTML, CSS, LESS, Javascript, Node.js, Git, Database, Authentication, Testing</li>
+                            <li><strong>Full Stack Web Development</strong>: HTML, CSS, LESS, Javascript, Node.js, Git, Database, Authentication, Testing</li>
                             <li><strong>Computer Science</strong>: Python, OOP, Algorithims, Data Structures, Graphs, Django, Hash Tables, caching</li>
                         </ul>
                     </div>
@@ -30,8 +30,8 @@ export default class Education extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li><strong>Masters</strong>: Communication - Documentary, VR, Brain Computer Interface, Bitcoin, Technical written communication</li>
-                            <li><strong>Major</strong>: Electronic Media and Film - Adobe After Effects, Premiere, Final Cut, Photoshop, Cinematography, Timelapse</li>
+                            <li><strong>M.A.</strong>: Communication - Documentary, VR, Brain Computer Interface, Bitcoin, Technical written communication</li>
+                            <li><strong>B.S.</strong>: Electronic Media and Film - Adobe After Effects, Premiere, Final Cut, Photoshop, Cinematography, Timelapse</li>
                             <li><strong>Minor</strong>: Business - Microsoft Word, Excel, Powerpoint, Accounting, Finance</li>
                             {/* <li><strong>Extra</strong>: Mascot - Hype</li> */}
                         </ul>
@@ -39,7 +39,7 @@ export default class Education extends React.Component {
                 </div>
                 <div>
                     <strong className="dateAndTitle">
-                        <span className="one">Albuquerque</span>
+                        <span className="one">Albuquerque, NM</span>
                         <span className="two">Sandia Preparatory School</span>
                         <span className="three">June 2011</span>
                     </strong>

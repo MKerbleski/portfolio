@@ -13,7 +13,7 @@ export default class Jobs extends React.Component {
                 <div>
                     <strong className="dateAndTitle">
                         <span className="one">Graduate Teaching Assistant</span>
-                        <span className="two">School of Communication</span>
+                        <span className="two">NAU School of Communication</span>
                         <span className="three">Aug 2016 - May 2018</span>
                     </strong>
                     <div className="details">
@@ -28,7 +28,7 @@ export default class Jobs extends React.Component {
                     <strong className="dateAndTitle">
                         <span className="one">360 Video Specialist</span>
                         <span className="two">
-                            <a href="https://www.facebook.com/nauivrlab/">Interactive Virtual Reality Lab</a></span>
+                            <a href="https://www.facebook.com/nauivrlab/">NAU Interactive Virtual Reality Lab</a></span>
                         <span className="three">Jan 2017 - Jun 2017</span>
                     </strong>
                     <div className="details">
@@ -58,7 +58,7 @@ export default class Jobs extends React.Component {
                             <li>Managed, scheduled, budegeted, planned, supervised for a team of 5 videographers. </li>
                             <li>Organized workflows, 
                                 {/* created backup data managment plans.  */}
-                                Corridnated among internal and external vendors.</li>
+                                 Corridnated among internal and external vendors.</li>
                         </ul>
                     </div>
                 </div>

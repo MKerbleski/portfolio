@@ -11,29 +11,29 @@ export default class Projects extends React.Component {
                 </div>
                 <div>
                     <strong className="dateAndTitle">
-                        <span className="one">Personal Website: 
-                            <a href="http://kerble.ski">http://kerble.ski</a>
+                        <span className="one">Personal Website: -  
+                            <a href="http://kerble.ski"> http://kerble.ski</a>
                         </span>
                     </strong>
                 </div>
                 <div>
                     <strong className="dateAndTitle">
                         <span className="one">
-                            <a href="https://github.com/MKerbleski/front-end-project-week" target="_blank">Stic.ky</a>
+                            <a href="https://mkerbleski.github.io/front-end-project-week/" target="_blank">Stic.ky</a>
                         </span>
                     </strong>
                     <div className="details">
                         <ul>
                             <li>Personal Data Aggregator that combines user ideas with bookmarking features from 3rd party applications</li>
                             <li>Front End: Redux, React.js, Styled Components, Axios, Ajax, RESTful API, Express, React DnD, ES6</li>
-                            <li>Back End: Arcitechure, node.js, middleware, authentication, knex, SQLite3, postgress, heroku</li>
+                            <li>Back End: Arcitechure, Node.js, middleware, authentication, Knex, SQLite3, Heroku</li>
                         </ul>
                     </div>
                 </div>
                 <div>
                     <strong className="dateAndTitle">
                         <span className="one">
-                            <a href="https://github.com/LaikaFusion/License-Plate-Game" target="_blank">License Plate Game</a>
+                            <a href="https://mkerbleski.github.io/License-Plate-Game/" target="_blank">License Plate Game</a>
                         </span>
                     </strong>
                     <div className="details">
@@ -50,9 +50,9 @@ export default class Projects extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Designed and developed a front end user experience, with websockets, for   
+                            <li>Designed and developed a front end UX, with websockets, for   
                                 <a href="https://github.com/LambdaSchool/LambdaMUD-Project/blob/master/README.md" target="_blank">
-                                 an existing Python Django backend API</a>
+                                  an existing Python Django backend API</a>
                                 </li>
                         </ul>
                     </div>
