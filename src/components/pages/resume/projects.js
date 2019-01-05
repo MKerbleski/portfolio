@@ -24,7 +24,7 @@ export default class Projects extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>A full stack Personal Data Aggregator that combines user ideas with bookmarking features from 3rd party applications</li>
+                            <li>Personal Data Aggregator that combines user ideas with bookmarking features from 3rd party applications</li>
                             <li>Front End: Redux, React.js, Styled Components, Axios, Ajax, RESTful API, Express, React DnD, ES6</li>
                             <li>Back End: Arcitechure, node.js, middleware, authentication, knex, SQLite3, postgress, heroku</li>
                         </ul>
