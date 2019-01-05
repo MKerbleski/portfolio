@@ -11,59 +11,72 @@ export default class Projects extends React.Component {
                 </div>
                 <div>
                     <strong className="dateAndTitle">
-                        <span className="one">Personal Website: <a href="http://kerble.ski">http://kerble.ski</a></span>
+                        <span className="one">Personal Website: 
+                            <a href="http://kerble.ski">http://kerble.ski</a>
+                        </span>
                     </strong>
                 </div>
                 <div>
                     <strong className="dateAndTitle">
-                        <span className="one"><a href="https://amudappthatdoesntsuck.xyz" target="_blank">Stic.ky</a></span>
+                        <span className="one">
+                            <a href="https://github.com/MKerbleski/front-end-project-week" target="_blank">Stic.ky</a>
+                        </span>
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Personal Data Aggregator</li>
-                            <li>Front End: Redux, React.js, Styled Components, Axios, Ajax, RESTful API, Express, React Drag and Drop, ES6</li>
-                            <li>Back End: Arcitechure, node.js, middleware, authentication, knex, sqlite3, postgress, heroku, </li>
+                            <li>A full stack Personal Data Aggregator that combines user ideas with bookmarking features from 3rd party applications</li>
+                            <li>Front End: Redux, React.js, Styled Components, Axios, Ajax, RESTful API, Express, React DnD, ES6</li>
+                            <li>Back End: Arcitechure, node.js, middleware, authentication, knex, SQLite3, postgress, heroku</li>
                         </ul>
                     </div>
                 </div>
                 <div>
                     <strong className="dateAndTitle">
-                        <span className="one"><a href="" target="_blank">TBD Capstone</a></span>
+                        <span className="one">
+                            <a href="https://github.com/LaikaFusion/License-Plate-Game" target="_blank">License Plate Game</a>
+                        </span>
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Collaborative website with 6 students for 5 weeks, communication, collaboration, vision, Team, from wireframes to functionall application</li>
+                            <li>One day project collaborating with 2 teammates to bring together a shared vision of the classic game.</li>
                         </ul>
                     </div>
                 </div>
                 <div>
                     <strong className="dateAndTitle">
-                        <span className="one"><a href="https://amudappthatdoesntsuck.xyz" target="_blank">MUD</a></span>
+                        <span className="one">
+                            <a href="https://amudappthatdoesntsuck.xyz" target="_blank">MUD</a>
+                        </span>
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Utilized: Websockets, Python, Django, API </li>
-                            <li>deployed on Netlify </li>
+                            <li>Designed and developed a front end user experience for 
+                                <a href="https://github.com/LambdaSchool/LambdaMUD-Project/blob/master/README.md" target="_blank">
+                                an existing Python Django backend API</a>
+                                which also needed modifications.</li>
+                            <li>Utilized: Websockets, Netlify</li>
                         </ul>
                     </div>
                 </div>
                 <div>
                     <strong className="dateAndTitle"> 
-                        <span className="one"><a href="https://mkerbleski.github.io/Conways-Life/" target="_blank">Conways Game of Life</a></span>
+                        <span className="one"><a href="https://mkerbleski.github.io/Conways-Life/" target="_blank">Cellular Automata</a></span>
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Utilized: conways game of life is a simulation that visualizes the cellular automata rules set in Conways game of life </li>
+                            <li>Developed a simulation and algorithim that visualizes the rules set in Conway's "Game of Life"</li>
                         </ul>
                     </div>
                 </div>
                 <div>
                     <strong className="dateAndTitle">
-                        <span className="one"><a href="https://mkerbleski.github.io/User-Interface-Project-Week/" target="_blank">Intro Design</a></span>
+                        <span className="one">
+                            <a href="https://mkerbleski.github.io/User-Interface-Project-Week/" target="_blank">S&J Arcitecture</a>
+                        </span>
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Utilized: HTML5, CSS, LESS, wireframes, using no Libraries, bootstrap, Dynamic, mobile design, user interface, user design</li>
+                            <li>Turned wireframes specs into a pixel-perfect, dynamic, (for mobile and desktop) UI/UX using HTML5, CSS, LESS, Javascript.</li>
                         </ul>
                     </div>
                 </div>
