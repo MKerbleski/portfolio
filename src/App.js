@@ -6,7 +6,6 @@ import { withRouter } from 'react-router'
 import { DragDropContext } from 'react-dnd';
 import { ResumePrintPage, ResumePage, WebPortfolioPage, MediaPortfolioPage, HomePage } from './pages'
 import { NavBar, Footer } from './components'
-// import { default as Footer } from './components/footer.js'
 
 class App extends React.Component {
   constructor(){
@@ -43,7 +42,7 @@ class App extends React.Component {
           <Route path="/resume" render={ResumePage} />
           <Route path="/web" component={WebPortfolioPage} />
           <Route path="/media" component={MediaPortfolioPage} />
-          <Route path="/" render={() => <HomePage openAuth={this.openAuth} />} />
+          <Route exact path="/" render={() => <HomePage openAuth={this.openAuth} />} />
         {this.state.showHeaders ? <Footer /> : null}
       </AppDiv>
     );

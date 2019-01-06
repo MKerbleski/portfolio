@@ -103,4 +103,7 @@ const ProjectsDiv = styled.div`
         /* border: 1px solid blue; */
        ${sectionHeader()}
     }
+    .details {
+        font-size: 12px;
+    }
 `

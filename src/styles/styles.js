@@ -4,6 +4,7 @@ export function sectionHeader(){
     flex-direction: row;
     justify-content: center;
     margin-top: 3px;
+    font-size: 14px;
     .left {
         float: left;
     }
@@ -15,10 +16,11 @@ export function sectionHeader(){
         display: flex;
         justify-content: flex-end;
     }
-`}
-
-export function sectionTitle(){
-    return `
+    `}
+    
+    export function sectionTitle(){
+        return `
+        font-size: 12px;
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
@@ -36,6 +38,7 @@ export function sectionContainer(){
         flex-direction: column;
         margin-top: 5px;
         width: 100%;
+        font-size: 12px;
         * {
             margin: 0;
             width: 100%;

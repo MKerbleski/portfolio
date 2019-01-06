@@ -1,25 +1,6 @@
 import React from 'react';
-import { DropTarget } from 'react-dnd'; //The HOC that brings everything together
 import styled from 'styled-components';
-
-const BasketDiv = styled.div`
-    box-sizing: border-box;
-    margin-left: 5px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    .logo {
-      box-sizing: border-box;
-      cursor: pointer;
-      font-size: 30px;
-      margin: 4px;
-      padding-right: 6px;
-      color: black;
-    }
-`
+import { DropTarget } from 'react-dnd'; //The HOC that brings everything together
 
 const Basket = (props) => (
   props.connectDropTarget(
@@ -57,3 +38,22 @@ const collect = (connect,  monitor) => ({
 });
 
 export default DropTarget('item', specObj, collect)(Basket);//HOC that combines Target
+
+const BasketDiv = styled.div`
+    box-sizing: border-box;
+    margin-left: 5px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    .logo {
+      box-sizing: border-box;
+      cursor: pointer;
+      font-size: 30px;
+      margin: 4px;
+      padding-right: 6px;
+      color: black;
+    }
+`

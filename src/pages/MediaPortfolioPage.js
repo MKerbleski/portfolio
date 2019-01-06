@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { media } from '../data/mediaObj'
-import WebTile from '../components/web-tile'
+import { WebTile } from '../components'
 
 class WebPortfolio extends React.Component {
   render(){
