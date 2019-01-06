@@ -1,17 +1,17 @@
-export function dateAndTitle(){
+export function sectionHeader(){
     return `
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 3px;
-    .one {
+    .left {
         float: left;
     }
-    .two {
+    .center {
         text-align: center;
         color: black;
     }
-    .three {
+    .right {
         display: flex;
         justify-content: flex-end;
     }

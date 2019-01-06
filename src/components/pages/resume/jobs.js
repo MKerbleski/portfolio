@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { sectionTitle, sectionContainer, dateAndTitle } from './styles';
+import { sectionTitle, sectionContainer, sectionHeader } from './styles';
 
 export default class Jobs extends React.Component {
     render(){
@@ -11,10 +11,10 @@ export default class Jobs extends React.Component {
                 </div>
                 {/* //GTA */}
                 <div>
-                    <strong className="dateAndTitle">
+                    <strong className="sectionHeader">
                         <span className="one">Graduate Teaching Assistant</span>
-                        <span className="two">NAU School of Communication</span>
-                        <span className="three">Aug 2016 - May 2018</span>
+                        <span className="center">NAU School of Communication</span>
+                        <span className="right">Aug 2016 - May 2018</span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -25,11 +25,11 @@ export default class Jobs extends React.Component {
                 </div>
                 {/* //VR Lab */}
                 <div>
-                    <strong className="dateAndTitle">
+                    <strong className="sectionHeader">
                         <span className="one">360 Video Specialist</span>
-                        <span className="two">
+                        <span className="center">
                             <a href="https://www.facebook.com/nauivrlab/">NAU Interactive Virtual Reality Lab</a></span>
-                        <span className="three">Jan 2017 - Jun 2017</span>
+                        <span className="right">Jan 2017 - Jun 2017</span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -46,12 +46,12 @@ export default class Jobs extends React.Component {
                 </div>
                 {/* //Video Manager */}
                 <div>
-                    <strong className="dateAndTitle">
+                    <strong className="sectionHeader">
                         <span className="one">Video Manager</span>
-                        <span className="two">
+                        <span className="center">
                             <a href="https://vimeo.com/nauvideo">NAU Marketing</a>
                         </span>
-                        <span className="three">May 2015 - May 2016</span>
+                        <span className="right">May 2015 - May 2016</span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -64,11 +64,11 @@ export default class Jobs extends React.Component {
                 </div>
                 {/* //Videographer */}
                 <div>
-                    <strong className="dateAndTitle">
+                    <strong className="sectionHeader">
                         <span className="one">Videographer</span>
-                        <span className="two">
+                        <span className="center">
                             <a href="https://vimeo.com/nauvideo">NAU Marketing</a></span>
-                        <span className="three">Jan 2014 - Dec 2014</span>
+                        <span className="right">Jan 2014 - Dec 2014</span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -79,10 +79,10 @@ export default class Jobs extends React.Component {
                 </div>
                 {/* //Vora */}
                 <div>
-                    <strong className="dateAndTitle">
+                    <strong className="sectionHeader">
                         <span className="one">Internship</span>
-                        <span className="two">Vora Financial Group</span>
-                        <span className="three">Oct 2012 - May 2013</span>
+                        <span className="center">Vora Financial Group</span>
+                        <span className="right">Oct 2012 - May 2013</span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -96,10 +96,10 @@ export default class Jobs extends React.Component {
                 </div>
                 {/* //VVF */}                
                 <div>
-                    <strong className="dateAndTitle">
+                    <strong className="sectionHeader">
                         <span className="one">Various Positions</span>
-                        <span className="two">Vail Valley Foundation</span>
-                        <span className="three">2011 - 2017</span>
+                        <span className="center">Vail Valley Foundation</span>
+                        <span className="right">2011 - 2017</span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -112,10 +112,10 @@ export default class Jobs extends React.Component {
                 </div>
                 {/* //Toji */}                
                 <div>
-                    <strong className="dateAndTitle">
+                    <strong className="sectionHeader">
                         <span className="one">Internship</span>
-                        <span className="two">Toji Trading</span>
-                        <span className="three">May 2011</span>
+                        <span className="center">Toji Trading</span>
+                        <span className="right">May 2011</span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -136,8 +136,8 @@ const JobsDiv = styled.div`
         /* border: 1px solid blue; */
        ${sectionTitle()}
     }
-    .dateAndTitle {
+    .sectionHeader {
         /* border: 1px solid blue; */
-        ${dateAndTitle()}
+        ${sectionHeader()}
     }
 `

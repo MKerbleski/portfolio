@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { dateAndTitle, sectionTitle, sectionContainer } from './styles';
+import { sectionHeader, sectionTitle, sectionContainer } from './styles';
 
 export default class Education extends React.Component {
     render(){
@@ -10,10 +10,10 @@ export default class Education extends React.Component {
                     <h3>Education</h3>
                 </div>
                 <div>
-                    <strong className="dateAndTitle">
-                        <span className="one">Remote</span>
-                        <a className="two" href="https://learn.lambdaschool.com/course/cs-fsw" target="_blank">Lambda School</a>
-                        <span className="three">June 2018 - Feb 2019</span>
+                    <strong className="sectionHeader">
+                        <span className="left">Remote</span>
+                        <a className="center" href="https://learn.lambdaschool.com/course/cs-fsw" target="_blank">Lambda School</a>
+                        <span className="right">June 2018 - Feb 2019</span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -23,10 +23,10 @@ export default class Education extends React.Component {
                     </div>
                 </div>
                 <div>
-                    <strong className="dateAndTitle">
-                        <span className="one">Flagstaff, AZ</span>
-                        <span className="two">Northern Arizona University</span>
-                        <span className="three">Aug 2011 - Dec 2018</span>
+                    <strong className="sectionHeader">
+                        <span className="left">Flagstaff, AZ</span>
+                        <span className="center">Northern Arizona University</span>
+                        <span className="right">Aug 2011 - Dec 2018</span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -38,10 +38,10 @@ export default class Education extends React.Component {
                     </div>
                 </div>
                 <div>
-                    <strong className="dateAndTitle">
-                        <span className="one">Albuquerque, NM</span>
-                        <span className="two">Sandia Preparatory School</span>
-                        <span className="three">June 2011</span>
+                    <strong className="sectionHeader">
+                        <span className="left">Albuquerque, NM</span>
+                        <span className="center">Sandia Preparatory School</span>
+                        <span className="right">June 2011</span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -61,8 +61,8 @@ const EducationDiv = styled.div`
         /* border: 1px solid blue; */
         ${sectionTitle()}
     }
-    .dateAndTitle {
+    .sectionHeader {
         text-decoration: none;
-       ${dateAndTitle()}
+       ${sectionHeader()}
     }
 `

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Intro from './intro'
-import Education from './education'
+import Education from './section'
 import Projects from './projects'
 import Jobs from './jobs'
 import Resume from './resume'

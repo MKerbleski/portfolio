@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { sectionTitle, sectionContainer, dateAndTitle } from './styles';
+import { sectionTitle, sectionContainer, sectionHeader } from './styles';
 
 export default class Projects extends React.Component {
     render(){
@@ -10,14 +10,14 @@ export default class Projects extends React.Component {
                     <h3>Software Projects</h3>
                 </div>
                 <div>
-                    <strong className="dateAndTitle">
+                    <strong className="sectionHeader">
                         <span className="one">Personal Website: -  
                             <a href="http://kerble.ski"> http://kerble.ski</a>
                         </span>
                     </strong>
                 </div>
                 <div>
-                    <strong className="dateAndTitle">
+                    <strong className="sectionHeader">
                         <span className="one">
                             <a href="https://mkerbleski.github.io/front-end-project-week/" target="_blank">Stic.ky</a>
                         </span>
@@ -31,7 +31,7 @@ export default class Projects extends React.Component {
                     </div>
                 </div>
                 <div>
-                    <strong className="dateAndTitle">
+                    <strong className="sectionHeader">
                         <span className="one">
                             <a href="https://mkerbleski.github.io/License-Plate-Game/" target="_blank">License Plate Game</a>
                         </span>
@@ -43,7 +43,7 @@ export default class Projects extends React.Component {
                     </div>
                 </div>
                 <div>
-                    <strong className="dateAndTitle">
+                    <strong className="sectionHeader">
                         <span className="one">
                             <a href="https://amudappthatdoesntsuck.xyz" target="_blank">MUD</a>
                         </span>
@@ -57,7 +57,7 @@ export default class Projects extends React.Component {
                     </div>
                 </div>
                 <div>
-                    <strong className="dateAndTitle"> 
+                    <strong className="sectionHeader"> 
                         <span className="one"><a href="https://mkerbleski.github.io/Conways-Life/" target="_blank">Cellular Automata</a></span>
                     </strong>
                     <div className="details">
@@ -67,7 +67,7 @@ export default class Projects extends React.Component {
                     </div>
                 </div>
                 <div>
-                    <strong className="dateAndTitle">
+                    <strong className="sectionHeader">
                         <span className="one">
                             <a href="https://mkerbleski.github.io/User-Interface-Project-Week/" target="_blank">S&J Arcitecture</a>
                         </span>
@@ -79,7 +79,7 @@ export default class Projects extends React.Component {
                     </div>
                 </div>
                 {/* <div>
-                    <strong className="dateAndTitle">
+                    <strong className="sectionHeader">
                         <span className="one">Skills in progress</span>
                     </strong>
                     <div className="details">
@@ -99,8 +99,8 @@ const ProjectsDiv = styled.div`
     .sectionTitle{
         ${sectionTitle()}
     }
-    .dateAndTitle {
+    .sectionHeader {
         /* border: 1px solid blue; */
-       ${dateAndTitle()}
+       ${sectionHeader()}
     }
 `
