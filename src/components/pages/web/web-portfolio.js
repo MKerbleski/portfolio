@@ -4,14 +4,6 @@ import { web } from './webObj'
 import WebTile from './web-tile'
 
 class WebPortfolio extends React.Component {
-  constructor(){
-    super();
-    this.state = {
-      currentProjectID: null,
-      currentProject: null,
-    }
-  }
-
   render(){
     return (
       <PortfolioDiv>

@@ -1,18 +1,9 @@
-
 import React from 'react';
 import styled from 'styled-components';
 import { media } from './mediaObj'
 import WebTile from '../web/web-tile'
 
 class WebPortfolio extends React.Component {
-  constructor(){
-    super();
-    this.state = {
-      currentProjectID: null,
-      currentProject: null,
-    }
-  }
-
   render(){
     return (
       <PortfolioDiv>

@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Title from './title.js';
 
-
 import styled from 'styled-components';
 
 class Home extends React.Component {
@@ -23,7 +22,6 @@ class Home extends React.Component {
 export default Home;
 
 const HomeDiv = styled.div`
-  ${'' /* border: 1px solid red; */}
   box-sizing: border-box;
   height: 99.5vh;
   margin: 0;
