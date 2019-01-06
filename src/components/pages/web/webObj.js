@@ -1,4 +1,4 @@
-export const webPortfolio = [
+export const web = [
     { 
         key: "sticky",
         name: "Stic.ky",
