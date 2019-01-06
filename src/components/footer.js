@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import moment from 'moment';
 import axios from 'axios'
 
-class Footer extends React.Component {
+export default class Footer extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -35,8 +35,6 @@ class Footer extends React.Component {
     )
   }
 }
-
-export default Footer;
 
 const FooterDiv = styled.div`
   ${'' /* border: 1px solid green; */}

@@ -1,10 +1,9 @@
 import React from 'react';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Ball from './ball';
 
 const Title = (props) => {
-   console.log(props)
    return (
      <TitleDiv>
          <Link className="link" to="">

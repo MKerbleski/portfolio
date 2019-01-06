@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { sectionHeader, sectionTitle, sectionContainer } from './styles';
+import { sectionHeader, sectionTitle, sectionContainer } from '../../styles/styles';
 
 export default class Education extends React.Component {
     render(){

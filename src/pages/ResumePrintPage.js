@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
-// import {Link} from 'react-router-dom';
-// import TitleTop from '../nav-bar/titleTop.js';
 import styled from 'styled-components';
-import Resume from './resume'
+import { Resume } from '../components/resume'
 
 class Print extends Component {
   constructor(props){
@@ -14,7 +12,6 @@ class Print extends Component {
 
   componentDidMount(){
     this.props.hideHeaders();
-    
   }
 
   componentDidUpdate(){

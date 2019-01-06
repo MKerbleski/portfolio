@@ -1,4 +1,4 @@
-import licensePlateGame from '../../../img/webShots/License-Plate-Game-2019-01-06-10_58_59.png'
+import licensePlateGame from '../img/webShots/License-Plate-Game-2019-01-06-10_58_59.png'
 
 export const web = [
     { 

@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import { sectionTitle, sectionContainer, sectionHeader } from './styles';
+import { sectionHeader, sectionTitle, sectionContainer } from '../../styles/styles';
 
 export default class Projects extends React.Component {
     render(){

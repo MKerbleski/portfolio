@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { web } from './webObj'
-import WebTile from './web-tile'
+import { media } from '../data/mediaObj'
+import WebTile from '../components/web-tile'
 
 class WebPortfolio extends React.Component {
   render(){
     return (
       <PortfolioDiv>
-        {web.map(item => {
+        {media.map(item => {
           return <WebTile item={item} picture={item.picture} />
         })}
       </PortfolioDiv>
