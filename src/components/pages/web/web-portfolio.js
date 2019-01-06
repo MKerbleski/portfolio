@@ -15,54 +15,33 @@ class WebPortfolio extends React.Component {
     }
   }
 
-  componentDidMount(){
-    // this.props.connnectGithub();
-  }
-
-  selectSite = e => {
-    e.preventDefault();
-    this.setState({
-      currentProjectID: e.target.id,
-      currentProject: this.props.state.githubData.find(project => +project.id === +e.target.id)
-    })
-  }
+  // selectSite = e => {
+  //   e.preventDefault();
+  //   this.setState({
+  //     currentProjectID: e.target.id,
+  //     currentProject: this.props.state.githubData.find(project => +project.id === +e.target.id)
+  //   })
+  // }
 
   render(){
     return (
       <PortfolioDiv>
-      {web.map(item => {
-        return <div className="web-tile">
-            <h1><a href={item.link}>{item.name}</a></h1>
-        </div>
-      })}
+        {web.map(item => {
+          <WebTile item={item} />
+        })}
       </PortfolioDiv>
     )
   }
 }
 
-// export default WebPortfolio;
-
-const mapStateToProps = store => {
-  return {state: store};//state is really props & store is store
-}
-
-const mapDispatchToProps = {
-  // connnectGithub
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(WebPortfolio);
+export default WebPortfolio;
 
 const PortfolioDiv = styled.div`
-  ${'' /* border: 1px solid red; */}
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  /* height: 99.5vh; */
-  overflow: auto;
-  flex-wrap: wrap;
-  .web-tile{
-    border: 1px solid red;
-    width: 100%;
-  }
+    ${'' /* border: 1px solid red; */}
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    overflow: auto;
+    flex-wrap: wrap;
 `;
