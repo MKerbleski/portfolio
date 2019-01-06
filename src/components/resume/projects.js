@@ -19,7 +19,7 @@ export default class Projects extends React.Component {
                 <div>
                     <strong className="sectionHeader">
                         <span className="one">
-                            <a href="https://mkerbleski.github.io/front-end-project-week/" target="_blank">Stic.ky</a>
+                            <a href="https://mkerbleski.github.io/front-end-project-week/" target="_blank" rel="noopener noreferrer">Stic.ky</a>
                         </span>
                     </strong>
                     <div className="details">
@@ -33,7 +33,7 @@ export default class Projects extends React.Component {
                 <div>
                     <strong className="sectionHeader">
                         <span className="one">
-                            <a href="https://mkerbleski.github.io/License-Plate-Game/" target="_blank">License Plate Game</a>
+                            <a href="https://mkerbleski.github.io/License-Plate-Game/" rel="noopener noreferrer" target="_blank">License Plate Game</a>
                         </span>
                     </strong>
                     <div className="details">
@@ -45,20 +45,20 @@ export default class Projects extends React.Component {
                 <div>
                     <strong className="sectionHeader">
                         <span className="one">
-                            <a href="https://amudappthatdoesntsuck.xyz" target="_blank">MUD</a>
+                            <a href="https://amudappthatdoesntsuck.xyz" target="_blank" rel="noopener noreferrer">MUD</a>
                         </span>
                     </strong>
                     <div className="details">
                         <ul>
                             <li>Designed and developed a front end UX, with websockets, and modified    
-                                <a href="https://github.com/LambdaSchool/LambdaMUD-Project/blob/master/README.md" target="_blank"> an existing Python Django backend API</a>
+                                <a href="https://github.com/LambdaSchool/LambdaMUD-Project/blob/master/README.md" target="_blank" rel="noopener noreferrer"> an existing Python Django backend API</a>
                                 </li>
                         </ul>
                     </div>
                 </div>
                 <div>
                     <strong className="sectionHeader"> 
-                        <span className="one"><a href="https://mkerbleski.github.io/Conways-Life/" target="_blank">Cellular Automata</a></span>
+                        <span className="one"><a href="https://mkerbleski.github.io/Conways-Life/" target="_blank" rel="noopener noreferrer">Cellular Automata</a></span>
                     </strong>
                     <div className="details">
                         <ul>
@@ -69,7 +69,7 @@ export default class Projects extends React.Component {
                 <div>
                     <strong className="sectionHeader">
                         <span className="one">
-                            <a href="https://mkerbleski.github.io/User-Interface-Project-Week/" target="_blank">S&J Arcitecture</a>
+                            <a href="https://mkerbleski.github.io/User-Interface-Project-Week/" target="_blank" rel="noopener noreferrer">S&J Arcitecture</a>
                         </span>
                     </strong>
                     <div className="details">

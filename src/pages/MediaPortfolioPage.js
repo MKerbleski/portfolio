@@ -8,7 +8,7 @@ class WebPortfolio extends React.Component {
     return (
       <PortfolioDiv>
         {media.map(item => {
-          return <WebTile item={item} picture={item.picture} />
+          return <WebTile item={item} key={item.name} />
         })}
       </PortfolioDiv>
     )

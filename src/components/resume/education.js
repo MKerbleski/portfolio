@@ -12,7 +12,7 @@ export default class Education extends React.Component {
                 <div>
                     <strong className="sectionHeader">
                         <span className="left">Remote</span>
-                        <a className="center" href="https://learn.lambdaschool.com/course/cs-fsw" target="_blank">Lambda School</a>
+                        <a className="center" href="https://learn.lambdaschool.com/course/cs-fsw" target="_blank" rel="noopener noreferrer">Lambda School</a>
                         <span className="right">June 2018 - Feb 2019</span>
                     </strong>
                     <div className="details">

@@ -5,7 +5,10 @@ import { Route } from 'react-router-dom';
 import { withRouter } from 'react-router'
 import { DragDropContext } from 'react-dnd';
 import { ResumePrintPage, ResumePage, WebPortfolioPage, MediaPortfolioPage, HomePage } from './pages'
-import { NavBar, Footer } from './components'
+import { 
+  NavBar, 
+  Footer
+ } from './components'
 
 class App extends React.Component {
   constructor(){
@@ -60,5 +63,4 @@ const AppDiv = styled.div`
     padding: 0;
 `;
 
-export default DragDropContext(HTML5Backend)(
-  withRouter(App));
+export default DragDropContext(HTML5Backend)(withRouter(App));
