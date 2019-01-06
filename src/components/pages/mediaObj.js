@@ -1,0 +1,45 @@
+export const media = [
+    { 
+        key: "tonto",
+        name: "Tonto National Monument VR",
+        link: "http://swvirtualmuseum.nau.edu/wp/Tonto_panos/Tonto-NM-pano-tour.html",
+        video: null,
+        picture: null,
+    },
+    { 
+        key: "timelapse",
+        name: "Timelapse",
+        link: "",
+        video: "there needs to be",
+        picture: null,
+    },
+    { 
+        key: "chemVR",
+        name: "Chem VR Documentary",
+        link: null,
+        video: "https://vimeo.com/209591527",
+        picture: null,
+    },
+    { 
+        key: "bbVR",
+        name: "Basketball Play ",
+        link: null,
+        video: "https://vimeo.com/214381757",
+        download: "dropbox something or other",
+        picture: null,
+    },
+    { 
+        key: "fictionVR",
+        name: "Fiction VR Film",
+        link: "",
+        video: "there needs to be",
+        picture: null,
+    },
+    { 
+        key: "fictionFilm",
+        name: "White Lies",
+        link: null,
+        video: "https://vimeo.com/115537215",
+        picture: null,
+    },
+]

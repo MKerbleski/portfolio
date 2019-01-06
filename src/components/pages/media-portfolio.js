@@ -1,32 +1,31 @@
 import React from 'react';
 import styled from 'styled-components';
-import {connnectGithub} from '../../actions';
-import {connect} from 'react-redux';
-
+import { connnectGithub } from '../../actions';
+import { connect } from 'react-redux';
 
 class MediaPortfolio extends React.Component {
-  constructor(){
-    super();
-    this.state = {
-      currentProjectID: null,
-      currentProject: null,
+    constructor(){
+        super();
+        this.state = {
+          currentProjectID: null,
+          currentProject: null,
+        }
     }
-  }
 
-  componentDidMount(){
-   // this.props.connnectGithub();
-  }
+    componentDidMount(){
+    // this.props.connnectGithub();
+    }
 
-  selectSite = e => {
-    e.preventDefault();
-    this.setState({
-      currentProjectID: e.target.id,
-      currentProject: this.props.state.githubData.filter(project => +project.id === +e.target.id
-      )
-//change to find and it wont return an array maybe
+    selectSite = e => {
+        e.preventDefault();
+        this.setState({
+          currentProjectID: e.target.id,
+          currentProject: this.props.state.githubData.filter(project => +project.id === +e.target.id
+          )
+        //change to find and it wont return an array maybe
 
-    })
-  }
+        })
+    }
 
   render(){
     return (
