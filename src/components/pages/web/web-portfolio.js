@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { connect } from 'react-redux';
 import moment from 'moment';
 import { web } from './webObj'
+import WebTile from './web-tile'
 
 class WebPortfolio extends React.Component {
   constructor(){
@@ -27,7 +28,7 @@ class WebPortfolio extends React.Component {
     return (
       <PortfolioDiv>
         {web.map(item => {
-          <WebTile item={item} />
+          return <WebTile item={item} picture={item.picture} />
         })}
       </PortfolioDiv>
     )
@@ -41,7 +42,7 @@ const PortfolioDiv = styled.div`
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
     overflow: auto;
     flex-wrap: wrap;
 `;

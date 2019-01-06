@@ -8,19 +8,34 @@ export default class WebTile extends Component {
 
         }
     }
+    clickHandler = (e) => {
+        window.open(this.props.item.link)
+    }
 
     render(){
         console.log(this.props)
+        const item = this.props.item
         return(
-            <WebTileDiv> 
-                <div style={'background'= picture} className="web-tile">
-                    <h1><a href={item.link}>{item.name}</a></h1>
-                </div>
+            <WebTileDiv onClick={this.clickHandler}> 
+                    <h1>{item.name}</h1>
             </WebTileDiv>
         )
     }
 }
 
 const WebTileDiv = styled.div`
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    background: gray;
+    width: 49%;
+    margin: 2px;
+    text-align: center;
+    color: black;
+    &:hover{
+        background: lightgray;
+        cursor: pointer;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+    }
 `

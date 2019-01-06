@@ -18,7 +18,7 @@ export const web = [
     { 
         key: "mud",
         name: "MUD",
-        link: "https://amudappthatdoesntsuck.xyz/game",
+        link: "https://amudappthatdoesntsuck.xyz/",
         github: "https://github.com/MKerbleski/LambdaMUD-Client",
         picture: null,
     },

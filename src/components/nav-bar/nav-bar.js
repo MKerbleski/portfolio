@@ -40,7 +40,7 @@ class NavBar extends Component {
         }
     }
 
-  render(props){
+  render(){
       return (
           <NavBarDiv>
                 <div className="nav-left">
@@ -49,7 +49,7 @@ class NavBar extends Component {
                   <Basket  />
                   }
                 </div>
-                <input className="nav-center" placeholder="******" type="password"></input>
+                {/* <input className="nav-center" placeholder="******" type="password" /> */}
                 <AllContactTabs className="nav-center" />
           </NavBarDiv>
       )
@@ -57,5 +57,3 @@ class NavBar extends Component {
 }
 
 export default NavBar;
-
-// https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiChbONrurcAhXph1QKHQV1C-YQjRx6BAgBEAU&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FHamburger_button&psig=AOvVaw1lPUakx0rOZ_UdjtUlNNV9&ust=1534261092973887
