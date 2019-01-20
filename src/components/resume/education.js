@@ -21,7 +21,7 @@ export default class Education extends React.Component {
                             <li><strong>Computer Science</strong>: Python, OOP, Algorithims, Data Structures, Graphs, Django, Hash Tables, caching</li>
                         </ul>
                     </div>
-                </div>
+                </div> 
                 <div>
                     <strong className="sectionHeader">
                         <span className="left">Flagstaff, AZ</span>
