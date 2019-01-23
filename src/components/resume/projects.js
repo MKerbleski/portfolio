@@ -38,7 +38,8 @@ export default class Projects extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>5 week capstone project with 5 classmates working remotly taking wireframes to deployed app. The web application is a place for employers to connect with paying prospective applicants.</li>
+                            <li>5 week capstone project with 5 classmates working remotly taking wireframes to deployed app. </li>
+                            <li>The web application is a place for employers to connect with paying prospective applicants.</li>
                         </ul>
                     </div>
                 </div>
