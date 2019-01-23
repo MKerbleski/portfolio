@@ -3,16 +3,19 @@ import styled from 'styled-components'
 
 export default class WebTile extends Component {
     clickHandler = (e) => {
-        window.open(this.props.item.link)
+        console.log(e.target.name)
+        console.log(e.target)
+        e.stopPropagation()
+        window.open(e.target.link)
     }
 
     render(){
         return(
-            <WebTileDiv onClick={this.clickHandler}> 
+            <WebTileDiv name='link' onClick={(e) => this.clickHandler(e)}> 
                     <h1>{this.props.item.name}</h1>
-                    <div className="otherlinks">
-                        {this.props.item.github ? <a href={this.props.item.github}><i className="fab fa-github"></i></a> : null}
-                    </div>
+                    {/* <div className="otherlinks">
+                        {this.props.item.github ? <i name='github' className="fab fa-github" onClick={(e) => this.clickHandler(e)}></i> : null}
+                    </div> */}
             </WebTileDiv>
         )
     }
