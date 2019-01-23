@@ -10,6 +10,9 @@ export default class WebTile extends Component {
         return(
             <WebTileDiv onClick={this.clickHandler}> 
                     <h1>{this.props.item.name}</h1>
+                    <div className="otherlinks">
+                        {this.props.item.github ? <a href={this.props.item.github}><i className="fab fa-github"></i></a> : null}
+                    </div>
             </WebTileDiv>
         )
     }
@@ -25,10 +28,11 @@ const WebTileDiv = styled.div`
     min-height: 200px;
     max-width: 400px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1);
-    &:hover{
+    &:hover {
         background: #f2f2f2;
         cursor: pointer;
         /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
