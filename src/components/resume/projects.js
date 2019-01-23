@@ -25,8 +25,8 @@ export default class Projects extends React.Component {
                     <div className="details">
                         <ul>
                             <li>Personal Data Aggregator that collects saved items from 3rd party applications</li>
-                            <li>Front End: Redux, React.js, Styled Components, Axios, Ajax, RESTful API, Node.js, Express, React DnD, ES6</li>
-                            <li>Back End: Arcitechure, Node.js, middleware, authentication, Knex, SQLite3, Heroku</li>
+                            <li>Front End: Redux, React.js, Styled Components, Axios, Ajax, React DnD, ES6</li>
+                            <li>Back End: Arcitechure, RESTful API, Express, Node.js, middleware, authentication, Knex, SQLite3, Heroku</li>
                         </ul>
                     </div>
                 </div>

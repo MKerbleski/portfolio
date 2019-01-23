@@ -12,7 +12,8 @@ class Home extends React.Component {
             <Link className="link" to="/resume">resume</Link>
             <Link className="link" to="/web">web</Link>
             <Link className="link" to="/media">media</Link>
-            <a className="link" to="http://blog.mikerble.ski">blog</a>
+            <a className="link" href="https://blog.mikerble.ski/">blog</a>
+            {/* https://kerbleski-blog.netlify.com/ */}
           </div>
         </HomeDiv>
       )

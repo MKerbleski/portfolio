@@ -9,6 +9,13 @@ export const web = [
         picture: licensePlateGame,
     },
     { 
+        key: "devProfiles",
+        name: "Developer Profiles",
+        link: "https://ecstatic-dev-profiles.netlify.com/",
+        github: "https://github.com/Lambda-School-Labs/labs9-developer-profiles",
+        picture: licensePlateGame,
+    },
+    { 
         key: "LPG",
         name: "License Plate Game",
         link: "https://mkerbleski.github.io/License-Plate-Game/",
