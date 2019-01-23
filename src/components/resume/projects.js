@@ -67,7 +67,7 @@ export default class Projects extends React.Component {
                         </ul>
                     </div>
                 </div>
-                <div>
+                {/* <div>
                     <strong className="sectionHeader">
                         <span className="one">
                             <a href="https://mkerbleski.github.io/User-Interface-Project-Week/" target="_blank" rel="noopener noreferrer">S&J Arcitecture</a>
@@ -78,7 +78,7 @@ export default class Projects extends React.Component {
                             <li>Turned wireframes into a pixel-perfect dynamic UI/UX using HTML5, CSS, LESS, Javascript.</li>
                         </ul>
                     </div>
-                </div>
+                </div> */}
                 {/* <div>
                     <strong className="sectionHeader">
                         <span className="one">Skills in progress</span>
