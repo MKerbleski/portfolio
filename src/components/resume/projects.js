@@ -19,13 +19,13 @@ export default class Projects extends React.Component {
                 <div>
                     <strong className="sectionHeader">
                         <span className="one">
-                            <a href="https://mkerbleski.github.io/front-end-project-week/" target="_blank" rel="noopener noreferrer">Stic.ky</a>
+                            <a href="https://mkerbleski.github.io/front-end-project-week/" target="_blank" rel="noopener noreferrer">Stic.ky (in progress)</a>
                         </span>
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Personal Data Aggregator that combines user ideas with bookmarking features from 3rd party applications</li>
-                            <li>Front End: Redux, React.js, Styled Components, Axios, Ajax, RESTful API, Express, React DnD, ES6</li>
+                            <li>Personal Data Aggregator that collects saved items from 3rd party applications</li>
+                            <li>Front End: Redux, React.js, Styled Components, Axios, Ajax, RESTful API, Node.js, Express, React DnD, ES6</li>
                             <li>Back End: Arcitechure, Node.js, middleware, authentication, Knex, SQLite3, Heroku</li>
                         </ul>
                     </div>
@@ -33,12 +33,12 @@ export default class Projects extends React.Component {
                 <div>
                     <strong className="sectionHeader">
                         <span className="one">
-                            <a href="https://mkerbleski.github.io/License-Plate-Game/" rel="noopener noreferrer" target="_blank">License Plate Game</a>
+                            <a href="https://ecstatic-dev-profiles.netlify.com/" rel="noopener noreferrer" target="_blank">Developer Profiles (in progress)</a>
                         </span>
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>One day project collaborating with 2 teammates to bring together a shared vision of the classic game.</li>
+                            <li>5 week capstone project with 5 classmates working remotly taking wireframes to deployed app. The web application is a place for employers to connect with paying prospective applicants.</li>
                         </ul>
                     </div>
                 </div>

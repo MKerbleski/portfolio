@@ -18,7 +18,7 @@ export default class Education extends React.Component {
                     <div className="details">
                         <ul>
                             <li><strong>Full Stack Web Development</strong>: HTML, CSS, LESS, Javascript, Node.js, Git, Database, Authentication, Testing</li>
-                            <li><strong>Computer Science</strong>: Python, OOP, Algorithims, Data Structures, Graphs, Django, Hash Tables, caching</li>
+                            <li><strong>Computer Science</strong>: Python, OOP, Algorithims, Data Structures, Graphs, Django, Hash Tables, Caching</li>
                         </ul>
                     </div>
                 </div> 
@@ -30,7 +30,7 @@ export default class Education extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li><strong>M.A.</strong> Communication - Documentary, VR, Brain Computer Interface, Bitcoin, Written communication</li>
+                            <li><strong>M.A.</strong> Communication - Documentaries, VR, Brain Computer Interface, Bitcoin, Written and Visual Communication</li>
                             <li><strong>B.S.</strong> Electronic Media and Film - Adobe After Effects, Premiere, Final Cut, Photoshop, Cinematography, Timelapse</li>
                             <li><strong>Minor</strong>: Business - Microsoft Word, Excel, Powerpoint, Accounting, Finance</li>
                             {/* <li><strong>Extra</strong>: Mascot - Hype</li> */}
@@ -45,7 +45,7 @@ export default class Education extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li><strong>High School</strong>: Eagle Scout, Newspaper Editor-in-Chief, Outdoor Leadership Program</li>
+                            <li><strong>High School</strong>: Eagle Scout, Newspaper: Editor-in-Chief, Outdoor Leadership Program, Lacrosse & Hockey: Captain</li>
                         </ul>
                     </div>
                 </div>
