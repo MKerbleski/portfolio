@@ -12,14 +12,14 @@ export default class Projects extends React.Component {
                 <div>
                     <strong className="sectionHeader">
                         <span className="one">Personal Website: -  
-                            <a href="http://kerble.ski"> http://kerble.ski</a>
+                            <a href="http://mikerble.ski"> http://mikerble.ski</a>
                         </span>
                     </strong>
                 </div>
                 <div>
                     <strong className="sectionHeader">
                         <span className="one">
-                            <a href="https://mkerbleski.github.io/front-end-project-week/" target="_blank" rel="noopener noreferrer">Stic.ky (in progress)</a>
+                            <a href="https://notes-app.xyz/welcome" rel="noopener noreferrer" target="_blank">Stic.ky (in progress)</a>
                         </span>
                     </strong>
                     <div className="details">
@@ -43,7 +43,7 @@ export default class Projects extends React.Component {
                         </ul>
                     </div>
                 </div>
-                <div>
+                {/* <div>
                     <strong className="sectionHeader">
                         <span className="one">
                             <a href="https://amudappthatdoesntsuck.xyz" target="_blank" rel="noopener noreferrer">MUD</a>
@@ -56,7 +56,7 @@ export default class Projects extends React.Component {
                                 </li>
                         </ul>
                     </div>
-                </div>
+                </div> */}
                 <div>
                     <strong className="sectionHeader"> 
                         <span className="one"><a href="https://mkerbleski.github.io/Conways-Life/" target="_blank" rel="noopener noreferrer">Cellular Automata</a></span>
