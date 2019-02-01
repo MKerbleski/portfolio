@@ -52,9 +52,9 @@ export default class Jobs extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Managed, scheduled, budegeted, planned, supervised for a team of 5 videographers. </li>
-                            <li>Organized workflows, created data managment plans, and corridnated among internal and external vendors.</li>
-                                 {/* created backup data managment plans.  */}
+                            <li>Managed, scheduled, budgeted, planned, supervised for a team of 5 videographers. </li>
+                            <li>Organized workflows, created data management plans, and coordinated among internal and external vendors.</li>
+                                 {/* created backup data management plans.  */}
                         </ul>
                     </div>
                 </div>
@@ -82,9 +82,9 @@ export default class Jobs extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Assisted in the file managment and preservation of financial records,
+                            <li>Assisted in the file management and preservation of financial records,
                                  created necessary redundancies</li>
-                            <li>Knowledge Leveraged: Asset managments, wealth managment, 
+                            <li>Knowledge Leveraged: Asset management, wealth management, 
                                 financial planning, microeconomics.</li>
                             
                         </ul>
@@ -99,9 +99,9 @@ export default class Jobs extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Various event managment positions for events throughout the 
+                            <li>Various event management positions for events throughout the 
                                 Vail Valley in Colorado.</li>
-                            <li>Knowledge Leveraged: Logistics, advanced planning, event managment, 
+                            <li>Knowledge Leveraged: Logistics, advanced planning, event management, 
                                 attention to detail, improvisation.</li>
                         </ul>
                     </div>
