@@ -28,15 +28,14 @@ export default class Jobs extends React.Component {
                     <strong className="sectionHeader">
                         <span className="one">360 Video Specialist</span>
                         <span className="center">
-                            <a target="_blank" href="https://in.nau.edu/ivr-lab/">NAU Interactive Virtual Reality Lab</a></span>
+                            <a target="_blank" rel="noopener noreferrer" href="https://in.nau.edu/ivr-lab/">NAU Interactive Virtual Reality Lab</a></span>
                         <span className="right">Jan 2017 - Jun 2017</span>
                     </strong>
                     <div className="details">
                         <ul>
                             <li>Created collaborative 360 video projects among artists, 
                                 sound editors, archeologists, computer scientists.</li>
-                            <li>Software: UE4.</li>
-                            <li>Projects: <a target="_blank" href="http://swvirtualmuseum.nau.edu/wp/Tonto_panos/Tonto-NM-pano-tour.html">Tonto National Monument (interactive)</a>, <a target="_blank" href="https://vimeo.com/209591527"> Chem VR</a>, <a target="_blank" href="https://vimeo.com/214381757"> NAU basketball (interactive)</a>, <a target="_blank" href=""> Fiction film</a>
+                            <li>Projects: <a target="_blank" rel="noopener noreferrer" href="http://swvirtualmuseum.nau.edu/wp/Tonto_panos/Tonto-NM-pano-tour.html">Tonto National Monument (interactive)</a>, <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/209591527"> Chem VR</a>, <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/214381757"> NAU basketball (interactive)</a>, <a target="_blank" href=""> Fiction film</a>
                                 </li>
                         </ul>
                     </div>
@@ -46,7 +45,7 @@ export default class Jobs extends React.Component {
                     <strong className="sectionHeader">
                         <span className="one">Video Manager</span>
                         <span className="center">
-                            <a target="_blank" href="https://vimeo.com/nauvideo">NAU Marketing</a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/nauvideo">NAU Marketing</a>
                         </span>
                         <span className="right">May 2015 - May 2016</span>
                     </strong>
@@ -63,7 +62,7 @@ export default class Jobs extends React.Component {
                     <strong className="sectionHeader">
                         <span className="one">Videographer</span>
                         <span className="center">
-                            <a target="_blank" href="https://vimeo.com/nauvideo">NAU Marketing</a></span>
+                            <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/nauvideo">NAU Marketing</a></span>
                         <span className="right">Jan 2014 - Dec 2014</span>
                     </strong>
                     <div className="details">

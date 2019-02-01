@@ -12,7 +12,7 @@ class Home extends React.Component {
             <Link className="link" to="/resume">resume</Link>
             <Link className="link" to="/web">web</Link>
             <Link className="link" to="/media">media</Link>
-            <a className="link" target="_blank" href="https://kerbleski.webflow.io">blog</a> 
+            <a className="link" rel="noopener noreferrer" target="_blank" href="https://kerbleski.webflow.io">blog</a> 
           </div>
         </HomeDiv>
       )
