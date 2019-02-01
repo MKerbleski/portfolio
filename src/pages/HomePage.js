@@ -32,12 +32,23 @@ const HomeDiv = styled.div`
   h1 {
     font-size: 13vw;
   }
+  @media (max-width: 760px){
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 100px;
+        }
   .all-links {
     ${'' /* border: 1px solid green; */}
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    /* @media (max-width: 760px){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        } */
     .link {
       ${'' /* border: 1px solid red; */}
       margin: 0 3px;
@@ -52,6 +63,9 @@ const HomeDiv = styled.div`
         background-color: black; */}
         text-decoration: underline;
       }
+      /* @media (max-width: 760px){
+            margin: 20px;
+        } */
     }
   }
   
