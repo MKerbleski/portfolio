@@ -12,12 +12,12 @@ export default class Education extends React.Component {
                 <div>
                     <strong className="sectionHeader">
                         <span className="left">Remote</span>
-                        <a className="center" href="https://learn.lambdaschool.com/course/cs-fsw" target="_blank" rel="noopener noreferrer">Lambda School</a>
+                        <a className="center" href="https://lambdaschool.com/" target="_blank" rel="noopener noreferrer">Lambda School</a>
                         <span className="right">June 2018 - Feb 2019</span>
                     </strong>
                     <div className="details">
                         <ul>
-                            <li><strong>Full Stack Web Development</strong>: HTML, CSS, LESS, Javascript, Node.js, Git, Database, Authentication, Testing</li>
+                            <li><strong>Full Stack Web Development</strong>: HTML, CSS, Javascript, Node.js, Git, Database, Authentication, Testing</li>
                             <li><strong>Computer Science</strong>: Python, OOP, Algorithims, Data Structures, Graphs, Django, Hash Tables, Caching</li>
                         </ul>
                     </div>

@@ -11,8 +11,8 @@ export default class Projects extends React.Component {
                 </div>
                 <div>
                     <strong className="sectionHeader">
-                        <span className="one">Personal Website: -  
-                            <a href="https://mikerble.ski"> http://mikerble.ski</a>
+                        <span className="one">Personal Website:  
+                            <a href="https://mikerble.ski"> https://mikerble.ski</a>
                         </span>
                     </strong>
                 </div>
@@ -43,7 +43,7 @@ export default class Projects extends React.Component {
                         </ul>
                     </div>
                 </div>
-                {/* <div>
+                <div>
                     <strong className="sectionHeader">
                         <span className="one">
                             <a href="https://amudappthatdoesntsuck.xyz" target="_blank" rel="noopener noreferrer">MUD</a>
@@ -51,15 +51,15 @@ export default class Projects extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Designed and developed a front end UX, with websockets, and modified    
-                                <a href="https://github.com/LambdaSchool/LambdaMUD-Project/blob/master/README.md" target="_blank" rel="noopener noreferrer"> an existing Python Django backend API</a>
+                            <li>Designed and developed a front end interface with websockets, and made modifications    
+                                <a href="https://github.com/LambdaSchool/LambdaMUD-Project/blob/master/README.md" target="_blank" rel="noopener noreferrer"> to an existing Python Django backend API</a>
                                 </li>
                         </ul>
                     </div>
-                </div> */}
+                </div>
                 <div>
                     <strong className="sectionHeader"> 
-                        <span className="one"><a href="https://mkerbleski.github.io/Conways-Life/" target="_blank" rel="noopener noreferrer">Cellular Automata</a></span>
+                        <span className="one"><a href="https://game-of-life-mjk.netlify.com/" target="_blank" rel="noopener noreferrer">Cellular Automata</a></span>
                     </strong>
                     <div className="details">
                         <ul>

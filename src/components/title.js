@@ -13,7 +13,6 @@ const Title = (props) => {
             <span>RBLE
               <span className="ball">
               {/* <Ball /> */}
-              .
               </span>
                    .SKI
              </span>
