@@ -19,7 +19,7 @@ export default class Projects extends React.Component {
                 <div>
                     <strong className="sectionHeader">
                         <span className="one">
-                            <a href="https://notes-app.xyz/welcome" rel="noopener noreferrer" target="_blank">Stic.ky (in progress)</a>
+                            <a href="https://notes-app.xyz/welcome" rel="noopener noreferrer" target="_blank">Sticky (in progress)</a>
                         </span>
                     </strong>
                     <div className="details">
