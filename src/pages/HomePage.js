@@ -33,11 +33,11 @@ const HomeDiv = styled.div`
     font-size: 13vw;
   }
   @media (max-width: 760px){
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            margin-top: 100px;
-        }
+      flex-direction: column;
+      justify-content: flex-start;
+      /* align-items: center; */
+      margin-top: 200px;
+  }
   .all-links {
     ${'' /* border: 1px solid green; */}
     display: flex;
