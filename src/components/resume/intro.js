@@ -32,6 +32,11 @@ const IntroDiv = styled.div`
     display: flex;
     flex-direction: row;
     margin-bottom: 8px;
+    @media (max-width: 760px){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     * {
         margin: 0;
         box-sizing: border-box;
@@ -41,13 +46,26 @@ const IntroDiv = styled.div`
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
+        @media (max-width: 760px){
+            display: none;
+        }
         ul {
             /* border: 1px solid green; */
             list-style-type: none;
                 padding: 0;
+                @media (min-width: 500px){
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
             li {
                 float: left;
                 /* border: 1px solid red; */
+                @media (min-width: 500px){
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
             }
         }
     }
@@ -56,15 +74,34 @@ const IntroDiv = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        @media (max-width: 760px){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+        }
     }
     .right {
         width: 100%;
+        @media (max-width: 760px){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
         ul {
+            padding: 0;
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             align-items: flex-end;
             list-style-type: none;
+            @media (max-width: 760px){
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
             li {
                 /* border: 1px solid red; */
                 float: right;
