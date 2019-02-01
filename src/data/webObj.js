@@ -2,9 +2,9 @@ import licensePlateGame from '../img/webShots/License-Plate-Game-2019-01-06-10_5
 
 export const web = [
     { 
-        key: "sticky",
-        name: "Stic.ky",
-        link: "http://stic.ky",
+        key: "notes-app",
+        name: "Notes-App",
+        link: "http://notes-app.xyz",
         github: null,
         picture: licensePlateGame,
     },
@@ -32,7 +32,7 @@ export const web = [
     { 
         key: "gameOfLife",
         name: "Cellular Automata",
-        link: "https://mkerbleski.github.io/Conways-Life/",
+        link: "https://game-of-life-mjk.netlify.com/",
         github: "https://github.com/MKerbleski/Conways-Life",
         picture: null,
     },

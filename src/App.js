@@ -61,7 +61,7 @@ const AppDiv = styled.div`
     justify-content: space-between;
     width: 100%;
     margin: 0;
-    padding: 0;
+    padding: 0; 
 `;
 
 export default DragDropContext(HTML5Backend)(withRouter(App));

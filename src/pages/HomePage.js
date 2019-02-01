@@ -55,4 +55,5 @@ const HomeDiv = styled.div`
       }
     }
   }
+  
 `;
