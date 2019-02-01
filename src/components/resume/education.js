@@ -18,7 +18,7 @@ export default class Education extends React.Component {
                     <div className="details">
                         <ul>
                             <li><strong>Full Stack Web Development</strong>: HTML, CSS, Javascript, Node.js, Git, Database, Authentication, Testing</li>
-                            <li><strong>Computer Science</strong>: Python, OOP, Algorithims, Data Structures, Graphs, Django, Hash Tables, Caching</li>
+                            <li><strong>Computer Science</strong>: Python, OOP, Algorithms, Data Structures, Graphs, Django, Hash Tables, Caching</li>
                         </ul>
                     </div>
                 </div> 

@@ -83,7 +83,7 @@ export default class Jobs extends React.Component {
                     <div className="details">
                         <ul>
                             <li>Assisted in the file managment and preservation of financial records,
-                                 created necessary redundencies</li>
+                                 created necessary redundancies</li>
                             <li>Knowledge Leveraged: Asset managments, wealth managment, 
                                 financial planning, microeconomics.</li>
                             

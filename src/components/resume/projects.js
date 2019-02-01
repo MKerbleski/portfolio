@@ -26,7 +26,7 @@ export default class Projects extends React.Component {
                         <ul>
                             <li>Personal Data Aggregator that collects saved items from 3rd party applications</li>
                             <li>Front End: Redux, React.js, Styled Components, Axios, Ajax, React DnD, ES6</li>
-                            <li>Back End: Arcitechure, RESTful API, Express, Node.js, middleware, authentication, Knex, SQLite3, Heroku</li>
+                            <li>Back End: RESTful API, Express, Node.js, middleware, authentication, Knex, SQLite3, Heroku</li>
                         </ul>
                     </div>
                 </div>
@@ -38,8 +38,8 @@ export default class Projects extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>5 week capstone project with 5 classmates working remotly taking wireframes to deployed app. </li>
-                            <li>The web application is a place for employers to connect with paying prospective applicants.</li>
+                            <li>This web application is a place for employers to connect with  prospective paying applicants.</li>
+                            <li>From wireframe to deployed app in 5 weeks. Worked with a team of 5 classmates all working remotely.</li>
                         </ul>
                     </div>
                 </div>
@@ -51,7 +51,7 @@ export default class Projects extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Designed and developed a front end interface with websockets, and made modifications    
+                            <li>Designed and developed a front end interface with WebSockets, and made modifications    
                                 <a href="https://github.com/LambdaSchool/LambdaMUD-Project/blob/master/README.md" target="_blank" rel="noopener noreferrer"> to an existing Python Django backend API</a>
                                 </li>
                         </ul>
@@ -63,7 +63,7 @@ export default class Projects extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Developed a simulation and algorithim that visualizes the rules set in Conway's "Game of Life"</li>
+                            <li>Developed a simulation and algorithm that visualizes the rules set in Conway's "Game of Life"</li>
                         </ul>
                     </div>
                 </div>
