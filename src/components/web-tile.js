@@ -3,8 +3,8 @@ import styled from 'styled-components'
 
 export default class WebTile extends Component {
     clickHandler = (e) => {
-        console.log(e.target.name)
-        console.log(e.target)
+        // console.log(e.target.name)
+        // console.log(e.target)
         e.stopPropagation()
         window.open(e.target.link)
     }

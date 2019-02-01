@@ -21,7 +21,7 @@ class App extends React.Component {
   }
 
   openAuth(){
-    console.log('openAuth')
+    // console.log('openAuth')
   };
 
   hideHeaders = () => {

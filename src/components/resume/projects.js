@@ -7,12 +7,12 @@ export default class Projects extends React.Component {
         return (
             <ProjectsDiv>
                 <div className="sectionTitle">
-                    <h3>Software Projects</h3>
+                    <h3>Notable Software Projects</h3>
                 </div>
                 <div>
                     <strong className="sectionHeader">
                         <span className="one">Personal Website: -  
-                            <a href="http://mikerble.ski"> http://mikerble.ski</a>
+                            <a href="https://mikerble.ski"> http://mikerble.ski</a>
                         </span>
                     </strong>
                 </div>
