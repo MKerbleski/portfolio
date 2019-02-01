@@ -7,8 +7,11 @@ const TitleTop = () => {
     <TitleDiv>
         <Link className="link" to="">
           <h1>
-            <mi>MI</mi>
-            <ke>KE</ke>RBLE.SKI</h1>
+            {/* <mi>MI</mi>
+            <ke>KE</ke> */}
+            <span className="mi">MI</span>
+            <span className="ke">KE</span>
+            RBLE.SKI</h1>
             {/* https://www.w3schools.com/howto/howto_js_draggable.asp */}
         </Link>
       </TitleDiv>
@@ -51,6 +54,14 @@ const TitleDiv = styled.div`
     }
     ke {
       color: black;
+    }
+  }
+  .ke {
+    color: black;
+    .underline {
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
 `;

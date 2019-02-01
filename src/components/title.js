@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import Ball from './ball';
+// import Ball from './ball';
 
 const Title = (props) => {
    return (
@@ -11,8 +11,11 @@ const Title = (props) => {
              <span className="mi">MI</span>
              <span className="ke">KE</span>
             <span>RBLE
-              <span className="ball"><Ball /></span>
-                   SKI
+              <span className="ball">
+              {/* <Ball /> */}
+              .
+              </span>
+                   .SKI
              </span>
            </h1>
             {/* https://www.w3schools.com/howto/howto_js_draggable.asp */}
