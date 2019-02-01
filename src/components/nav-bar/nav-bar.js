@@ -28,7 +28,7 @@ const NavBarDiv = styled.div`
           color: black;
         }
         .nav-title{
-          ${'' /* font-size: 10vh; */}
+            ${'' /* font-size: 10vh; */}
         }
     }
 `;

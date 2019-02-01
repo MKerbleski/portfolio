@@ -24,4 +24,5 @@ const PortfolioDiv = styled.div`
     justify-content: space-around;
     overflow: auto;
     flex-wrap: wrap;
+    
 `;

@@ -46,4 +46,11 @@ const WebTileDiv = styled.div`
         text-decoration: none;
         color: black;
     }
+    @media (max-width: 836px){
+        /* flex-direction: column;
+        justify-content: flex-start; */
+        /* align-items: center; */
+        max-width: 95%;
+        width: 95%;
+    }
 `
