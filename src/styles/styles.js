@@ -3,7 +3,7 @@ export function sectionHeader(){
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 3px;
+    margin-top: 5px;
     font-size: 14px;
     .left {
         float: left;

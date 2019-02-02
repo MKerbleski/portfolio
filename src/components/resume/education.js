@@ -18,7 +18,7 @@ export default class Education extends React.Component {
                     <div className="details">
                         <ul>
                             <li><strong>Full Stack Web Development</strong>: HTML, CSS, Javascript, Node.js, Git, Database, Authentication, Testing</li>
-                            <li><strong>Computer Science</strong>: Python, OOP, Algorithms, Data Structures, Graphs, Django, Hash Tables, Caching</li>
+                            <li><strong>Computer Science</strong>: C, Python, OOP, Algorithms, Data Structures, Graphs, Django, Hash Tables, Caching</li>
                         </ul>
                     </div>
                 </div> 
@@ -30,8 +30,8 @@ export default class Education extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li><strong>M.A.</strong> Communication - Documentaries, VR, Brain Computer Interface, Bitcoin Blog</li>
-                            <li><strong>B.S.</strong> Electronic Media and Film - Adobe After Effects, Premiere, Photoshop, Final Cut, Cinematography, Timelapse</li>
+                            <li><strong>M.A.</strong> Communication - Documentaries, Virtual Reality, Brain Computer Interface, Ponzi Schemes  & Bitcoin</li>
+                            <li><strong>B.S.</strong> Electronic Media and Film - After Effects, Premiere, Photoshop, Final Cut, Cinematography, Timelapse</li>
                             <li><strong>Minor</strong>: Business - Microsoft Word, Excel, Powerpoint, Accounting, Finance</li>
                             {/* <li><strong>Extra</strong>: Mascot - Hype</li> */}
                         </ul>

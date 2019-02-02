@@ -5,11 +5,11 @@ import { Intro, Education, Projects, Jobs } from './index'
 const Resume = () => {
   return <div className="resume-div">
               <ResumeDiv>
-                  <Intro />
-                  <Education />
+                  <Intro className="section" />
+                  <Education className="section" />
                   {/* <Section section={Ed} /> */}
-                  <Projects />
-                  <Jobs />
+                  <Projects className="section" />
+                  <Jobs className="section" />
               </ResumeDiv>
           </div>
 }
@@ -24,6 +24,11 @@ const ResumeDiv = styled.div `
   flex-direction: column;
   justify-content: baseline;
   align-items: center;
+  max-height: 2500px;
+  .section{
+      border: 1px solid red;
+      margin-top: 15px;
+  }
   a {
       text-decoration: none;
       color: black;

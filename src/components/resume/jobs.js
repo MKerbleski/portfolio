@@ -19,7 +19,7 @@ export default class Jobs extends React.Component {
                     <div className="details">
                         <ul>
                             <li>Delivered technical written and spoken communication to 4 classes of 
-                                10-15 students on the basic operations of editing software and filmmaking equipment.</li>
+                                10-15 students on the basic operations of video editing software and filmmaking equipment.</li>
                         </ul>
                     </div>
                 </div>
@@ -34,9 +34,8 @@ export default class Jobs extends React.Component {
                     <div className="details">
                         <ul>
                             <li>Created collaborative 360 video projects among artists, 
-                                sound editors, archeologists, computer scientists.</li>
-                            <li>Projects: <a target="_blank" rel="noopener noreferrer" href="http://swvirtualmuseum.nau.edu/wp/Tonto_panos/Tonto-NM-pano-tour.html">Tonto National Monument (interactive)</a>, <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/209591527"> Chem VR</a>, <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/214381757"> NAU basketball (interactive)</a>, <a target="_blank" href=""> Fiction film</a>
-                                </li>
+                                sound editors, archeologists & computer scientists.</li>
+                            <li>Projects: <a target="_blank" rel="noopener noreferrer" href="http://swvirtualmuseum.nau.edu/wp/Tonto_panos/Tonto-NM-pano-tour.html">Tonto National Monument (interactive website)</a>,  <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/214381757"> NAU basketball (video and interactive mobile application using UE4)</a>, <a target="_blank" rel="noopener noreferrer" href="https://vimeo.com/209591527"> Chem VR (video)</a>, Fiction film (video)</li>
                         </ul>
                     </div>
                 </div>
@@ -51,8 +50,8 @@ export default class Jobs extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Managed, scheduled, budgeted, planned, supervised for a team of 5 videographers. </li>
-                            <li>Organized workflows, created data management plans, and coordinated among internal and external vendors.</li>
+                            <li>Managed, scheduled, budgeted, planned, supervised for a team of 5 videographers.</li>
+                            <li>Organized workflows, created data management plans, and coordinated among internal teams.</li>
                                  {/* created backup data management plans.  */}
                         </ul>
                     </div>
@@ -119,6 +118,7 @@ export default class Jobs extends React.Component {
                         </ul>
                     </div>
                 </div>
+                
             </JobsDiv>
         )
     }

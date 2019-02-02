@@ -24,9 +24,9 @@ export default class Projects extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Personal Data Aggregator that collects saved items from 3rd party applications</li>
-                            <li>Front End: Redux, React.js, Styled Components, Axios, Ajax, React DnD, ES6</li>
-                            <li>Back End: RESTful API, Express, Node.js, middleware, authentication, Knex, SQLite3, Heroku</li>
+                            <li>Personal Data Aggregator that collects saved items from 3rd party applications and combines user notes.</li>
+                            <li>Front End: Redux, React, Styled Components, Axios, React DnD, ES6. </li>
+                            <li>Back End: RESTful API, Express, Node.js, middleware, Knex.js, SQLite3, PostgreSQL, Heroku</li>
                         </ul>
                     </div>
                 </div>
@@ -39,7 +39,7 @@ export default class Projects extends React.Component {
                     <div className="details">
                         <ul>
                             <li>This web application is a place for employers to connect with  prospective paying applicants.</li>
-                            <li>From wireframe to deployed app in 5 weeks. Worked with a team of 5 classmates all working remotely.</li>
+                            <li>From wireframe specifications to deployed app in 5 weeks. Worked with a team of 5 remote developers.</li>
                         </ul>
                     </div>
                 </div>
@@ -51,9 +51,9 @@ export default class Projects extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Designed and developed a front end interface with WebSockets, and made modifications    
-                                <a href="https://github.com/LambdaSchool/LambdaMUD-Project/blob/master/README.md" target="_blank" rel="noopener noreferrer"> to an existing Python Django backend API</a>
-                                </li>
+                            {/* <li>Designed and developed a front end interface with WebSockets, and made modifications <a href="https://github.com/LambdaSchool/LambdaMUD-Project/blob/master/README.md" target="_blank" rel="noopener noreferrer">to an existing Python Django backend API</a>
+                                </li> */}
+                                <li>MUD is a multi user 'dungeon' game that runs in the browser using a python/django backend API.</li><li>Websockets were utilized for real time updates on other players movements within the game.</li>
                         </ul>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ export default class Projects extends React.Component {
                     </strong>
                     <div className="details">
                         <ul>
-                            <li>Developed a simulation and algorithm that visualizes the rules set in Conway's "Game of Life"</li>
+                            <li>Developed a simulation that visualizes the set of rules in Conway's "Game of Life" algorithm.</li>
                         </ul>
                     </div>
                 </div>
