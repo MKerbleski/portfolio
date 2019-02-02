@@ -31,7 +31,7 @@ export default class Education extends React.Component {
                     <div className="details">
                         <ul>
                             <li><strong>M.A.</strong> Communication - Documentaries, VR, Brain Computer Interface, Bitcoin Blog</li>
-                            <li><strong>B.S.</strong> Electronic Media and Film - Adobe After Effects, Premiere, Final Cut, Photoshop, Cinematography, Timelapse</li>
+                            <li><strong>B.S.</strong> Electronic Media and Film - Adobe After Effects, Premiere, Photoshop, Final Cut, Cinematography, Timelapse</li>
                             <li><strong>Minor</strong>: Business - Microsoft Word, Excel, Powerpoint, Accounting, Finance</li>
                             {/* <li><strong>Extra</strong>: Mascot - Hype</li> */}
                         </ul>
