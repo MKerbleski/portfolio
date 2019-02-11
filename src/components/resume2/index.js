@@ -1,0 +1,5 @@
+export { default as Education2 } from './education2'
+export { default as Intro2 } from './intro2'
+export { default as Jobs2 } from './jobs2'
+export { default as Projects2 } from './projects2'
+export { default as Resume2 } from './resume2'
