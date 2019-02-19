@@ -57,4 +57,11 @@ export const web = [
         github: "https://github.com/MKerbleski/Hackathon-July2018",
         picture: null,
     },
+    { 
+        key: "silverScreens",
+        name: "Silver Screens",
+        link: "https://silverscreens.xyz",
+        github: "https://github.com/MKerbleski/SilverScreens",
+        picture: null,
+    },
 ]

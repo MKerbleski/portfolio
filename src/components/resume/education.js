@@ -11,8 +11,8 @@ export default class Education extends React.Component {
                 </div>
                 <div>
                     <strong className="sectionHeader">
-                        <span className="left">Remote</span>
-                        <a className="center" href="https://lambdaschool.com/" target="_blank" rel="noopener noreferrer">Lambda School</a>
+                        <span><a className="left" href="https://lambdaschool.com/" target="_blank" rel="noopener noreferrer">Lambda School</a></span>
+                        <span className="center">Remote</span>
                         <span className="right">June 2018 - Feb 2019</span>
                     </strong>
                     <div className="details">
@@ -24,23 +24,22 @@ export default class Education extends React.Component {
                 </div> 
                 <div>
                     <strong className="sectionHeader">
-                        <span className="left">Flagstaff, AZ</span>
-                        <span className="center">Northern Arizona University</span>
+                        <span className="left">Northern Arizona University</span>
+                        <span className="center">Flagstaff, AZ</span>
                         <span className="right">Aug 2011 - Dec 2018</span>
                     </strong>
                     <div className="details">
                         <ul>
                             <li><strong>M.A.</strong> Communication - Documentaries, Virtual Reality, Brain Computer Interface, Ponzi Schemes  & Bitcoin</li>
                             <li><strong>B.S.</strong> Electronic Media and Film - After Effects, Premiere, Photoshop, Final Cut, Cinematography, Timelapse</li>
-                            <li><strong>Minor</strong>: Business - Microsoft Word, Excel, Powerpoint, Accounting, Finance</li>
-                            {/* <li><strong>Extra</strong>: Mascot - Hype</li> */}
+                            <li><strong>Minor</strong>: Business - Microsoft Word, Excel, Powerpoint, Accounting, Finance <strong>Mascot</strong>: Louie The Lumberjack</li>
                         </ul>
                     </div>
                 </div>
                 <div>
                     <strong className="sectionHeader">
-                        <span className="left">Albuquerque, NM</span>
-                        <span className="center">Sandia Preparatory School</span>
+                        <span className="left">Sandia Preparatory School</span>
+                        <span className="center">Albuquerque, NM</span>
                         <span className="right">June 2011</span>
                     </strong>
                     <div className="details">
