@@ -6,7 +6,7 @@ const AllContactTabs = () => {
     <AllContactTabsDiv>
       <a className="logo" target="_blank" rel="noopener noreferrer" href="https://github.com/mkerbleski"><i className="fab fa-github"></i></a>
       <a className="logo" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/mkerbleski"><i className="fab fa-linkedin"></i></a>
-      {/* <a className="logo" target="_blank" rel="noopener noreferrer" href="https://twitter.com/kerbleski"><i className="fab fa-twitter"></i></a> */}
+      <a className="logo" target="_blank" rel="noopener noreferrer" href="https://twitter.com/kerbleski"><i className="fab fa-twitter"></i></a>
       <a className="logo" target="_blank" rel="noopener noreferrer" href="https://500px.com/mkerbleski"><i className="fab fa-500px"></i></a>
       <a className="logo" target="_blank" rel="noopener noreferrer" href="https://vimeo.com/mkerbleski"><i className="fab fa-vimeo"></i></a>
       <a className="logo" target="_blank" rel="noopener noreferrer" href="https://medium.com/@kerbleski"><i className="fab fa-medium"></i></a>
