@@ -35,7 +35,7 @@ const ResumePageDiv = styled.div `
       .print{
           padding: 5px;
           text-decoration: none;
-          :hover{
+          :hover {
               text-decoration: underline;
           }
       }
