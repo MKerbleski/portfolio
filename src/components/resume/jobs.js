@@ -31,7 +31,7 @@ export default class Jobs extends React.Component {
                     <div className="details">
                         <ul>
                             <li>Indica Labs is a quantitative pathology startup aimed at help medical professionals analze medical images to better diagnose, treat, and research.</li>
-                            <li>Tasked with implementing GraphQL into an existing React front end code base and utilize Higher Order Components to move away from redux and legacy APIs.</li>
+                            <li>Tasked with implementing GraphQL into an existing React front end code base to utilize Higher Order Components and move away from redux and legacy APIs.</li>
                         </ul>
                     </div>
                 </div>
