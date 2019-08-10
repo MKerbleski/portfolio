@@ -4,7 +4,7 @@ import HTML5Backend from 'react-dnd-html5-backend';
 import { Route } from 'react-router-dom';
 import { withRouter } from 'react-router'
 import { DragDropContext } from 'react-dnd';
-import { ResumePrintPage, ResumePage, WebPortfolioPage, MediaPortfolioPage, HomePage } from './pages'
+import { ResumePrintPage, ResumePage, WebPortfolioPage, MediaPortfolioPage, HomePage, BlogPage } from './pages'
 import { 
   NavBar, 
   Footer
@@ -45,6 +45,7 @@ class App extends React.Component {
           <Route path="/resume" render={ResumePage} />
           <Route path="/web" component={WebPortfolioPage} />
           <Route path="/media" component={MediaPortfolioPage} />
+          <Route path="/blog" render={(a) => <BlogPage a={a} />} />
           <Route exact path="/" render={() => <HomePage openAuth={this.openAuth} />} />
         {this.state.showHeaders ? <Footer /> : null}
       </AppDiv>
