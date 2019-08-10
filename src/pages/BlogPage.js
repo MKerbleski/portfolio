@@ -15,7 +15,13 @@ const blogPosts = {
         title: "second",
         link: "https://docs.google.com/document/d/1lOLDDYMaeCdlMiIV49qE5G0pLQ602_O6v-j5c-ligKE/pub?embedded=true",
         date: Date.now()
-    }
+    },
+    waffles: {
+        url: 'waffles',
+        title: "waffles",
+        link: "https://docs.google.com/document/d/e/2PACX-1vRGoEltOarq_JcDVtWINqY08kGbQacC4-smLxniND2YcllegPyOkPu7gzzSA194e_MpEoGoOc7n90lF/pub",
+        date: Date.now()
+    },
 }
 
 class BlogPage extends Component {
@@ -30,14 +36,17 @@ class BlogPage extends Component {
         console.log('this.props', this.props)
         return(
             <BlogPageDiv> 
+            <ul className="blogLinks">
+
                 {Object.keys(blogPosts).map(key => {
                     return (
-                        <div className="blogLinks">
+                        <li className="blogLink">
                             <Link to={`/blog/${blogPosts[key].url}`} >{blogPosts[key].title}</Link>
-                        </div>)
+                        </li>)
                 })}
-                <Route path={`/blog/:postTitle`} render={(a) => <div className="post">
-                    <h4>{a.match.params.postTitle}</h4>
+            </ul>
+                <Route path={`/blog/:postTitle`} render={(a) => 
+                <div className="wholePost">
                     <iframe className="post" src={blogPosts[a.match.params.postTitle].link} ></iframe>
                 </div>} />
 
@@ -50,21 +59,37 @@ class BlogPage extends Component {
 export default withRouter(BlogPage)
 
 const BlogPageDiv = styled.div`
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    padding: 5px;
     display: flex;
+    flex-direction: row;
+    align-items: space-around;
+    justify-content: space-around;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    .post{
+    .wholePost {
         border: 0;
-        position: absolute;
-        width: 99%;
-        height: 100%;
+        /* position: relative; */
+        width: 90vw;
+        /* height: 100%; */
+        overflow: hidden;
     }
-    .blogLinks{
+    .post {
+        margin: 10px;
+        position: fixed;
+        display: block;       /* iframes are inline by default */
+        /* background: #000; */
+        border: none;         /* Reset default border */
+        height: 80vh;       
+        width: 80vw;
+    }
+    .blogLinks {
+        /* border: 1px solid green; */
+        width: 10vw;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        alignItems: space-around;
+        align-items: space-around;
     }
 `
