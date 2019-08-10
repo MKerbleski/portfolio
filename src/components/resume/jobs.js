@@ -12,6 +12,31 @@ export default class Jobs extends React.Component {
                 {/* //GTA */}
                 <div>
                     <strong className="sectionHeader">
+                        <span className="one">Web Developer</span>
+                        <span className="center">Florida Blue - Blue Cross Blue Shield</span>
+                        <span className="right">April 2019 - Present</span>
+                    </strong>
+                    <div className="details">
+                        <ul>
+                            <li>Creating internal applications that provide a User Interface intended to increase efficienty of business operations and reduce errors by centralizing processes.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <strong className="sectionHeader">
+                        <span className="one">Software Engineer - Intern</span>
+                        <span className="center">Indica Labs</span>
+                        <span className="right">March 2019 - April 2019</span>
+                    </strong>
+                    <div className="details">
+                        <ul>
+                            <li>Indica Labs is a quantitative pathology startup aimed at help medical professionals analze medical images to better diagnose, treat, and research.</li>
+                            <li>Tasked with implementing GraphQL into an existing React front end code base to utilize Higher Order Components and move away from redux and legacy APIs.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <strong className="sectionHeader">
                         <span className="one">Graduate Teaching Assistant</span>
                         <span className="center">NAU School of Communication</span>
                         <span className="right">Aug 2016 - May 2018</span>
