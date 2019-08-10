@@ -5,22 +5,17 @@ import { withRouter } from 'react-router'
 
 const blogPosts = {
     this: {
-        url: 'this',
         title: "this is a test",
         link: "https://docs.google.com/document/d/e/2PACX-1vQD28DlTzy5FNFZcZDXIvS0262REST5lm8dUsQqQLpi7vYAolMDgWWrA1v4PLDtVFgF8JC4ejQwMK6f/pub?embedded=true",
         date: Date.now()
     },
-    second: {
-        url: 'second',
-        title: "second",
-        link: "https://docs.google.com/document/d/1lOLDDYMaeCdlMiIV49qE5G0pLQ602_O6v-j5c-ligKE/pub?embedded=true",
-        date: Date.now()
-    },
     waffles: {
-        url: 'waffles',
         title: "waffles",
         link: "https://docs.google.com/document/d/e/2PACX-1vRGoEltOarq_JcDVtWINqY08kGbQacC4-smLxniND2YcllegPyOkPu7gzzSA194e_MpEoGoOc7n90lF/pub",
         date: Date.now()
+    },
+    vrWorthEmulating: {
+        link: "https://docs.google.com/document/d/e/2PACX-1vQUdPPAlzQE4sAmjj7OrxnEqW6nGTwIl7iEFTlOn1zc8Ymo7NKN-M8EqRfG7-qkO1nXLJBd3uPmULXd/pub",
     },
 }
 
@@ -28,7 +23,6 @@ class BlogPage extends Component {
     constructor(props){
         super(props)
         this.state = {
-
         }
     }
 
@@ -37,11 +31,12 @@ class BlogPage extends Component {
         return(
             <BlogPageDiv> 
             <ul className="blogLinks">
+                <h4>Posts</h4>  
 
                 {Object.keys(blogPosts).map(key => {
                     return (
                         <li className="blogLink">
-                            <Link to={`/blog/${blogPosts[key].url}`} >{blogPosts[key].title}</Link>
+                            {this.props.location.pathname.includes(key) ? '-> ' : null}<Link to={`/blog/${key}`} >{key}</Link>
                         </li>)
                 })}
             </ul>

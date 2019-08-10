@@ -15,7 +15,7 @@ export default class Intro extends React.Component {
                 </div>
                 <div className="right">
                     <ul>
-                        <li><a href="mailto:michaelkerbleski@google.com">michaelkerbleski@google.com</a></li>
+                        <li><a href="mailto:michaelkerbleski@google.com">michaelkerbleski@gmail.com</a></li>
                         <li><a href="tel:1-520-333-6271">520-333-6271</a></li>
                         <li><a href="https://mikerble.ski">https://mikerble.ski</a></li>
                     </ul>
