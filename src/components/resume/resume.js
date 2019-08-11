@@ -6,10 +6,10 @@ const Resume = () => {
   return <div className="resume-div">
               <ResumeDiv>
                   <Intro className="section" />
+                  <Jobs className="section" />
                   <Education className="section" />
                   {/* <Section section={Ed} /> */}
                   <Projects className="section" />
-                  <Jobs className="section" />
               </ResumeDiv>
           </div>
 }

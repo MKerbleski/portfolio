@@ -47,7 +47,7 @@ const FooterDiv = styled.div`
   padding: 5px 0;
   background: white;
   bottom: 0;
-  position: absolute;
+  position: fixed;
   .top {
     box-sizing: border-box;
     ${'' /* border: 1px solid red; */}

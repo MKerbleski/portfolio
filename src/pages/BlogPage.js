@@ -31,6 +31,7 @@ class BlogPage extends Component {
     }
 
     componentDidMount(){
+        //https://sheetsu.com/dashboard/sheets
         axios.get('https://sheetsu.com/apis/v1.0bu/2300c8af088e').then(res => {
             this.setState({
                 blogPosts: res.data
