@@ -2,8 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { media } from '../data/mediaObj'
 import { WebTile } from '../components'
+import { connect } from 'react-redux';
+import { updateLogs } from '../redux/actions.js'
 
 class WebPortfolio extends React.Component {
+
   render(){
     return (
       <PortfolioDiv>
@@ -15,13 +18,17 @@ class WebPortfolio extends React.Component {
   }
 }
 
-export default WebPortfolio;
+const mapStateToProps = state => {
+  return {state};
+}
+
+export default connect(mapStateToProps, {updateLogs})(WebPortfolio)
 
 const PortfolioDiv = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-around;
-    overflow: auto;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  overflow: auto;
+  flex-wrap: wrap;
 `;

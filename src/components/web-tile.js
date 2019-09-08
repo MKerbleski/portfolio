@@ -1,9 +1,17 @@
 import React , { Component } from 'react'
 import styled from 'styled-components'
+import { connect } from 'react-redux';
+import { updateLogs } from '../redux/actions.js'
 
-export default class WebTile extends Component {
+class WebTile extends Component {
     clickHandler = (item) => {
-        window.open(item)
+        window.open(item.link)
+        const log = {
+            time: Date.now(),
+            action: `click`,
+            component: `${item.name}`
+        }
+        this.props.updateLogs(log)
     }
 
     render(){
@@ -12,7 +20,7 @@ export default class WebTile extends Component {
             <WebTileDiv 
                 name='link' 
                 onClick={() => {
-                    this.clickHandler(item.link)
+                    this.clickHandler(item)
                 }}> 
                     <h1>{item.name}</h1>
                     {/* <div className="otherlinks">
@@ -22,6 +30,12 @@ export default class WebTile extends Component {
         )
     }
 }
+
+const mapStateToProps = state => {
+    return {state};
+  }
+  
+  export default connect(mapStateToProps, {updateLogs})(WebTile)
 
 const WebTileDiv = styled.div`
     background: white;
