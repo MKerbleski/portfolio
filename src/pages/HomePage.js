@@ -9,18 +9,13 @@ class Home extends React.Component {
   }
 
   startFade = (e) => {
-    console.log('hi', this.state.count)
     e.target.hidden = true
     this.setState({count: this.state.count+1})
   }
 
-  bringBack = (e) => {
-    e.target.style.background= "white"
-  }
-
   render(){
       return (
-        <HomeDiv >
+        <HomeDiv style={{alignItems: `${this.state.count ===5 ? 'center': null}`}}>
           <h1 onMouseLeave={(e) => this.startFade(e)} className="dark name">MICHAEL</h1>
           <h1 onMouseLeave={(e) => this.startFade(e)} className="white name">KERBLE.SKI</h1>
           <div className="all-links">
@@ -28,7 +23,7 @@ class Home extends React.Component {
             <Link onMouseLeave={(e) => this.startFade(e)} className="link" to="/web">web</Link>
             <Link onMouseLeave={(e) => this.startFade(e)} className="link" to="/media">media</Link>
           </div>
-          {this.state.count === 5 && <iframe width="560" height="315" src="https://www.youtube.com/embed/rweNNtFJAEk" frameBorder="0" allow="accelerometer; autoPlay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>}
+          {this.state.count === 5 && <iframe height="90%" width="90%" src="https://www.youtube.com/embed/rweNNtFJAEk" frameBorder="0" allow="accelerometer; autoPlay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>}
         </HomeDiv>
       )
   }
@@ -38,17 +33,13 @@ export default Home;
 
 const HomeDiv = styled.div`
   box-sizing: border-box;
-  height: 99.5vh;
+  height: 87vh;
+  width: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background: white;
-  opacity: 1;
-  transition: opacity 2s ease-out;
-  .fade {
-    opacity: 0;
-  }
   h1 {
     font-size: 13vw;
   }
