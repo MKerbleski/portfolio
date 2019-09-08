@@ -1,35 +1,52 @@
 import React from 'react';
 import styled from 'styled-components';
+import { connect } from 'react-redux';
+import { updateLogs } from '../../redux/actions.js'
 
-const AllContactTabs = () => {
-  return (
-    <AllContactTabsDiv>
-      <a className="logo" target="_blank" rel="noopener noreferrer" href="https://github.com/mkerbleski">
+class AllContactTabs extends React.Component {
+  trackClick(name){
+    const log = {
+      time: Date.now(),
+      action: `click`,
+      component: `${name}`
+    }
+    this.props.updateLogs(log)
+  }
+
+  render(){
+    return (
+      <AllContactTabsDiv>
+      <a onClick={(e) => this.trackClick('github')} className="logo" target="_blank" rel="noopener noreferrer" href="https://github.com/mkerbleski">
         <i className="fab fa-github"></i>
       </a>
-      <a className="logo" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/mkerbleski">
+      <a onClick={(e) => this.trackClick('linkedin')} className="logo" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/mkerbleski">
         <i className="fab fa-linkedin"></i>
       </a>
-      <a className="logo" target="_blank" rel="noopener noreferrer" href="https://twitter.com/kerbleski">
+      <a onClick={(e) => this.trackClick('twitter')} name="twitter" className="logo" target="_blank" rel="noopener noreferrer" href="https://twitter.com/kerbleski">
         <i className="fab fa-twitter"></i>
       </a>
-      <a className="logo" target="_blank" rel="noopener noreferrer" href="https://500px.com/mkerbleski">
+      <a onClick={(e) => this.trackClick('500px')} className="logo" target="_blank" rel="noopener noreferrer" href="https://500px.com/mkerbleski">
         <i className="fab fa-500px"></i>
       </a>
-      <a className="logo" target="_blank" rel="noopener noreferrer" href="https://vimeo.com/mkerbleski">
+      <a onClick={(e) => this.trackClick('vimeo')} className="logo" target="_blank" rel="noopener noreferrer" href="https://vimeo.com/mkerbleski">
         <i className="fab fa-vimeo"></i>
       </a>
-      <a className="logo" target="_blank" rel="noopener noreferrer" href="https://medium.com/@kerbleski">
+      <a onClick={(e) => this.trackClick('medium')} className="logo" target="_blank" rel="noopener noreferrer" href="https://medium.com/@kerbleski">
         <i className="fab fa-medium"></i>
       </a>
-      <a className="logo" target="_blank" rel="noopener noreferrer" href="https://angel.co/kerbleski">
+      <a onClick={(e) => this.trackClick('angel')} className="logo" target="_blank" rel="noopener noreferrer" href="https://angel.co/kerbleski">
         <i className="fab fa-angellist"></i>
       </a>
     </AllContactTabsDiv>
   )
 }
+}
 
-export default AllContactTabs;
+const mapStateToProps = state => {
+  return {state};
+}
+
+export default connect(mapStateToProps, {updateLogs})(AllContactTabs)
 
 const AllContactTabsDiv = styled.div`
     ${'' /* border: 1px solid red; */}
