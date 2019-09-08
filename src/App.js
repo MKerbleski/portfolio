@@ -9,6 +9,9 @@ import {
   NavBar, 
   Footer
  } from './components'
+ import {connect} from 'react-redux';
+import { updateLogs, createSession, sendLogs } from './redux/actions.js'
+import uuidv4 from 'uuid/v4'
 
 class App extends React.Component {
   constructor(){
@@ -20,9 +23,17 @@ class App extends React.Component {
     }
   }
 
-  openAuth(){
-    // console.log('openAuth')
-  };
+  componentDidMount(){
+    if(localStorage.getItem('uuid')){
+      let id = localStorage.getItem('uuid')
+      this.props.createSession(id)
+    } else {
+      let id = uuidv4()
+      console.log('id', id)
+      localStorage.setItem(`uuid`, id)
+      this.props.createSession(id)
+    }
+  }
 
   hideHeaders = () => {
     this.setState({
@@ -36,9 +47,28 @@ class App extends React.Component {
     })
   }
 
+  leftApp = () => {
+    const log = {
+      time: Date.now(),
+      action: 'exit',
+      component: 'app'
+    }
+    this.props.updateLogs(log)
+    this.props.sendLogs(this.props.state)
+  }
+
+  returnToApp = () => {
+    const log = {
+      time: Date.now(),
+      action: 'enter',
+      component: 'app'
+    }
+    this.props.updateLogs(log)
+  }
+
   render() {
     return (
-      <AppDiv>
+      <AppDiv onMouseLeave={(e) => this.leftApp(e)} onMouseEnter={(e) => this.returnToApp(e)}>
         {this.state.showHeaders ? <NavBar /> : null}
           <Route exact path="/print" render={() => {
             return <ResumePrintPage hideHeaders={this.hideHeaders} showHeaders={this.showHeaders}/>}} />
@@ -64,4 +94,8 @@ const AppDiv = styled.div`
     padding: 0; 
 `;
 
-export default DragDropContext(HTML5Backend)(withRouter(App));
+const mapStateToProps = state => {
+  return {state};
+}
+
+export default connect(mapStateToProps, {updateLogs, createSession, sendLogs})(DragDropContext(HTML5Backend)(withRouter(App)));

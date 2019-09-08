@@ -1,27 +1,29 @@
-import uuid from 'uuid/v1'
+import axios from 'axios'
 
-// export const sendLogs = (id) => {
-//     return function(dispatch){
-//         dispatch({type: DELETING_NOTE})
-//         axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/notes/${id}`, getAuthHeader()).then(res => {
-//             dispatch({type: NOTE_DELETED})
-//             dispatch(getDeletedNotes())
-//         }).catch(err => {
-//             console.log("error deleting note", err.message)
-//             dispatch({type: ERROR_DELETING_NOTE})
-//         })
-//     }
-// }
+export const UPDATE_LOGS = 'UPDATE_LOGS';
+export const CREATE_SESSION = 'CREATE_SESSION';
+export const ERROR = 'ERROR';
 
-// export const updateLogs = () => {
-//     return function(dispatch){
-//         dispatch({type: UPDATE_LOGS})
-//     }
-// }
+export const sendLogs = (data) => {
+    return function(dispatch){
+        axios.post(`${process.env.REACT_APP_ANALYTICS_URL}`, data).then(res => {
+          }).catch(err => {
+            console.log('err')
+          })
+    }
+}
 
-// export const createSession = () => {
-//     return function(dispatch){
+export const updateLogs = (log) => {
+    return function(dispatch){
+        dispatch({type: UPDATE_LOGS, payload: log})
+    }
+}
 
-//         dispatch({type: CREATE_SESSION})
-//     }
-// }
+export const createSession = (uuid) => {
+    return function(dispatch){
+        dispatch({type: CREATE_SESSION, payload: {
+            uuid: uuid,
+            startTime: Date.now(),
+        }})
+    }
+}

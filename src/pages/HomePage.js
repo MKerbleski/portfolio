@@ -1,36 +1,44 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { Title } from '../components';
-import {connect} from 'react-redux';
-import axios from 'axios'
-
-const tracker = []
+import  Video  from '../components/video.js';
+import { connect } from 'react-redux';
+import { updateLogs } from '../redux/actions.js'
 
 class Home extends React.Component {
   state = {
     count: 0,
+    video: false
   }
 
   componentWillMount = () => {
     const log = {
       time: Date.now(),
-      action: 'mount',
+      action: 'enter',
       component: 'home'
     }
-    tracker.push(log)
+    this.props.updateLogs(log)
   }
 
-  startFade = (e) => {
+  dropElement = (e, name) => {
     e.target.hidden = true
     
     const log = {
       time: Date.now(),
-      action: `Count: ${this.state.count+1}`,
-      component: 'home'
+      action: `hide`,
+      component: `${e.target.name || name}`
     }
-    tracker.push(log)
+    this.props.updateLogs(log)
     this.setState({count: this.state.count+1})
+  }
+
+  trackVideo = (action) => {
+    const log = {
+      time: Date.now(),
+      action: `${action}`,
+      component: 'video'
+    }
+    this.props.updateLogs(log)
   }
 
   componentWillUnmount = () => {
@@ -39,52 +47,32 @@ class Home extends React.Component {
       action: 'unmount',
       component: 'home'
     }
-    tracker.push(log)
-  }
-
-  componentWillUpdate(){
-    console.log('update', this.state.count)
-    if(this.state.count >= 4 ){
-      axios.post('http://localhost:4000/portfolio', {tracker}).then(res => {
-        console.log('res', res)
-        axios.get('http://localhost:4000/portfolio').then(res => {
-          console.log('res', res)
-        }).catch(err => {
-          console.log('err', err)
-        })
-      }).catch(err => {
-        console.log('err', err)
-      })
-    }
+    this.props.updateLogs(log)
   }
 
   render(){
-    console.log('tracker', tracker)
       return (
         <HomeDiv style={{alignItems: `${this.state.count ===5 ? 'center': null}`}}>
-          <h1 onMouseLeave={(e) => this.startFade(e)} className="dark name">MICHAEL</h1>
-          <h1 onMouseLeave={(e) => this.startFade(e)} className="white name">KERBLE.SKI</h1>
+          <h1 onMouseLeave={(e) => this.dropElement(e, 'michael')} className="dark name">MICHAEL</h1>
+          <h1 onMouseLeave={(e) => this.dropElement(e, 'kerbleski')} className="white name">KERBLE.SKI</h1>
           <div className="all-links">
-            <Link onMouseLeave={(e) => this.startFade(e)} className="link" to="/resume">resume</Link>
-            <Link onMouseLeave={(e) => this.startFade(e)} className="link" to="/web">web</Link>
-            <Link onMouseLeave={(e) => this.startFade(e)} className="link" to="/media">media</Link>
+            <Link name="resume" onMouseLeave={(e) => this.dropElement(e)} className="link" to="/resume">resume</Link>
+            <Link name="web" onMouseLeave={(e) => this.dropElement(e)} className="link" to="/web">web</Link>
+            <Link name="media" onMouseLeave={(e) => this.dropElement(e)} className="link" to="/media">media</Link>
           </div>
-          {this.state.count === 5 && <iframe height="90%" width="90%" src="https://www.youtube.com/embed/rweNNtFJAEk" frameBorder="0" allow="accelerometer; autoPlay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>}
+          {this.state.count === 5 && <Video />}
         </HomeDiv>
       )
   }
 }
 
 
-// const mapStateToProps = store => {
-//   return {store: store};
-// }
+const mapStateToProps = state => {
+  return {state};
+}
 
-// const mapDispatchToProps = {
-// }
-
-// export default connect(mapStateToProps, mapDispatchToProps)(Home)
-export default Home;
+export default connect(mapStateToProps, {updateLogs})(Home)
+// export default Home;
 
 const HomeDiv = styled.div`
   box-sizing: border-box;

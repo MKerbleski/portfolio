@@ -4,24 +4,24 @@ import { Route, Link } from 'react-router-dom';
 import { withRouter } from 'react-router'
 import axios from 'axios'
 
-const blogPosts = {
-    this: {
-        title: "this is a test",
-        link: "https://docs.google.com/document/d/e/2PACX-1vQD28DlTzy5FNFZcZDXIvS0262REST5lm8dUsQqQLpi7vYAolMDgWWrA1v4PLDtVFgF8JC4ejQwMK6f/pub?embedded=true",
-        date: Date.now()
-    },
-    waffles: {
-        title: "waffles",
-        link: "https://docs.google.com/document/d/e/2PACX-1vRGoEltOarq_JcDVtWINqY08kGbQacC4-smLxniND2YcllegPyOkPu7gzzSA194e_MpEoGoOc7n90lF/pub",
-        date: Date.now()
-    },
-    vrWorthEmulating: {
-        link: "https://docs.google.com/document/d/e/2PACX-1vQUdPPAlzQE4sAmjj7OrxnEqW6nGTwIl7iEFTlOn1zc8Ymo7NKN-M8EqRfG7-qkO1nXLJBd3uPmULXd/pub",
-    },
-    guess: {
-        link: "https://docs.google.com/document/d/e/2PACX-1vR9QN9kVs_6dqlhePT4H888m9eqsqdpyS5xWd4v9LTrmBUdiYSwjeXh6OgBX9ydnJt-9__ThQNx7pOY/pub",
-    },
-}
+// const blogPosts = {
+//     this: {
+//         title: "this is a test",
+//         link: "https://docs.google.com/document/d/e/2PACX-1vQD28DlTzy5FNFZcZDXIvS0262REST5lm8dUsQqQLpi7vYAolMDgWWrA1v4PLDtVFgF8JC4ejQwMK6f/pub?embedded=true",
+//         date: Date.now()
+//     },
+//     waffles: {
+//         title: "waffles",
+//         link: "https://docs.google.com/document/d/e/2PACX-1vRGoEltOarq_JcDVtWINqY08kGbQacC4-smLxniND2YcllegPyOkPu7gzzSA194e_MpEoGoOc7n90lF/pub",
+//         date: Date.now()
+//     },
+//     vrWorthEmulating: {
+//         link: "https://docs.google.com/document/d/e/2PACX-1vQUdPPAlzQE4sAmjj7OrxnEqW6nGTwIl7iEFTlOn1zc8Ymo7NKN-M8EqRfG7-qkO1nXLJBd3uPmULXd/pub",
+//     },
+//     guess: {
+//         link: "https://docs.google.com/document/d/e/2PACX-1vR9QN9kVs_6dqlhePT4H888m9eqsqdpyS5xWd4v9LTrmBUdiYSwjeXh6OgBX9ydnJt-9__ThQNx7pOY/pub",
+//     },
+// }
 
 class BlogPage extends Component {
     constructor(props){
@@ -59,7 +59,7 @@ class BlogPage extends Component {
                         </ul>
                             <Route path={`/blog/:postTitle`} render={(a) => 
                             <div className="wholePost">
-                                <iframe className="post" src={this.state.blogPosts.filter(each => each.keyword === a.match.params.postTitle)[0].url} ></iframe>
+                                <iframe className="post" title='title' src={this.state.blogPosts.filter(each => each.keyword === a.match.params.postTitle)[0].url} ></iframe>
                             </div>} />
                     </React.Fragment>
                 : null}
