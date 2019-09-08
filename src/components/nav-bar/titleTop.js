@@ -42,7 +42,7 @@ const TitleDiv = styled.div`
     }
   }
   h1 {
-    margin: 10px;
+    margin: 5px 12px;
     color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
