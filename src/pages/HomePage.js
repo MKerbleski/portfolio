@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import  Video  from '../components/video.js';
 import { connect } from 'react-redux';
 import { updateLogs } from '../redux/actions.js'
+import { withRouter } from 'react-router'
 
 class Home extends React.Component {
   state = {
@@ -50,6 +51,12 @@ class Home extends React.Component {
     this.props.updateLogs(log)
   }
 
+  componentWillUpdate(){
+    if(this.state.count === 5){
+      this.props.history.push('/demo')
+    }
+  }
+
   render(){
       return (
         <HomeDiv style={{alignItems: `${this.state.count ===5 ? 'center': null}`}}>
@@ -71,7 +78,7 @@ const mapStateToProps = state => {
   return {state};
 }
 
-export default connect(mapStateToProps, {updateLogs})(Home)
+export default withRouter(connect(mapStateToProps, {updateLogs})(Home))
 // export default Home;
 
 const HomeDiv = styled.div`
