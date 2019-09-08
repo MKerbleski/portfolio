@@ -11,7 +11,7 @@ import {
  } from './components'
  import Video from './components/video.js'
  import {connect} from 'react-redux';
-import { updateLogs, createSession, sendLogs } from './redux/actions.js'
+import { updateLogs, createSession, sendLogs, addToSession } from './redux/actions.js'
 import uuidv4 from 'uuid/v4'
 
 class App extends React.Component {
@@ -48,7 +48,15 @@ class App extends React.Component {
     })
   }
 
-  leftApp = () => {
+  leftApp = async () => {
+    if(this.props.location.pathname === '/demo' && !localStorage.getItem(`name`)){
+      const name = await prompt('Wait! Thanks for stopping by, can I ask your name?')
+      localStorage.setItem(`name`, name)
+      if(name){
+        alert('Thanks! Feel free to connect if you would like to chat.')
+        await this.props.addToSession(name)
+      }
+    }
     const log = {
       time: Date.now(),
       action: 'exit',
@@ -102,4 +110,4 @@ const mapStateToProps = state => {
   return {state};
 }
 
-export default DragDropContext(HTML5Backend)(withRouter(connect(mapStateToProps, {updateLogs, createSession, sendLogs})(App)));
+export default DragDropContext(HTML5Backend)(withRouter(connect(mapStateToProps, {updateLogs, createSession, sendLogs, addToSession })(App)));

@@ -1,6 +1,7 @@
 import {   
     UPDATE_LOGS,
     CREATE_SESSION,
+    ADD_NAME_TO_SESSION,
 } from './actions';
 
 const initialState = {    
@@ -18,6 +19,10 @@ const reducer = (state=initialState, action) => {
         case CREATE_SESSION:
             return Object.assign({}, state, {
                 session: action.payload,
+            })
+        case ADD_NAME_TO_SESSION:
+            return Object.assign({}, state, {
+                session: {...state.session, name: action.payload},
             })
         default: 
             return state;

@@ -2,6 +2,7 @@ import axios from 'axios'
 
 export const UPDATE_LOGS = 'UPDATE_LOGS';
 export const CREATE_SESSION = 'CREATE_SESSION';
+export const ADD_NAME_TO_SESSION = 'ADD_NAME_TO_SESSION';
 export const ERROR = 'ERROR';
 
 export const sendLogs = (data) => {
@@ -25,5 +26,10 @@ export const createSession = (uuid) => {
             uuid: uuid,
             startTime: Date.now(),
         }})
+    }
+}
+export const addToSession = (name) => {
+    return function(dispatch){
+        dispatch({type: ADD_NAME_TO_SESSION, payload: name})
     }
 }
