@@ -1,20 +1,48 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Intro, Education, Projects, Jobs } from './index'
+import { connect } from 'react-redux';
+import { updateLogs } from '../../redux/actions.js'
 
-const Resume = () => {
-  return <div className="resume-div">
-              <ResumeDiv>
-                  <Intro className="section" />
-                  <Jobs className="section" />
-                  <Education className="section" />
-                  {/* <Section section={Ed} /> */}
-                  <Projects className="section" />
-              </ResumeDiv>
-          </div>
+class Resume extends React.Component {
+    componentDidMount(){
+        const log = {
+            time: Date.now(),
+            action: `mount`,
+            component: `resume`
+          }
+          this.props.updateLogs(log)
+    }
+
+    componentWillUnmound(){
+        const log = {
+            time: Date.now(),
+            action: `unmount`,
+            component: `resume`
+          }
+          this.props.updateLogs(log)
+    }
+    
+    render(){
+        return (
+            <div className="resume-div">
+                <ResumeDiv>
+                    <Intro className="section" />
+                    <Jobs className="section" />
+                    <Education className="section" />
+                    {/* <Section section={Ed} /> */}
+                    <Projects className="section" />
+                </ResumeDiv>
+            </div>
+        )
+    }
 }
 
-export default Resume;
+const mapStateToProps = state => {
+    return {state};
+  }
+  
+export default connect(mapStateToProps, {updateLogs})(Resume)
 
 const ResumeDiv = styled.div `
   max-width: 800px;
