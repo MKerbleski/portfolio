@@ -32,7 +32,6 @@ class Home extends React.Component {
     this.props.updateLogs(log)
     this.setState({count: this.state.count+1}, () => {
       if(this.state.count === 5){
-        console.log('push')
         this.props.history.push('/demo')
       }
     })
@@ -57,7 +56,6 @@ class Home extends React.Component {
   }
 
   render(){
-    console.log('this.state.count', this.state.count)
       return (
         <HomeDiv>
           <h1 onMouseLeave={(e) => this.dropElement(e, 'michael')} className="dark name">MICHAEL</h1>

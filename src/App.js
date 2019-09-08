@@ -4,15 +4,25 @@ import HTML5Backend from 'react-dnd-html5-backend';
 import { Route } from 'react-router-dom';
 import { withRouter } from 'react-router'
 import { DragDropContext } from 'react-dnd';
-import { ResumePrintPage, ResumePage, WebPortfolioPage, MediaPortfolioPage, HomePage, BlogPage } from './pages'
+import {connect} from 'react-redux';
+import uuidv4 from 'uuid/v4'
+
+import { 
+  ResumePrintPage, 
+  ResumePage, 
+  WebPortfolioPage, 
+  MediaPortfolioPage, 
+  HomePage, 
+  BlogPage 
+} from './pages'
+
 import { 
   NavBar, 
   Footer
- } from './components'
- import Video from './components/video.js'
- import {connect} from 'react-redux';
+} from './components'
+
+import Video from './components/video.js'
 import { updateLogs, createSession, sendLogs, addToSession } from './redux/actions.js'
-import uuidv4 from 'uuid/v4'
 
 class App extends React.Component {
   constructor(){
@@ -30,7 +40,6 @@ class App extends React.Component {
       this.props.createSession(id)
     } else {
       let id = uuidv4()
-      console.log('id', id)
       localStorage.setItem(`uuid`, id)
       this.props.createSession(id)
     }
