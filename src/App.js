@@ -98,4 +98,4 @@ const mapStateToProps = state => {
   return {state};
 }
 
-export default connect(mapStateToProps, {updateLogs, createSession, sendLogs})(DragDropContext(HTML5Backend)(withRouter(App)));
+export default DragDropContext(HTML5Backend)(withRouter(connect(mapStateToProps, {updateLogs, createSession, sendLogs})(App)));
