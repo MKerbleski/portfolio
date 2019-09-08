@@ -11,7 +11,7 @@ const NAME = styled.div`
 `;
 
 // Start FAq 
- Game when minimized to small
+ Game when minimized to small   
 
 <!-- 
 {/* <h1>Virtual Reality at Tonto National Monument</h1>
