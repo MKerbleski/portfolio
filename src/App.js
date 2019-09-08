@@ -82,7 +82,7 @@ class App extends React.Component {
           <Route exact path="/print" render={() => {
             return <ResumePrintPage hideHeaders={this.hideHeaders} showHeaders={this.showHeaders}/>}} />
           <Route path="/resume" render={ResumePage} />
-          <Route path="/80-second-demo" component={Video} />
+          <Route path="/80-sec-demo" component={Video} />
           <Route path="/demo" component={Video} />
           <Route path="/web" component={WebPortfolioPage} />
           <Route path="/media" component={MediaPortfolioPage} />
