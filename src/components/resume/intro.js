@@ -11,13 +11,13 @@ export default class Intro extends React.Component {
                     </ul>
                 </div>
                 <div className="center">
-                    <h1>Mike Kerbleski</h1>
+                    <h1>Michael Kerbleski</h1>
                 </div>
                 <div className="right">
                     <ul>
-                        <li><a href="mailto:michaelkerbleski@google.com">michaelkerbleski@gmail.com</a></li>
+                        <li><a href="mailto:mkerbleski7@google.com">mkerbleski7@gmail.com</a></li>
                         <li><a href="tel:1-520-333-6271">520-333-6271</a></li>
-                        <li><a href="https://mikerble.ski">https://mikerble.ski</a></li>
+                        <li><a href="https://mikerble.ski">https://kerble.ski</a></li>
                     </ul>
                 </div>
             </IntroDiv>
@@ -32,17 +32,13 @@ const IntroDiv = styled.div`
     display: flex;
     flex-direction: row;
     margin-bottom: 8px;
-    /* @media (max-width: 800px){
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } */
+
     * {
         margin: 0;
         box-sizing: border-box;
     }
     .left {
-        width: 100%;
+        width: 80%;
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
@@ -70,6 +66,7 @@ const IntroDiv = styled.div`
         }
     }
     .center {
+        /* border: 1px solid green; */
         width: 100%;
         display: flex;
         justify-content: center;
@@ -84,7 +81,7 @@ const IntroDiv = styled.div`
         }
     }
     .right {
-        width: 100%;
+        width: 80%;
         /* @media (max-width: 800px){
             flex-direction: column;
             justify-content: center;
