@@ -67,7 +67,6 @@ class Home extends React.Component {
             <Link name="web" onMouseLeave={(e) => this.dropElement(e)} className="link" to="/web">web</Link>
             <Link name="media" onMouseLeave={(e) => this.dropElement(e)} className="link" to="/media">media</Link>
           </div>
-          {this.state.count === 5 && <Video />}
         </HomeDiv>
       )
   }
@@ -115,20 +114,18 @@ const HomeDiv = styled.div`
       margin-top: 200px;
   }
   .all-links {
-    ${'' /* border: 1px solid green; */}
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    /* padding: 0 20px; */
     /* @media (max-width: 760px){
             flex-direction: column;
             justify-content: center;
             align-items: center;
         } */
     .link {
-      ${'' /* border: 1px solid red; */}
       margin: 0 3px;
-      padding: 0 3%;
+      padding: 0 .5%;
       color: black;
       font-size: 18px;
       text-decoration: none;

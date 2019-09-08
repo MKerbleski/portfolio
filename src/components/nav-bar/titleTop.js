@@ -21,10 +21,8 @@ const TitleTop = () => {
 export default TitleTop;
 
 const TitleDiv = styled.div`
-  ${'' /* border: 1px solid blue; */}
   display: flex;
   flex-wrap: nowrap;
-  justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;

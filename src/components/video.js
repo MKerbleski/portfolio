@@ -14,7 +14,6 @@ class Video extends React.Component {
     this.props.updateLogs(log)
   }
 
-
   trackVideo = (action) => {
     const log = {
       time: Date.now(),
@@ -23,7 +22,6 @@ class Video extends React.Component {
     }
     this.props.updateLogs(log)
   }
-
 
   render(){
       return (
