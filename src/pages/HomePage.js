@@ -4,17 +4,31 @@ import { Link } from 'react-router-dom';
 import { Title } from '../components';
 
 class Home extends React.Component {
+  state = {
+    count: 0
+  }
+
+  startFade = (e) => {
+    console.log('hi', this.state.count)
+    e.target.hidden = true
+    this.setState({count: this.state.count+1})
+  }
+
+  bringBack = (e) => {
+    e.target.style.background= "white"
+  }
+
   render(){
       return (
-        <HomeDiv>
-          <Title openAuth={this.props.openAuth} />
+        <HomeDiv >
+          <h1 onMouseLeave={(e) => this.startFade(e)} className="dark name">MICHAEL</h1>
+          <h1 onMouseLeave={(e) => this.startFade(e)} className="white name">KERBLE.SKI</h1>
           <div className="all-links">
-            <Link className="link" to="/resume">resume</Link>
-            <Link className="link" to="/web">web</Link>
-            <Link className="link" to="/media">media</Link>
-            {/* <Link className="link" to="/blog">blog</Link> */}
-            {/* <a className="link" rel="noopener noreferrer" target="_blank" href="https://kerbleski.webflow.io">blog</a>  */}
+            <Link onMouseLeave={(e) => this.startFade(e)} className="link" to="/resume" >resume</Link>
+            <Link onMouseLeave={(e) => this.startFade(e)} className="link" to="/web">web</Link>
+            <Link onMouseLeave={(e) => this.startFade(e)} className="link" to="/media">media</Link>
           </div>
+          {this.state.count === 5 && <iframe width="560" height="315" src="https://www.youtube.com/embed/rweNNtFJAEk" frameBorder="0" allow="accelerometer; autoPlay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>}
         </HomeDiv>
       )
   }
@@ -30,9 +44,29 @@ const HomeDiv = styled.div`
   flex-direction: column;
   justify-content: center;
   background: white;
+  opacity: 1;
+  transition: opacity 2s ease-out;
+  .fade {
+    opacity: 0;
+  }
   h1 {
     font-size: 13vw;
   }
+  .name {
+    margin: 0;
+    font-weight: 900;
+  }
+  .dark {
+    letter-spacing: 1rem;
+    color: black;
+  }
+  .white {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    text-decoration: none;
+  }
+  h1{line-height: 0.88}
   @media (max-width: 760px){
       flex-direction: column;
       justify-content: flex-start;
