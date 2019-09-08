@@ -23,9 +23,6 @@ class WebTile extends Component {
                     this.clickHandler(item)
                 }}> 
                     <h1>{item.name}</h1>
-                    {/* <div className="otherlinks">
-                        {this.props.item.github ? <i name='github' className="fab fa-github" onClick={(e) => this.clickHandler(e)}></i> : null}
-                    </div> */}
             </WebTileDiv>
         )
     }
