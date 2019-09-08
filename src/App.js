@@ -9,6 +9,7 @@ import {
   NavBar, 
   Footer
  } from './components'
+ import Video from './components/video.js'
  import {connect} from 'react-redux';
 import { updateLogs, createSession, sendLogs } from './redux/actions.js'
 import uuidv4 from 'uuid/v4'
@@ -73,6 +74,8 @@ class App extends React.Component {
           <Route exact path="/print" render={() => {
             return <ResumePrintPage hideHeaders={this.hideHeaders} showHeaders={this.showHeaders}/>}} />
           <Route path="/resume" render={ResumePage} />
+          <Route path="/80-second-demo" component={Video} />
+          <Route path="/demo" component={Video} />
           <Route path="/web" component={WebPortfolioPage} />
           <Route path="/media" component={MediaPortfolioPage} />
           <Route path="/blog" render={(a) => <BlogPage a={a} />} />
@@ -92,6 +95,7 @@ const AppDiv = styled.div`
     width: 100%;
     margin: 0;
     padding: 0; 
+    height: 90vh;
 `;
 
 const mapStateToProps = state => {
