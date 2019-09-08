@@ -4,16 +4,17 @@ import { Link } from 'react-router-dom';
 import { Resume } from '../components/resume'
 
 const ResumePage = () => {
-  return <div className="resume-page-div">
-            <ResumePageDiv>
-                <div className="resume-container">
-                    <Resume />
-                </div>
-                <div className="print-link">
-                    <Link className="print" to="/print">Print Resume Page</Link>
-                </div>
-            </ResumePageDiv>
-          </div>
+//   return <div className="resume-page-div">
+//             <ResumePageDiv>
+//                 <div className="resume-container">
+//                     <Resume />
+//                 </div>
+//                 <div className="print-link">
+//                     <Link className="print" to="/print">Print Resume Page</Link>
+//                 </div>
+//             </ResumePageDiv>
+//           </div>
+return <iframe style={{width: "100%", height: "100%"}} src="https://resume.creddle.io/resume/33w7i6krwqf"></iframe>
 }
 
 export default ResumePage;
