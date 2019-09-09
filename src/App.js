@@ -58,14 +58,14 @@ class App extends React.Component {
   }
 
   leftApp = async () => {
-    if(this.props.location.pathname === '/demo' && !localStorage.getItem(`name`)){
-      const name = await prompt('Wait! Thanks for stopping by, can I ask your name?')
-      localStorage.setItem(`name`, name)
-      if(name){
-        alert('Thanks! Feel free to connect if you would like to chat.')
-        await this.props.addToSession(name)
-      }
-    }
+    // if(this.props.location.pathname === '/demo' && !localStorage.getItem(`name`)){
+    //   const name = await prompt('Wait! Thanks for stopping by, can I ask your name?')
+    //   localStorage.setItem(`name`, name)
+    //   if(name){
+    //     alert('Thanks! Feel free to connect if you would like to chat.')
+    //     await this.props.addToSession(name)
+    //   }
+    // }
     const log = {
       time: Date.now(),
       action: 'exit',
