@@ -22,7 +22,7 @@ class Home extends React.Component {
   }
 
   dropElement = (e, name) => {
-    e.target.hidden = true
+    // e.target.hidden = true
     
     const log = {
       time: Date.now(),
@@ -30,20 +30,11 @@ class Home extends React.Component {
       component: `${e.target.name || name}`
     }
     this.props.updateLogs(log)
-    this.setState({count: this.state.count+1}, () => {
-      if(this.state.count === 5){
-        this.props.history.push('/demo')
-      }
-    })
-  }
-
-  trackVideo = (action) => {
-    const log = {
-      time: Date.now(),
-      action: `${action}`,
-      component: 'video'
-    }
-    this.props.updateLogs(log)
+    // this.setState({count: this.state.count+1}, () => {
+    //   if(this.state.count === 5){
+    //     this.props.history.push('/demo')
+    //   }
+    // })
   }
 
   componentWillUnmount = () => {
