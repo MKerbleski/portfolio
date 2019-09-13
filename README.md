@@ -29,3 +29,7 @@ open fullscreen</a>
 </div> */} -->
 
 TODO 
+
+Project ideas 
+how close or far to the nearest nice spot
+https://api.darksky.net/forecast/7a151315a8741c8abde82d34ef9a09b3/37.8267,-122.4233
