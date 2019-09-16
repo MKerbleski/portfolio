@@ -43,7 +43,7 @@ class Home extends React.Component {
       action: 'unmount',
       component: 'home'
     }
-    this.props.updateLogs(log)
+    // this.props.updateLogs(log)
   }
 
   render(){
@@ -56,6 +56,7 @@ class Home extends React.Component {
             <Link name="web" onMouseLeave={(e) => this.dropElement(e)} className="link" to="/web">web</Link>
             <Link name="media" onMouseLeave={(e) => this.dropElement(e)}  className="link" to="/media">media</Link>
             <Link name="demo" onMouseLeave={(e) => this.dropElement(e)}  className="link" to="/demo">demo</Link>
+            <Link name="chat" className="link" to="/chat">chat</Link>
           </div>
         </HomeDiv>
       )

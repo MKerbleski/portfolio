@@ -13,7 +13,8 @@ import {
   WebPortfolioPage, 
   MediaPortfolioPage, 
   HomePage, 
-  BlogPage 
+  BlogPage,
+  Chat,
 } from './pages'
 
 import { 
@@ -93,6 +94,7 @@ class App extends React.Component {
           <Route path="/resume" render={ResumePage} />
           <Route path="/80-sec-demo" component={Video} />
           <Route path="/demo" component={Video} />
+          <Route path="/chat" component={Chat} />
           <Route path="/web" component={WebPortfolioPage} />
           <Route path="/media" component={MediaPortfolioPage} />
           <Route path="/blog" render={(a) => <BlogPage a={a} />} />
