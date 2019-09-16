@@ -52,7 +52,7 @@ class Home extends React.Component {
           <h1 onMouseLeave={(e) => this.dropElement(e, 'michael')} className="dark name">MICHAEL</h1>
           <h1 onMouseLeave={(e) => this.dropElement(e, 'kerbleski')} className="white name">KERBLE.SKI</h1>
           <div className="all-links">
-            <Link name="resume" onMouseLeave={(e) => this.dropElement(e)} className="link" to="/resume">resume</Link>
+            <a name="resume" onMouseLeave={(e) => this.dropElement(e)} className="link" href="https://drive.google.com/file/d/19iWaPApdQODWaLroD1c7q3s93iYnH0SH/view">resume</a>
             <Link name="web" onMouseLeave={(e) => this.dropElement(e)} className="link" to="/web">web</Link>
             <Link name="media" onMouseLeave={(e) => this.dropElement(e)}  className="link" to="/media">media</Link>
             <Link name="demo" onMouseLeave={(e) => this.dropElement(e)}  className="link" to="/demo">demo</Link>
