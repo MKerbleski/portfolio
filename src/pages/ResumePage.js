@@ -8,7 +8,7 @@ const ResumePage = () => {
   return <div className="resume-page-div">
             <ResumePageDiv>
                 <div className="resume-container">
-                    <iframe style={{width: "100%", height: "100%"}} src="https://drive.google.com/file/d/1KrrWQK4V_mLdHq5DZfI0Bob7ldDQFJzE/preview"></iframe> 
+                    <iframe style={{width: "100%", height: "100%"}} src="https://drive.google.com/file/d/19iWaPApdQODWaLroD1c7q3s93iYnH0SH/preview"></iframe> 
                 </div>
             </ResumePageDiv>
           </div>
