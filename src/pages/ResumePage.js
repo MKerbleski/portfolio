@@ -1,20 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import { Resume } from '../components/resume'
+import { Resume } from '../components/resume';
+import { Document } from 'react-pdf'
 
 const ResumePage = () => {
-//   return <div className="resume-page-div">
-//             <ResumePageDiv>
-//                 <div className="resume-container">
-//                     <Resume />
-//                 </div>
-//                 <div className="print-link">
-//                     <Link className="print" to="/print">Print Resume Page</Link>
-//                 </div>
-//             </ResumePageDiv>
-//           </div>
-return <iframe style={{width: "100%", height: "100%"}} src="https://resume.creddle.io/resume/33w7i6krwqf"></iframe>
+  return <div className="resume-page-div">
+            <ResumePageDiv>
+                <div className="resume-container">
+                    <iframe style={{width: "100%", height: "100%"}} src="https://drive.google.com/file/d/1KrrWQK4V_mLdHq5DZfI0Bob7ldDQFJzE/preview"></iframe> 
+                </div>
+            </ResumePageDiv>
+          </div>
 }
 
 export default ResumePage;
@@ -24,9 +21,14 @@ const ResumePageDiv = styled.div `
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* border: 1px solid green; */
+  height: 90vh;
+  width: 90vw;
   .resume-container{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 20px;
+    width: 90vw;
+    height: 100%;
   }
   .print-link{
       width: 100%;
