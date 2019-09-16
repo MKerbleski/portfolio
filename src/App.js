@@ -91,7 +91,7 @@ class App extends React.Component {
         {this.state.showHeaders ? <NavBar /> : null}
           <Route exact path="/print" render={() => {
             return <ResumePrintPage hideHeaders={this.hideHeaders} showHeaders={this.showHeaders}/>}} />
-          <Route path="/resume" render={ResumePage} />
+          <Route path="/resume" component={ResumePage} />
           <Route path="/80-sec-demo" component={Video} />
           <Route path="/demo" component={Video} />
           <Route path="/chat" component={Chat} />
