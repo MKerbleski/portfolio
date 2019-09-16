@@ -5,9 +5,7 @@ import { Resume } from '../components/resume';
 import { Document } from 'react-pdf'
 
 class ResumePage extends React.Component {
-    // componentDidMount(){
-    //     this.props.history.push('https://drive.google.com/file/d/19iWaPApdQODWaLroD1c7q3s93iYnH0SH/view')
-    // }
+
     render(){
         return (
             <div className="resume-page-div">
