@@ -1,0 +1,4 @@
+/* /index.html 200
+
+# Redirect default Netlify subdomain to primary domain
+# https://unruffled-northcutt-2492b9.netlify.com/* https://blog.mikerble.ski/:splat 301!

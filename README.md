@@ -1,35 +1,37 @@
-# Portfolio
-Web Portfolio for Mike Kerbleski
+##Brightfield Coding Challenge
 
-https://www.youracclaim.com/badges/b3730f2f-5357-4d3f-a5d8-8def728f0258
+instructions to run locally 
 
-{/* <div>Icons made by <a href="https://www.flaticon.com/authors/those-icons" title="Those Icons">Those Icons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" rel="noopener noreferrer">CC 3.0 BY</a></div> */}
+terminal #1
+    (navigate to root folder )
+    (from root folder)
+    npm install (installs dependencies)
+    npm run dev -- starts node server with nodemon 
 
-import styled from 'styled-components';
-const NAME = styled.div`
+terminal #2 
+    (navigate to root folder )
+    cd client (will be in client folder) 
+    npm install (installs dependencies)
+    cd .. (will be in root folder)
+    npm run client -- starts local react server
+    (default broswer will open to localhost:3000)
 
-`;
 
-// Start FAq 
- Game when minimized to small   
+    ** to quit either process **
+    ctrl + c
 
-<!-- 
-{/* <h1>Virtual Reality at Tonto National Monument</h1>
-<div className="mediaBin">
-<iframe title="Tonto VR" className="media" src="http://swvirtualmuseum.nau.edu/wp/Tonto_panos/Tonto-NM-pano-tour.html"></iframe>
-<a href="http://swvirtualmuseum.nau.edu/wp/Tonto_panos/Tonto-NM-pano-tour.html">
-open fullscreen</a>
-<p>Note: There are errors with this website. I contributed the audio, photo, and videos displayed throughout the site and set up the interactive part with a seperate program. I was not responsible for anything relating to the publishing of the site or the errors that render. </p>
 
-<div className="video media">
-<iframe title="Basketball VR" src="https://player.vimeo.com/video/214381757" width="100%" height="80%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/214381757">Canada Play in 360 Womens Basketball</a> from <a href="https://vimeo.com/mkerbleski">Michael Kerbleski</a>.</p>
-</div>
 
-</div> */} -->
+--Instructions--
+In the attached zip file there are 3 files:
+data_0119.csv
+data_0219.csv
+data_0319.csv
 
-TODO 
+These files contain data from cannabis marketplaces, where each row is one instance of an item available on a marketplace somewhere. Each CSV represents one month of data (Jan, Feb, and Mar 2019). 
 
-Project ideas 
-how close or far to the nearest nice spot
-https://api.darksky.net/forecast/7a151315a8741c8abde82d34ef9a09b3/37.8267,-122.4233
+You should create a data visualization dashboard that shows some interesting and informative insights about the data.
+
+When building the dashboard please use either Microsoft Power BI, or create a custom dashboard with javascript (and any needed javascript libraries).
+
+Please include at least 3 figures on the dashboard, each showing a different facet of the data. Include at least one time-series figure showing month-to-month changes.

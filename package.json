@@ -1,33 +1,26 @@
 {
-  "name": "portfolio",
-  "author": "Michael Kerbleski",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "http://mikerbl.ski",
-  "dependencies": {
-    "axios": "^0.18.1",
-    "logger": "0.0.1",
-    "moment": "^2.22.2",
-    "react": "^16.4.2",
-    "react-dnd": "^5.0.0",
-    "react-dnd-html5-backend": "^5.0.1",
-    "react-dom": "^16.4.2",
-    "react-markdown": "^4.0.6",
-    "react-pdf": "^4.1.0",
-    "react-redux": "^5.1.1",
-    "react-router-dom": "^4.3.1",
-    "react-scripts": "1.1.4",
-    "redux": "^4.0.4",
-    "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.3.0",
-    "styled-components": "^3.4.2",
-    "thunk": "0.0.1",
-    "uuid": "^3.3.3"
-  },
-  "scripts": {
-    "start": "set PORT=3030 &&  react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+	"name": "BrightfieldChallenge",
+	"version": "0.1.0",
+	"private": true,
+	"homepage": "https://brightfield-challenge.herokuapp.com/",
+	"dependencies": {
+		"axios": "^0.18.1",
+		"csv-parser": "^2.3.0",
+		"express": "^4.17.1",
+		"express-http-proxy": "^1.5.1",
+		"express-static-gzip": "^1.1.3",
+		"jsonwebtoken": "^8.5.1",
+		"lodash": "^4.17.15",
+		"timestamp": "0.0.1"	
+	},
+	"scripts": {
+		"start": "node index.js",
+		"client": "cd ./client && npm start",
+		"dev": "nodemon index.js",
+		"build": "cd ./client && npm run build",
+		"heroku-postbuild": "cd client && npm install && npm run build"
+	},
+	"devDependencies": {
+		"nodemon": "^1.19.1"
+	}
 }
