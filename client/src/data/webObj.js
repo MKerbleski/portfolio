@@ -16,6 +16,13 @@ export const web = [
         picture: licensePlateGame,
     },
     { 
+        key: "sog",
+        name: "Sea of Green",
+        link: "https://sea-of-green.herokuapp.com/",
+        github: "https://github.com/MKerbleski/sea-of-green",        
+        picture: null,
+    },
+    { 
         key: "LPG",
         name: "License Plate Game",
         link: "https://mkerbleski.github.io/License-Plate-Game/",
