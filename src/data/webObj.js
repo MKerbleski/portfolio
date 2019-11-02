@@ -64,13 +64,13 @@ export const web = [
         github: "https://github.com/MKerbleski/Portfolio",
         picture: null,
     },
-    { 
-        key: "hackaathon",
-        name: "Job Trends",
-        link: "https://jobtrends.site/",
-        github: "https://github.com/MKerbleski/Hackathon-July2018",
-        picture: null,
-    },
+    // { 
+    //     key: "hackaathon",
+    //     name: "Job Trends",
+    //     link: "https://jobtrends.site/",
+    //     github: "https://github.com/MKerbleski/Hackathon-July2018",
+    //     picture: null,
+    // },
     { 
         key: "silverScreens",
         name: "Silver Screens",
