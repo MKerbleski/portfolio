@@ -18,7 +18,7 @@ export const web = [
     { 
         key: "sog",
         name: "Sea of Green",
-        link: "https://brightfield-challenge.herokuapp.com/",
+        link: "https://sea-of-green.herokuapp.com/",
         github: "https://github.com/MKerbleski/chart-js-demo",        
         picture: null,
     },
@@ -36,13 +36,13 @@ export const web = [
         github: "https://github.com/MKerbleski/License-Plate-Game",        
         picture: null,
     },
-    { 
-        key: "mud",
-        name: "MUD",
-        link: "https://amudappthatdoesntsuck.xyz/",
-        github: "https://github.com/MKerbleski/LambdaMUD-Client",
-        picture: null,
-    },
+    // { 
+    //     key: "mud",
+    //     name: "MUD",
+    //     link: "https://amudappthatdoesntsuck.xyz/",
+    //     github: "https://github.com/MKerbleski/LambdaMUD-Client",
+    //     picture: null,
+    // },
     { 
         key: "gameOfLife",
         name: "Cellular Automata",

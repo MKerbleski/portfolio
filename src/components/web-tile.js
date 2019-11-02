@@ -4,14 +4,14 @@ import { connect } from 'react-redux';
 import { updateLogs } from '../redux/actions.js'
 
 class WebTile extends Component {
-    clickHandler = (item) => {
-        window.open(item.link)
-        const log = {
-            time: Date.now(),
-            action: `click`,
-            component: `${item.name}`
-        }
-        this.props.updateLogs(log)
+    clickHandler = (link) => {
+        window.open(link)
+        // const log = {
+        //     time: Date.now(),
+        //     action: `click`,
+        //     component: `${item.name}`
+        // }
+        // this.props.updateLogs(log)
     }
 
     render(){
@@ -19,10 +19,17 @@ class WebTile extends Component {
         return(
             <WebTileDiv 
                 name='link' 
-                onClick={() => {
-                    this.clickHandler(item)
+                onClick={(e) => {
+                    e.stopPropagation()
+                    this.clickHandler(item.link)
                 }}> 
                     <h1>{item.name}</h1>
+                    <a className="github" onClick={(e) => {
+                            e.stopPropagation()
+                            this.clickHandler(item.github)
+                        }} target="_blank" href={item.github}>
+                        <i className="fab fa-github"></i>
+                    </a>
             </WebTileDiv>
         )
     }
@@ -63,5 +70,8 @@ const WebTileDiv = styled.div`
         /* align-items: center; */
         max-width: 95%;
         width: 95%;
+    }
+    .github{
+        font-size: 20px;
     }
 `
