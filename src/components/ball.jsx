@@ -1,6 +1,6 @@
 import React from 'react';
 import { DragSource } from 'react-dnd';
-import qrCode from './../img/QR_Code_.png';
+import qrCode from '../img/QR_Code_.png';
 
 const Ball = (props) => (
 // const Source = ({ color, connectDragSource, isDragging }) => (

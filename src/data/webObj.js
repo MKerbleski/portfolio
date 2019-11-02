@@ -18,7 +18,14 @@ export const web = [
     { 
         key: "sog",
         name: "Sea of Green",
-        link: "https://sea-of-green.herokuapp.com/",
+        link: "https://brightfield-challenge.herokuapp.com/",
+        github: "https://github.com/MKerbleski/chart-js-demo",        
+        picture: null,
+    },
+    { 
+        key: "charts",
+        name: "ChartJS Demo",
+        link: "https://chart-js-demo.herokuapp.com/",
         github: "https://github.com/MKerbleski/sea-of-green",        
         picture: null,
     },
