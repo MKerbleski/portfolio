@@ -10,8 +10,8 @@ class ResumePage extends React.Component {
         return (
             <div className="resume-page-div">
                 <ResumePageDiv>
-                    <div className="resume-container">
-                        <iframe style={{width: "100%", height: "100%"}} src="https://drive.google.com/file/d/19iWaPApdQODWaLroD1c7q3s93iYnH0SH/preview"></iframe> 
+                    <div className="resume-container"> 
+                        <iframe style={{width: "100%", height: "100%"}} title="resume" src={process.env.REACT_APP_RESUME_LINK}></iframe> 
                     </div>
                 </ResumePageDiv>
             </div>
