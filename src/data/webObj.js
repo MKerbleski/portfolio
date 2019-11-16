@@ -3,17 +3,17 @@ import licensePlateGame from '../img/webShots/License-Plate-Game-2019-01-06-10_5
 export const web = [
     { 
         key: "notes-app",
-        name: "Notes-App",
-        link: "http://notes-app.xyz",
+        name: "Sticky",
+        link: "http://sticky-app.netlify.com",
         github: null,
-        picture: licensePlateGame,
+        picture: null,
     },
     { 
         key: "devProfiles",
         name: "Developer Profiles",
         link: "https://ecstatic-dev-profiles.netlify.com/",
         github: "https://github.com/Lambda-School-Labs/labs9-developer-profiles",
-        picture: licensePlateGame,
+        picture: null,
     },
     { 
         key: "sog",
@@ -36,13 +36,13 @@ export const web = [
         github: "https://github.com/MKerbleski/License-Plate-Game",        
         picture: null,
     },
-    // { 
-    //     key: "mud",
-    //     name: "MUD",
-    //     link: "https://amudappthatdoesntsuck.xyz/",
-    //     github: "https://github.com/MKerbleski/LambdaMUD-Client",
-    //     picture: null,
-    // },
+    { 
+        key: "mud",
+        name: "MUD",
+        link: "https://amudappthatdoesntsuck.xyz/",
+        github: "https://github.com/MKerbleski/LambdaMUD-Client",
+        picture: null,
+    },
     { 
         key: "gameOfLife",
         name: "Cellular Automata",
